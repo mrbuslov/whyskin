@@ -1,0 +1,29 @@
+{% extends 'admin/change_form.html' %}
+
+{% block submit_buttons_bottom %}
+    {{ block.super }}
+    <div class="submit-row">
+        <input type="submit" value="Сохранить" name="save_btn" class="default" id="save_button">
+        <input type="submit" value="Сохранить и добавить новый" name="save_and_new_btn" class="default" id="save_and_new_btn">
+        <input type="submit" value="Удалить" id="delete_button" name="delete_btn" >
+    </div>
+    
+    <script>
+        // уберём дефолтный ряд с действиями, чтобы не мешал
+        document.querySelectorAll('.submit-row')[0].style.display = 'none';
+    </script>
+    <style>
+        #save_button, #delete_button, #save_and_new_btn{
+            text-transform: uppercase;
+            font-size: 15px;
+            height: 40px;
+        }
+        #delete_button{
+            background: var(--delete-button-bg); 
+            border-radius: 4px; 
+            padding: 10px 15px; 
+            line-height: 15px; 
+            color: var(--button-fg);
+        }
+    </style>
+{% endblock %}

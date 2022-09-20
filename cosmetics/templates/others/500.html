@@ -1,0 +1,27 @@
+{% extends 'cosmetics/base.html' %} 
+{% load static %} 
+{% load i18n %} 
+
+{% block title %}WhySkin 500{% endblock %}
+{% block head %}
+    <meta name="description" content="{% translate 'Вы попали на эту страницу, потому что сервер или упал, или что-то с ним не так.' %}">   
+    <meta property="og:url" content="{{request.build_absolute_uri}}" />
+    <meta property="og:site_name" content="WhySkin"/>
+    <meta property="og:image" content="https://whyskin.com.ua{% static 'img/505_error.svg' %}"/>
+    <meta property="og:title" content="{% translate 'WhySkin 500 проблема с сервером' %}" />
+    <meta property="og:description" content="{% translate 'Вы попали на эту страницу, потому что сервер или упал, или что-то с ним не так.' %}" />
+    <meta property="og:type" content="website" />
+{% endblock %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'css/error_pages.css' %}">
+{% endblock %}
+
+
+{% block content %}  
+    <h1 class="h1_500">WhySkin 500</h1>
+    <h3 class="h3_500">{% translate "Похоже, возникла проблема с сервером. Вернитесь к нам позже, когда мы её решим" %}.</h3>
+    <span class="span_500"><a a href="#" onclick="history.back();">< {% translate "Вернуться назад" %}</a></span>
+    <div class="div_500">
+        <img src="{% static 'img/505_error.svg'%}" alt="{% translate 'Сервер заснул' %}..." class="img_500">
+    </div>
+{% endblock %}

@@ -1,0 +1,194 @@
+{% extends 'cosmetics/base.html' %}
+{% load static %} 
+{% load i18n %} 
+
+{% block title %}{% translate 'Оформление заказа' %}{% endblock %}
+{% block head %}
+    <meta name="description" content="{% translate 'Страница оформления заказа' %}">   
+    <meta property="og:url" content="{{request.build_absolute_uri}}" />
+    <meta property="og:site_name" content="WhySkin"/>
+    <meta property="og:image" content="https://whyskin.com.ua{% static 'img/logo.jpg' %}"/>
+    <meta property="og:title" content="{% translate 'Оформление заказа' %}" />
+    <meta property="og:description" content="{% translate 'Страница оформления заказа' %}" />
+    <meta property="og:type" content="website" />
+{% endblock %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'css/cart_order.css' %}">
+{% endblock %}
+
+
+{% block content %}
+{% if error %}
+<style>
+    body{height: 70vh;}
+    .error_bg_image{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        position: absolute;
+        z-index: -1;
+        opacity: 0.4;
+    }
+    .error_content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        z-index: 1;
+    }
+</style>
+<img class="error_bg_image" src="{% static 'img/order_error_bg.jpg' %}">
+<div class="error_content">
+    <h1 class="order_error_h1">{{error}}</h1>
+    <h2 class="order_error_h2">{% translate 'Вы можете' %} <a href="{% url 'cosmetics:categories' %}">{% translate 'посмотреть больше' %}</a> {% translate 'товаров и добавить интересные в корзину' %}</h2>
+</div>
+{% else %}
+<h1 class="carted_h1">{% translate 'Оформление заказа' %}</h1>
+<div class="order_content">
+    <form action="{% url 'cosmetics:order_success' %}" method="post">
+        {% csrf_token %}
+        <h2>{% translate 'Ваш заказ' %}:</h2>
+        <div class="customer_orders">
+            {% for product, image, product_quantity in products %}
+            <a href="{% url 'cosmetics:product' product.slug %}" class="ordered">
+                <span class="cover_ordered_image">
+                    <img src="{{image.image.url}}" alt="{% translate 'Изображение' %} {{product.name}}" title="{% translate 'Изображение' %} {{product.name}}" class="ordered_image">
+                </span>
+                <div class="ordered_prod_name">{{product.name}}</div>
+                <div class="ordered_prod_price">{{product.price|floatformat:"0" }} <span>₴</span></div>
+            </a>
+            {% endfor %}
+        </div>
+
+        <h2>{% translate 'Доставка' %}*</h2>
+        <div class="delivery">
+            <span class="subtitle_text_span">{% translate 'Кликните по способу доставки' %}:</span>
+            <div class="delivery_ways">
+                <input type="radio" id="np_cb" class="delivery_checkbox" value="np" checked name="delivery_checkbox"/>
+                <label for="np_cb" class="delivery_checkbox_label">
+                    <img src="{% static 'img/np_logo.svg' %}"/>
+                    <span>{% translate 'Новая почта' %}</span>
+                </label>
+                <!-- <input type="radio" id="ukrp_cb" class="delivery_checkbox" value="ukrp" name="delivery_checkbox"/>
+                <label for="ukrp_cb" class="delivery_checkbox_label">
+                    <img src="{% static 'img/ukrp_logo.svg' %}"/>
+                    <span>Укрпочта</span>
+                </label> -->
+                <input type="radio" id="pickup_cb" class="delivery_checkbox" value="pickup" name="delivery_checkbox"/>
+                <label for="pickup_cb" class="delivery_checkbox_label">
+                    <img src="{% static 'img/pickup_cart.svg' %}"/>
+                    <span>{% translate 'Самовывоз' %}</span>
+                </label>
+            </div>
+            
+            <div class="delivery_info_np">
+                <div class="delivery_way_detailed">
+                    <input type="radio" id="in_warehouse" class="delivery_way_checkbox" value="В отделение" name="delivery_way_checkbox" checked/>
+                    <label for="in_warehouse" class="delivery_way_label">
+                        <span class="radio_changed"></span>
+                        <span>{% translate 'В отделение' %}</span>
+                    </label>
+                    <input type="radio" id="in_parcel_terminal" class="delivery_way_checkbox" value="В почтомат" name="delivery_way_checkbox"/>
+                    <label for="in_parcel_terminal" class="delivery_way_label">
+                        <span class="radio_changed"></span>
+                        <span>{% translate 'В почтомат' %} <span style="font-size: 12px;">{% translate '(доставка дешевле)' %}</span></span>
+                    </label>
+                </div>
+
+                <div class="city_field">
+                    <span class="subtitle_text_span">{% translate 'Введите и выберите Ваш город из списка' %}</span>
+                    <div class="city_input_field">
+                        <input type="text" name="city_input" id="city_input" required/>
+                        <input type="hidden" name="city_input_short" id="city_input_short">
+                        <div id="city_results"></div>
+                    </div>
+                </div>
+                
+                <div class="city_field">
+                    <span class="subtitle_text_span"><span style="right: 28px; bottom: 3px;"></span>{% translate 'Выберите отделение/почтомат' %}</span>
+                    <select id="warehouse_input" name="delivery_point_input"></select>
+                </div>
+            </div>
+            <div class="delivery_info_pickup">
+                <h2>{% translate 'Рады, что увидим Вас' %}!😊❤️</h2>
+                <h3>{% translate 'Вы сможете забрать свой заказ по адресу' %}: <a href="https://goo.gl/maps/wNTVMXXepLnRgQMu9">{% translate 'пр. Гагарина 43, г. Днепр' %} - <strong>{% translate 'ТЦ "Лето"' %}</strong></a></h3>
+            </div>
+        </div>
+
+        <h2>{% translate 'Введите Ваши данные' %}*</h2>
+        <div class="order_customer_data">
+            <span class="subtitle_text_span">{% translate 'Ваше Имя' %}</span>
+            {{form.author_name}}
+            <span class="subtitle_text_span">{% translate 'Ваша Фамилия' %}</span>
+            {{form.author_surname}}
+            <!-- <span class="subtitle_text_span">{% translate 'Ваше Отчество' %}</span>
+            {{form.author_patronymic}} -->
+            <span class="subtitle_text_span">{% translate 'Ваш номер телефона' %}</span>
+            {{form.author_phone}}
+            <span class="subtitle_text_span">Ваш Email</span>
+            {{form.author_email}}
+        </div>
+
+        <h2>Выберите способ оплаты*</h2>
+        <div class="way_of_payment_detailed">
+            {% for radio in form.way_of_payment %}
+                <div class="way_of_payment_radio">
+                    <span class="radio_pay_changed"></span>
+                    {{radio}}
+                </div>
+            {% endfor %}
+        </div>
+
+
+        <h2>{% translate 'Комментарий к заказу' %} <span style="font-size: 14px;">{% translate '(необязательно)' %}</span></h2>
+        {{form.comment}}
+
+        <h2>{% translate 'К оплате' %}:</h2>
+        <div class="final_counting">
+            {% for product, image, product_quantity in products %}
+            <p>
+                <span class="final_counting_prod">{{product.name}}</span>
+                <span class="final_counting_price">  
+                    <span class="final_product_quantity"><strong>{{product_quantity}}</strong> шт.</span>
+                    {{product.price|floatformat:"0" }} <span>₴</span>
+                </span>
+            </p>
+            {% endfor %}
+
+            <div class="order_goods_if_np">
+                {% for name, price in packaging_materials_for_np.items %}
+                <p><span class="final_counting_prod">{{name}}</span><span class="final_counting_price">{{price}} <span>₴</span></span></p>
+                {% endfor %}
+            </div>
+            <div class="order_goods_if_pickup">
+                {% for name, price in packaging_materials_for_pickup.items %}
+                <p><span class="final_counting_prod">{{name}}</span><span class="final_counting_price">
+                    {% if price == 0 %}
+                        {% translate 'бесплатно' %}
+                    {% else %}
+                        {{price}} <span>₴</span>
+                    {% endif %}
+                </span></p>
+                {% endfor %}
+            </div>
+            <hr style="width: 100%;">
+            <div class="order_total_price final_counting_price">{{total_price}} <span>₴</span></div>
+            <input type="hidden" class="order_total_price_hidden" value="{{total_price}}">
+        </div>
+
+        <input type="submit" class="cart_make_order order_make_order" value="{% translate 'Оформить заказ' %}" >
+    </form>
+</div>
+
+{% endif %}
+{% endblock %}
+
+{% block scripts %}
+<script src="{% static 'js/maskedinput.min.js' %}"></script>
+<script src="{% static 'js/order.js' %}"></script>
+<script>
+    document.getElementById('id_author_phone').setAttribute('type','tel');
+</script>
+{% endblock %}

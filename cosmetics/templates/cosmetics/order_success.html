@@ -1,0 +1,73 @@
+{% extends 'cosmetics/base.html' %}
+{% load static %} 
+{% load i18n %} 
+
+{% block title %}{% translate 'Спасибо за заказ!' %}{% endblock %}
+{% block head %}
+    <meta name="description" content="{% translate 'Страница успешного оформления заказа' %}">   
+    <meta property="og:url" content="{{request.build_absolute_uri}}" />
+    <meta property="og:site_name" content="WhySkin"/>
+    <meta property="og:image" content="https://whyskin.com.ua{% static 'img/logo.jpg' %}"/>
+    <meta property="og:title" content="{% translate 'Заказ оформлен успешно' %}!" />
+    <meta property="og:description" content="{% translate 'Страница успешного оформления заказа' %}" />
+    <meta property="og:type" content="website" />
+{% endblock %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'css/cart_order.css' %}">
+{% endblock %}
+
+
+{% block content %}
+{% if error %}
+<style>
+    body{height: 70vh;}
+    .error_bg_image{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        position: absolute;
+        z-index: -1;
+        opacity: 0.4;
+    }
+    .error_content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        z-index: 1;
+    }
+</style>
+<img class="error_bg_image" src="{% static 'img/order_error_bg.jpg' %}">
+<div class="error_content">
+    <h1 class="order_error_h1">{% translate 'Что-то пошло не так... Нам не удалось сформировать заказ' %} 😞</h1>
+    <h2 class="order_error_h2">{% translate 'Напишите' %} <a href="https://t.me/whyskin">{% translate 'нам в Телеграме' %}</a> {% translate 'или позвоните по номеру' %} <a href="tel:+380986225033">+380(98) 622-50-33</a>, {% translate 'мы Вам лично соберём заказ' %})</h2>
+</div>
+{% else %}
+<style>
+    .thanks_for_order{
+        display: flex;
+        height: 70%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 200px;
+    }
+    .thanks_for_order, .thanks_for_order h2, .thanks_for_order h3{
+        font-weight: normal;
+        text-align: center;
+    }
+</style>
+<div class="thanks_for_order">
+    <h1>You're breathtaking!</h1>
+    <h1>{% translate 'И спасибо за заказ' %})</h1>
+    <h2>{% translate 'В ближашее время с Вами свяжется приятная девушка или парень, чтобы уточнить детали' %}😊</h2>
+    <h3>{% translate 'Номер Вашего заказа' %}: <strong>{{order_num}}</strong></h3>
+    <a href="{% url 'cosmetics:index' %}">{% translate 'Перейти на главную' %}</a>
+</div>
+{% endif %}
+{% endblock %}
+
+{% block scripts %}
+{% endblock %}

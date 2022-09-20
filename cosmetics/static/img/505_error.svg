@@ -1,0 +1,184 @@
+<svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<style>.Union_702 {
+	animation: 2.8s linear 0.8s 1 normal forwards running Union_702;
+	animation-iteration-count: infinite;
+		transform: translateX(236px) translateY(67px);
+		width: 6px;
+		height: 6px;
+		opacity: 0;
+}
+@keyframes Union_702 {
+	0% {
+		transform: translateX(236px) translateY(67px);
+		width: 6px;
+		height: 6px;
+		opacity: 0;
+	}
+	28.57% {
+		transform: translateX(236px) translateY(67px);
+		width: 6px;
+		height: 6px;
+		opacity: 0;
+	}
+	100% {
+		transform: translateX(236px) translateY(22px);
+		width: 6px;
+		height: 6px;
+		opacity: 0;
+	}
+	32.14% {
+		opacity: 1;
+	}
+	46.43% {
+		transform: translateX(246px) translateY(52px);
+	}
+	64.29% {
+		transform: translateX(231.5px) translateY(37.5px);
+		width: 15px;
+		height: 15px;
+	}
+	82.14% {
+		transform: translateX(246px) translateY(32px);
+		opacity: 1;
+	}
+}.Union_477 {
+	animation: 2.8s linear 0.4s 1 normal forwards running Union_477;
+	animation-iteration-count: infinite;
+		transform: translateX(242px) translateY(67px);
+		width: 6px;
+		height: 6px;
+		opacity: 0;
+}
+@keyframes Union_477 {
+	0% {
+		transform: translateX(242px) translateY(67px);
+		width: 6px;
+		height: 6px;
+		opacity: 0;
+	}
+	14.29% {
+		transform: translateX(242px) translateY(67px);
+		width: 6px;
+		height: 6px;
+		opacity: 0;
+	}
+	17.86% {
+		opacity: 0;
+	}
+	32.14% {
+		transform: translateX(252px) translateY(52px);
+	}
+	50% {
+		transform: translateX(237.5px) translateY(37.5px);
+		width: 15px;
+		height: 15px;
+	}
+	100% {
+		transform: translateX(242px) translateY(22px);
+		width: 6px;
+		height: 6px;
+		opacity: 0;
+	}
+	67.86% {
+		transform: translateX(252px) translateY(32px);
+		opacity: 1;
+	}
+	85.71% {
+		transform: translateX(242px) translateY(22px);
+		width: 6px;
+		height: 6px;
+		opacity: 0;
+	}
+}.Union_242 {
+	animation: 2.8s linear 0s 1 normal forwards running Union_242;
+	animation-iteration-count: infinite;
+		transform: translateX(248px) translateY(67px);
+		width: 6px;
+		height: 6px;
+		opacity: 0;
+}
+@keyframes Union_242 {
+	0% {
+		transform: translateX(248px) translateY(67px);
+		width: 6px;
+		height: 6px;
+		opacity: 0;
+	}
+	17.86% {
+		transform: translateX(258px) translateY(52px);
+	}
+	100% {
+		transform: translateX(248px) translateY(22px);
+		width: 6px;
+		height: 6px;
+		opacity: 0;
+	}
+	3.57% {
+		opacity: 1;
+	}
+	35.71% {
+		transform: translateX(243.5px) translateY(37.5px);
+		width: 15px;
+		height: 15px;
+	}
+	53.57% {
+		transform: translateX(258px) translateY(32px);
+		opacity: 1;
+	}
+	71.43% {
+		transform: translateX(248px) translateY(22px);
+		width: 6px;
+		height: 6px;
+		opacity: 0;
+	}
+}
+</style>
+<g clip-path="url(#clip_0_255)" width="300" height="300" data-name="Frame 1">
+	<rect width="300" height="300" data-name="Frame 1"/>
+	<g transform="translate(28 67)" width="245" height="230" data-name="Group 8">
+		<rect width="245" height="230" rx="15" fill="#848391" data-name="Rectangle 1"/>
+		<g transform="translate(14 12)" width="80" height="43" data-name="Group 5">
+			<g transform="translate(0 37)" width="80" height="6" data-name="Group 4">
+				<rect width="14" height="6" rx="3" fill="#555555" data-name="Rectangle 2"/>
+				<rect width="14" height="6" rx="3" fill="#555555" data-name="Rectangle 3" transform="translate(22 0)"/>
+				<rect width="14" height="6" rx="3" fill="#555555" data-name="Rectangle 4" transform="translate(44 0)"/>
+				<rect width="14" height="6" rx="3" fill="#555555" data-name="Rectangle 5" transform="translate(66 0)"/>
+			</g>
+			<g transform="translate(0 24)" width="80" height="6" data-name="Group 3">
+				<rect width="14" height="6" rx="3" fill="#555555" data-name="Rectangle 2"/>
+				<rect width="14" height="6" rx="3" fill="#555555" data-name="Rectangle 3" transform="translate(22 0)"/>
+				<rect width="14" height="6" rx="3" fill="#555555" data-name="Rectangle 4" transform="translate(44 0)"/>
+				<rect width="14" height="6" rx="3" fill="#555555" data-name="Rectangle 5" transform="translate(66 0)"/>
+			</g>
+			<g transform="translate(0 12)" width="80" height="6" data-name="Group 2">
+				<rect width="14" height="6" rx="3" fill="#555555" data-name="Rectangle 2"/>
+				<rect width="14" height="6" rx="3" fill="#555555" data-name="Rectangle 3" transform="translate(22 0)"/>
+				<rect width="14" height="6" rx="3" fill="#555555" data-name="Rectangle 4" transform="translate(44 0)"/>
+				<rect width="14" height="6" rx="3" fill="#555555" data-name="Rectangle 5" transform="translate(66 0)"/>
+			</g>
+			<g width="80" height="6" data-name="Group 1">
+				<rect width="14" height="6" rx="3" fill="#555555" data-name="Rectangle 2"/>
+				<rect width="14" height="6" rx="3" fill="#555555" data-name="Rectangle 3" transform="translate(22 0)"/>
+				<rect width="14" height="6" rx="3" fill="#555555" data-name="Rectangle 4" transform="translate(44 0)"/>
+				<rect width="14" height="6" rx="3" fill="#555555" data-name="Rectangle 5" transform="translate(66 0)"/>
+			</g>
+		</g>
+		<g transform="translate(175 8)" width="22" height="22" data-name="Group 6">
+			<ellipse fill="#555555" data-name="Ellipse 1" transform="translate(11 11)" rx="11" ry="11"/>
+			<ellipse fill="#FFFF00" data-name="Ellipse 3" transform="translate(11 11)" rx="7" ry="7"/>
+		</g>
+		<g transform="translate(206 8)" width="22" height="22" data-name="Group 7">
+			<ellipse fill="#555555" data-name="Ellipse 1" transform="translate(11 11)" rx="11" ry="11"/>
+			<ellipse fill="#FF0000" data-name="Ellipse 3" transform="translate(11 11)" rx="7" ry="7"/>
+		</g>
+		<path fill-rule="evenodd" clip-rule="evenodd" d="M39.3038 7.84501C40.0144 6.12958 40.4871 4.32921 40.712 2.49383C40.88 1.12337 39.745 0 38.3643 0V0C36.9836 0 35.8848 1.1264 35.6631 2.48919C35.4713 3.66785 35.1435 4.82318 34.6844 5.93159C33.9055 7.81214 32.7637 9.52085 31.3244 10.9602C29.8851 12.3995 28.1764 13.5412 26.2959 14.3201C24.4153 15.0991 22.3998 15.5 20.3643 15.5C18.3288 15.5 16.3132 15.0991 14.4327 14.3201C12.5521 13.5412 10.8434 12.3995 9.40413 10.9602C7.96482 9.52085 6.8231 7.81214 6.04415 5.93159C5.58503 4.82317 5.25724 3.66785 5.06546 2.48919C4.84373 1.1264 3.74499 0 2.36428 0V0C0.983571 0 -0.151431 1.12337 0.016534 2.49382C0.24148 4.3292 0.714197 6.12958 1.42475 7.84501C2.45497 10.3322 3.96499 12.5921 5.86859 14.4957C7.77219 16.3993 10.0321 17.9093 12.5193 18.9395C15.0064 19.9698 17.6722 20.5 20.3643 20.5C23.0564 20.5 25.7221 19.9698 28.2093 18.9395C30.6965 17.9093 32.9564 16.3993 34.86 14.4957C36.7636 12.5921 38.2736 10.3322 39.3038 7.84501Z" fill="#555555" data-name="Subtract" transform="translate(32 105)"/>
+		<path fill-rule="evenodd" clip-rule="evenodd" d="M39.3038 7.84501C40.0144 6.12958 40.4871 4.32921 40.712 2.49383C40.88 1.12337 39.745 0 38.3643 0V0C36.9836 0 35.8848 1.1264 35.6631 2.48919C35.4713 3.66785 35.1435 4.82318 34.6844 5.93159C33.9055 7.81214 32.7637 9.52085 31.3244 10.9602C29.8851 12.3995 28.1764 13.5412 26.2959 14.3201C24.4153 15.0991 22.3998 15.5 20.3643 15.5C18.3288 15.5 16.3132 15.0991 14.4327 14.3201C12.5521 13.5412 10.8434 12.3995 9.40413 10.9602C7.96482 9.52085 6.8231 7.81214 6.04415 5.93159C5.58503 4.82317 5.25724 3.66785 5.06546 2.48919C4.84373 1.1264 3.74499 0 2.36428 0V0C0.983571 0 -0.151431 1.12337 0.016534 2.49382C0.24148 4.3292 0.714197 6.12958 1.42475 7.84501C2.45497 10.3322 3.96499 12.5921 5.86859 14.4957C7.77219 16.3993 10.0321 17.9093 12.5193 18.9395C15.0064 19.9698 17.6722 20.5 20.3643 20.5C23.0564 20.5 25.7221 19.9698 28.2093 18.9395C30.6965 17.9093 32.9564 16.3993 34.86 14.4957C36.7636 12.5921 38.2736 10.3322 39.3038 7.84501Z" fill="#555555" data-name="Subtract" transform="translate(172 105)"/>
+		<path fill-rule="evenodd" clip-rule="evenodd" d="M3.44004 1.41887C3.12361 0.635397 2.42928 0 1.58432 0V0C0.647777 0 -0.129165 0.767922 0.0736652 1.68224C0.221884 2.35037 0.45833 3.0053 0.780178 3.63549C1.36882 4.78809 2.23162 5.83536 3.31929 6.71751C4.40697 7.59967 5.69823 8.29944 7.11935 8.77686C8.54047 9.25428 10.0636 9.5 11.6018 9.5C13.14 9.5 14.6632 9.25428 16.0843 8.77686C17.5054 8.29944 18.7967 7.59967 19.8844 6.71752C20.972 5.83536 21.8348 4.78809 22.4235 3.63549C22.7881 2.92159 23.0431 2.17593 23.1844 1.4153C23.3279 0.642442 22.6778 0 21.8918 0V0C21.1826 0 20.5976 0.530567 20.3572 1.19778C20.2676 1.44644 20.1613 1.69145 20.0386 1.93171C19.5935 2.80319 18.9412 3.59503 18.1188 4.26202C17.2964 4.92902 16.3201 5.45811 15.2456 5.81909C14.1711 6.18006 13.0194 6.36585 11.8564 6.36585C10.6934 6.36585 9.54171 6.18006 8.4672 5.81909C7.3927 5.45811 6.41638 4.92902 5.59399 4.26202C4.7716 3.59503 4.11924 2.80319 3.67417 1.93171C3.588 1.76298 3.50992 1.59191 3.44004 1.41887Z" fill="#555555" data-name="Subtract" transform="translate(107.04 181)"/>
+	</g>
+	<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H5.25V1.33333H5.24997L2.24999 4.66665L5.99999 4.66665V5.99998H0.749985V4.66665L3.74997 1.33333H0V0Z" fill="#BA9FF2" data-name="Union" class="Union_702"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H5.25003V1.33335H5.24998L2.24998 4.6667H6V6.00004H0.74997V4.6667L3.74998 1.33335H0V0Z" fill="#BA9FF2" data-name="Union" class="Union_477"/>
+	<path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H5.25008V1.33331H0V0ZM2.2499 4.66671H5.99995V6.00003H0.749878V4.66671L3.74993 1.33343L5.24995 1.33343L2.2499 4.66671Z" fill="#BA9FF2" data-name="Union" class="Union_242"/>
+</g>
+<defs><clipPath id="clip_0_255"><rect width="300" height="300"/></clipPath>
+</defs>
+</svg>

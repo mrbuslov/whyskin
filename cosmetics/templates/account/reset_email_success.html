@@ -1,0 +1,27 @@
+{% extends 'cosmetics/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}{% translate 'Пароль сброшен' %}{% endblock %}
+{% block head %}
+    <meta name="description" content="{% translate 'Страница успешного сброса пароля' %}">   
+    <meta property="og:url" content="{{request.build_absolute_uri}}" />
+    <meta property="og:site_name" content="WhySkin"/>
+    <meta property="og:image" content="https://whyskin.com.ua{% static 'img/logo.jpg' %}"/>
+    <meta property="og:title" content="{% translate 'Пароль сброшен' %}" />
+    <meta property="og:description" content="{% translate 'Страница успешного сброса пароля' %}" />
+    <meta property="og:type" content="website" />
+{% endblock %}
+{% block styles %}
+    <link href="{% static 'css/registration.css' %}" type="text/css" rel="stylesheet">
+{% endblock %}
+
+
+{% block content %}
+    <h1 class="registration_greeting">{% translate "Мы отправили Вам письмо" %}</h1>
+    <h3 class="email_not_sent">{% translate "Проверьте почту. Если письма нет, подождите немного, Gmail делает проверку" %}</h3>
+    <h3 class="email_not_sent">{% translate 'Если же его долго нет, посмотрите в папки "Спам" и "Вся почта"' %}</h3>
+    <br>
+    <a href="{% url 'account:login' %}" class="go_to_index">{% translate "Войти в профиль" %}</a><br>
+    <a href="{% url 'cosmetics:index' %}" class="go_to_index">{% translate "Вернуться на главную" %}</a>
+{% endblock %}

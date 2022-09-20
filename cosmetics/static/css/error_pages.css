@@ -1,0 +1,87 @@
+/*--------------------------------------------------- 404 ---------------------------------------------------------*/
+.h1_404, .h1_500, .h1_error{
+    font-weight: normal;
+    font-size: 45px;
+    text-align: center;
+}
+.h3_404, .h3_500, .h3_error{
+    font-weight: normal;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.span_404, .span_500, .span_error{
+    display: block;
+    text-align: center;
+}
+.span_404 a, .span_500 a, .span_error a{
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: -.5px;
+    color: rgb(87, 68, 155);
+}
+.div_404, .div_500{
+    width: 30%;
+    height: 30%;
+    text-align: center;
+    margin: auto;
+}
+.img_404, .img_500{
+    height: 100%;
+    width: 100%;
+    margin: 50px auto;
+}
+/*--------------------------------------------------- Exception ---------------------------------------------------------*/
+.quote{
+    margin-top: 30px;
+    font-size: 17px;
+    text-align: end;
+    padding: 10px;
+}
+.quote_text{
+    font-style: italic;
+    margin-bottom: 10px;
+}
+.quote_author{
+    font-size: 14px;
+}
+
+
+/*--------------------------------- Телефон ВЕРТИКАЛЬНО --------------------------------------*/
+@media (orientation:portrait) and (max-width:480px){
+    .div_404{
+        width: 50%;
+        height: 50%;
+    }
+}
+@media (max-width:420px){
+
+}
+@media (max-width:380px){
+
+}
+@media (max-width:360px){
+
+}
+@media (max-width:320px){
+
+}
+
+@media (max-width:280px){	
+
+}
+
+
+/*--------------------------------- Телефон Горизонтально --------------------------------------*/
+@media (orientation:landscape) and (max-width:900px){
+    
+}
+@media (orientation:landscape) and (max-width:850px){
+    
+}
+@media (orientation:landscape) and (max-width:740px){
+    
+}
+@media (orientation:landscape) and (max-width:600px){
+
+}

@@ -1,0 +1,45 @@
+{% extends 'cosmetics/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}{% translate "Регистрация" %} на Whyskin{% endblock %}
+{% block head %}
+    <meta name="description" content="{% translate 'Страница регистрации на WhySkin' %}">   
+    <meta property="og:url" content="{{request.build_absolute_uri}}" />
+    <meta property="og:site_name" content="WhySkin"/>
+    <meta property="og:image" content="https://whyskin.com.ua{% static 'img/logo.jpg' %}"/>
+    <meta property="og:title" content="{% translate 'Регистрация' %} на Whyskin" />
+    <meta property="og:description" content="{% translate 'Страница регистрации на WhySkin' %}" />
+    <meta property="og:type" content="website" />
+{% endblock %}
+{% block styles %}
+    <link href="{% static 'css/registration.css' %}" type="text/css" rel="stylesheet">
+{% endblock %}
+
+
+{% block content %}
+    <div class="box"> 
+        <h1 class="login_header">{% translate "Регистрация" %}</h1>
+        <form method="POST" action="{% url 'account:registration' %}" id="registrationForm">
+            {% csrf_token %}
+                <div class="input_textbox">
+                    <input type="email" name="email" required id="email" placeholder="Email" style="margin-bottom: 0;"><br>
+                    <span id="email_error_text" style="color: #f00; font-size: 12px; margin-bottom: 20px; display: block; margin-left: 5px;"></span>
+                </div>	
+                <div class="input_textbox">
+                    <input type="password" id="password" name="password" required placeholder="Пароль"><br>
+                </div>		    
+                <label class="agree_checkbox_label">
+                    <input type="checkbox" class="agree_checkbox">
+                    <span class="agree_over"></span>
+                    <span class="registr_privacy">{% translate "Я соглашаюсь с" %} <a href="{% url 'cosmetics:privacy_policy' %}">{% translate "Политикой конфиденциальности" %}</a> {% translate "и даю согласие на обработку личных данных" %}.</span>
+                </label>
+                <button type="submit" class="button">
+                    <span class="button_text">{% translate "Зарегистрироваться" %}</span>
+                </button>
+                <p class="go_to_register">{% translate "Уже есть аккаунт" %}? <a href="{% url 'account:login' %}">{% translate "Войти" %}</a></p>
+                <p class="forgot_password"><a href="{% url 'account:reset_email' %}">{% translate "Забыли пароль" %}?</a></p>
+        </form>
+    </div>
+
+{% endblock %}

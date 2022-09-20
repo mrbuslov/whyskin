@@ -1,0 +1,59 @@
+{% extends 'admin/change_form.html' %}
+
+{% block submit_buttons_bottom %}
+    {{ block.super }}
+    <div class="submit-row">
+        <a href="#" class="user_option_tel">Позвонить</a>
+        <a href="#" class="user_option_telegram" target="_blank">Телеграм</a>
+        <a href="#" class="user_option_viber">Вайбер</a>
+    </div>
+    <div class="submit-row">
+        <input type="submit" value="Сохранить" name="save_btn" class="default" id="save_button">
+        <input type="submit" value="Подтвердить" name="submit_btn" class="default" id="submit_btn">
+        <input type="submit" value="Отклонить" name="reject_btn" class="default" id="reject_btn">
+        <input type="submit" value="Удалить" id="delete_button" name="delete_btn" >
+    </div>
+    
+    
+    <script>
+        // уберём дефолтный ряд с действиями, чтобы не мешал
+        document.querySelectorAll('.submit-row')[0].style.display = 'none';
+        var phone_num = document.getElementById('id_author_phone').value.replaceAll('-','').replaceAll(' ','').replaceAll(')','').replaceAll('(','')
+        document.querySelector('.user_option_tel').href = 'tel:' + phone_num;
+        document.querySelector('.user_option_telegram').href = 'https://t.me/' + phone_num;
+        document.querySelector('.user_option_viber').href = 'viber://chat?number=%2B' + phone_num.replace('+','');
+    </script>
+    <style>
+        #save_button, #delete_button, #submit_btn, #reject_btn{
+            text-transform: uppercase;
+            font-size: 15px;
+            height: 40px;
+        }
+        #reject_btn{
+            background: rgb(215, 92, 92);
+        }
+        #delete_button{
+            background: var(--delete-button-bg); 
+            border-radius: 4px; 
+            padding: 10px 15px; 
+            line-height: 15px; 
+            color: var(--button-fg);
+        }
+        .user_option_tel, .user_option_telegram, .user_option_viber{
+            background: rgb(51, 155, 51); 
+            border-radius: 4px; 
+            padding: 10px 15px; 
+            margin: 0 10px;
+            font-size: 17px;
+            color: #fff !important;
+            display: inline-block;
+            text-decoration: none;
+        }
+        .user_option_telegram{
+            background: #0088cc;
+        }
+        .user_option_viber{
+            background: #7360F2;
+        }
+    </style>
+{% endblock %}

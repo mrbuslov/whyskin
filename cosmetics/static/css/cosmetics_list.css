@@ -1,0 +1,118 @@
+.product_item:hover .item_add_to_liked{
+    opacity: 100;
+}
+.item_add_to_liked{
+    position: absolute; 
+    padding: 2px;
+    box-sizing: border-box;
+    background: #fff;
+    border-radius: 9px;
+    cursor: pointer;
+    right: 15px;
+    top: 15px;
+    padding-bottom: 0;
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+.item_add_to_liked img{
+    height: 25px;
+    transition: all .2s ease;
+}
+.item_add_to_liked:hover img{
+    transform: scale(1.1);
+}
+
+.category_name{
+    font-size: 29px;
+    text-align: center;
+}
+.category_name span{
+    text-transform: lowercase;
+}
+.product_categories{
+    list-style: none;
+    text-align: center;
+}
+.product_categories li{
+    display: inline-block;
+}
+.products_block{
+    width: 70%; /* 90% */
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+/* .products_filters{
+    width: 20%;
+} */
+.items{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.product_item{
+    width: 23%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 2% 0;
+    position: relative;
+}
+.product_item a{
+    text-align: center;
+}
+.cover_image_span{
+    height: 220px;
+}
+.item_img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.item_name{
+    font-size: 13.5px;
+    text-align: center;
+    color: initial;
+}
+.item_brand{
+    text-align: center;
+    color: rgb(179, 179, 179);
+    margin: 5px 0;
+    font-size: 13px;
+}
+.item_options{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: auto;
+}
+.item_prices{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.item_old_price span, .item_price span{
+    font-size: 12px;
+}
+.item_old_price{
+    font-size: 14px;
+    text-decoration: line-through;
+    color: rgb(165, 165, 165);
+}
+.item_price{
+    font-size: 23px;
+    font-weight: bold;
+}
+.item_add_to_cart{
+    display: flex; 
+    align-items: end;
+    cursor: pointer;
+}
+.add_to_cart_img{
+    width: 35px;
+}
+
+

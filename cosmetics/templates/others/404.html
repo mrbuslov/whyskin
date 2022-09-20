@@ -1,0 +1,27 @@
+{% extends 'cosmetics/base.html' %} 
+{% load static %} 
+{% load i18n %} 
+
+{% block title %}Whyskin 404{% endblock %}
+{% block head %}
+    <meta name="description" content="{% translate '404... Вы попали на эту страницу, потому что был указан неправильный адрес.' %}">   
+    <meta property="og:url" content="{{request.build_absolute_uri}}" />
+    <meta property="og:site_name" content="WhySkin"/>
+    <meta property="og:image" content="https://whyskin.com.ua{% static 'img/search_empty.svg' %}"/>
+    <meta property="og:title" content="{% translate 'Whyskin 404 страница не найдена' %}" />
+    <meta property="og:description" content="{% translate '404... Вы попали на эту страницу, потому что был указан неправильный адрес.' %}" />
+    <meta property="og:type" content="website" />
+{% endblock %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'css/error_pages.css' %}">
+{% endblock %}
+
+
+{% block content %}  
+    <h1 class="h1_404">Whyskin 404</h1>
+    <h3 class="h3_404">{% translate 'Мы искали, но не наискали' %}( <br> {% translate 'Попробуйте перейти на другую страницу' %}</h3>
+    <span class="span_404"><a a href="#" onclick="history.back();">< {% translate "Вернуться назад" %}</a></span>
+    <div class="div_404">
+        <img src="{% static 'img/search_empty.svg'%}" alt="{% translate 'Картинка *ищет' %} о_о*" class="img_404">
+    </div>
+{% endblock %}

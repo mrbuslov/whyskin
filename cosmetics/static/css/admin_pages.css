@@ -1,0 +1,211 @@
+/* -------------------------------------------- Add Product ------------------------------------------------------------ */
+
+.upload_image_button{
+    height: 50px;
+    display: inline-block;
+    object-fit: scale-down;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    background-size: cover;
+    margin-left: 5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.upload_image_button img{
+    object-fit: contain;
+    width: inherit;
+    height: inherit;
+    background: #75bbfd;
+    border-radius: 5px;
+}
+.dark .upload_image_button{
+    background: #5385b4;  
+}
+.upload_image_button:hover{
+    opacity: 0.85;
+}   
+
+
+#img_upload{
+    display: none;
+}
+
+
+
+
+.image_upload_field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image_upload_field span{
+    margin-left: 15px;
+    color: #8975fd;
+    font-size: 20px;
+}
+.images_field{
+    display: flex;
+    /* justify-content: space-between; */
+    overflow-x: auto;
+    padding: 10px 0;
+    box-sizing: border-box;
+}
+.uploaded_image{
+    max-height: 300px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    margin: 0 15px;
+}
+
+
+.add_h1{
+    text-align: center;
+}
+.add_content{
+    padding: 25px 40px;
+    box-sizing: border-box;
+}
+.add_main_info{
+    display: flex;
+    flex-direction: row;
+}
+.add_main_info_1_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    height: 220px;
+}
+.add_main_info_1_div span{
+    display: flex;
+    align-items: center;
+}
+.add_main_info_1_div input, .add_main_info_1_div select, .add_more_info select, #id_volume{
+    padding: 3px;
+    font-size: 14px;
+    width: 50px;
+    margin-left: 10px;
+    text-align: center;
+    outline: none;
+}
+#id_name{
+    padding: 3px;
+    font-size: 14px;
+    flex: 1;
+    margin: 0 15px;
+    text-align: left;
+}
+.add_main_info_1_div select, .add_more_info select{
+    text-align: left;
+    width: auto;
+}
+.add_desc_title{
+    margin: 0;
+    margin-bottom: 20px;
+}
+.add_main_info textarea{
+    height: 100%;
+    resize: none;
+    outline: none;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.add_more_info{
+    flex-direction: column;
+    display: flex;
+}
+.add_more_info_h2{
+    padding-left: 20px;
+    margin: 40px 0;
+}
+.add_more_info input{
+    padding: 3px;
+    font-size: 14px;
+    outline: none;
+    flex: 1;
+    margin: 0 15px;
+}
+.add_more_info textarea{
+    resize: none;
+    width: 50%;
+    padding: 10px;
+    font-size: 14px;
+    outline: none;
+    box-sizing: border-box;
+}
+.add_more_info span{
+    margin-top: 10px;
+}
+
+.add_submit{
+    background: #ADE7AF;
+    border: 1px solid #ccc;
+    margin: 20px auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    display: block;
+    border-radius: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background .3s ease;
+}
+.add_submit:hover{
+    background: #8ab88b;
+}
+
+/* -------------------------------------------------------------------------------------------------------- */
+
+
+
+/*--------------------------------- ПЛАНШЕТ ВЕРТИКАЛЬНО --------------------------------------*/
+@media (orientation:portrait) and (max-width:1025px) and (max-height:1367px){
+    .add_content{
+        padding: 5px;
+    }
+    .add_main_info{
+        flex-direction: column;
+    }
+    .add_main_info_1_div{
+        width: 100%;
+    }
+    .add_desc_title{
+        margin-top: 50px;
+    }
+    #cke_id_description{
+        width: 100% !important;
+    }
+    .django-ckeditor-widget{
+        width: 100%;
+    }
+    .add_more_info textarea{
+        width: 100%;
+    }
+}
+/*--------------------------------- ПЛАНШЕТ ГОРИЗОНТАЛЬНО --------------------------------------*/
+@media (orientation:landscape) and (max-width:1367px) and (max-height:1025px){
+    .add_content{
+        padding: 5px;
+    }
+    .add_main_info{
+        flex-direction: column;
+    }
+    .add_main_info_1_div{
+        width: 100%;
+    }
+    .add_desc_title{
+        margin-top: 50px;
+    }
+    #cke_id_description{
+        width: 100% !important;
+    }
+    .django-ckeditor-widget{
+        width: 100%;
+    }
+    .add_more_info textarea{
+        width: 100%;
+    }
+}

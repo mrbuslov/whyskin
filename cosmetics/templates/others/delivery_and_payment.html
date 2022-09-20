@@ -1,0 +1,44 @@
+{% extends 'cosmetics/base.html' %}
+{% load static %} 
+{% load i18n %} 
+
+{% block title %}{% translate "Обмен и возврат" %} на WhySkin{% endblock %}
+{% block head %}
+    <meta name="description" content="{% translate 'Доставка и оплата онлайн-магазина WhySkin. Прочитайте доставку и оплату перед тем, как покупать товары в нашем онлайн-магазине.' %}">   
+    <meta property="og:url" content="{{request.build_absolute_uri}}" />
+    <meta property="og:site_name" content="WhySkin"/>
+    <meta property="og:image" content="https://whyskin.com.ua/{% static 'img/logo.jpg' %}"/>
+    <meta property="og:title" content="{% translate 'Доставка и оплата онлайн-магазина WhySkin' %}" />
+    <meta property="og:description" content="Доставка и оплата онлайн-магазина WhySkin. Прочитайте доставку и оплату перед тем, как покупать товары в нашем онлайн-магазине." />
+    <meta property="og:type" content="website" />
+{% endblock %}
+{% block styles %}
+    <link href="{% static 'css/privacy.css' %}" type="text/css" rel="stylesheet">
+{% endblock %}
+
+{% block content %} 
+<div class="rules_field">
+    <div class="rules_block">
+        <p class="rules_title">{% translate "Доставка и оплата" %} </p>        
+        <p style="text-align: center;">{% translate "Способы доставки" %} </p>
+        <div class="ways_of_delivery">
+            <div class="way_of_delivery">
+                <img src="{% static 'img/np_logo.svg' %}" alt="{% translate 'Доставка по Новой Почте' %}">
+                <span>{% translate 'Новая почта' %}</span>
+                <span>{% translate 'В почтомат/отделение' %}</span>
+            </div>
+            <div class="way_of_delivery">
+                <img src="{% static 'img/pickup_cart.svg' %}" alt="{% translate 'Самовывоз' %}">
+                <span>{% translate 'Самовывоз' %}</span>
+                <span><a href="https://goo.gl/maps/wNTVMXXepLnRgQMu9">{% translate 'пр. Гагарина 43, г. Днепр' %} - {% translate 'ТЦ "Лето"' %}</a></span>
+            </div>
+        </div>
+        <p style="text-align: center;">{% translate "Оплата удобным способом" %} </p>
+        <ol>
+            <li style="margin-top: 5px;">{% translate "Наложенный платеж — оплата наличными или картой при получении через курьерскую службу" %}</li>
+            <li style="margin-top: 5px;">{% translate "Оплата переводом на карту" %}</li>
+            <li style="margin-top: 5px;">{% translate "Наличные деньги (при самовывозе)" %}</li>
+        </ol>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,205 @@
+<svg width="300" height="300" viewBox="0 0 300 300" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<style>.Rectangle_1_474 {
+	animation: 4.4s linear 0s 1 normal forwards running Rectangle_1_474;
+	animation-iteration-count: infinite;
+		width: 126px;
+		transform: translateX(79px) translateY(188px);
+}
+@keyframes Rectangle_1_474 {
+	0% {
+		width: 126px;
+		transform: translateX(79px) translateY(188px);
+	}
+	25% {
+		transform: translateX(79px) translateY(188px);
+	}
+	100% {
+		transform: translateX(79px) translateY(188px);
+		width: 126px;
+	}
+	15.91% {
+		width: 100px;
+	}
+	34.09% {
+		transform: translateX(93px) translateY(188px);
+	}
+	43.18% {
+		transform: translateX(106px) translateY(188px);
+		width: 100px;
+	}
+	52.27% {
+		transform: translateX(79px) translateY(188px);
+		width: 126px;
+	}
+}.Group_2_505 {
+	animation: 4.4s linear 0.1s 1 normal forwards running Group_2_505;
+	animation-iteration-count: infinite;
+		transform: translateX(186.25px) translateY(60.01px);
+}
+@keyframes Group_2_505 {
+	0% {
+		transform: translateX(186.25px) translateY(60.01px);
+	}
+	2.27% {
+		transform: translateX(186.25px) translateY(60.01px);
+	}
+	15.91% {
+		transform: translateX(179.25px) translateY(53.01px);
+	}
+	25% {
+		transform: translateX(179.25px) translateY(60px);
+	}
+	34.09% {
+		transform: translateX(193.25px) translateY(60px);
+	}
+	100% {
+		transform: translateX(186.25px) translateY(60.01px);
+	}
+	43.18% {
+		transform: translateX(193.25px) translateY(53.01px);
+	}
+	52.27% {
+		transform: translateX(186.25px) translateY(60.01px);
+	}
+}.Ellipse_22_338 {
+	animation: 4.4s linear 0.1s 1 normal forwards running Ellipse_22_338;
+	animation-iteration-count: infinite;
+		ry: 51.415px;
+}
+@keyframes Ellipse_22_338 {
+	0% {
+		ry: 51.415px;
+	}
+	2.27% {
+		ry: 51.415px;
+	}
+	15.91% {
+		ry: 56.415px;
+	}
+	43.18% {
+		ry: 56.415px;
+	}
+	52.27% {
+		ry: 51.415px;
+	}
+	100% {
+		ry: 51.415px;
+	}
+}.Ellipse_21_657 {
+	animation: 4.4s linear 0.1s 1 normal forwards running Ellipse_21_657;
+	animation-iteration-count: infinite;
+		ry: 27.5px;
+}
+@keyframes Ellipse_21_657 {
+	0% {
+		ry: 27.5px;
+	}
+	2.27% {
+		ry: 27.5px;
+	}
+	15.91% {
+		ry: 32.5px;
+	}
+	43.18% {
+		ry: 32.5px;
+	}
+	52.27% {
+		ry: 27.5px;
+	}
+	100% {
+		ry: 27.5px;
+	}
+}.Group_1_745 {
+	animation: 4.4s linear 0.1s 1 normal forwards running Group_1_745;
+	animation-iteration-count: infinite;
+		transform: translateX(10.01px) translateY(60.01px);
+}
+@keyframes Group_1_745 {
+	0% {
+		transform: translateX(10.01px) translateY(60.01px);
+	}
+	2.27% {
+		transform: translateX(10.01px) translateY(60.01px);
+	}
+	15.91% {
+		transform: translateX(3.01px) translateY(53.01px);
+	}
+	25% {
+		transform: translateX(3.01px) translateY(60px);
+	}
+	34.09% {
+		transform: translateX(17.01px) translateY(60px);
+	}
+	100% {
+		transform: translateX(10.01px) translateY(60.01px);
+	}
+	43.18% {
+		transform: translateX(17.01px) translateY(53.01px);
+	}
+	52.27% {
+		transform: translateX(10.01px) translateY(60.01px);
+	}
+}.Ellipse_12_863 {
+	animation: 4.4s linear 0.1s 1 normal forwards running Ellipse_12_863;
+	animation-iteration-count: infinite;
+		ry: 51.415px;
+}
+@keyframes Ellipse_12_863 {
+	0% {
+		ry: 51.415px;
+	}
+	2.27% {
+		ry: 51.415px;
+	}
+	15.91% {
+		ry: 56.415px;
+	}
+	43.18% {
+		ry: 56.415px;
+	}
+	52.27% {
+		ry: 51.415px;
+	}
+	100% {
+		ry: 51.415px;
+	}
+}.Ellipse_11_326 {
+	animation: 4.4s linear 0.1s 1 normal forwards running Ellipse_11_326;
+	animation-iteration-count: infinite;
+		ry: 27.5px;
+}
+@keyframes Ellipse_11_326 {
+	0% {
+		ry: 27.5px;
+	}
+	2.27% {
+		ry: 27.5px;
+	}
+	15.91% {
+		ry: 32.5px;
+	}
+	43.18% {
+		ry: 32.5px;
+	}
+	52.27% {
+		ry: 27.5px;
+	}
+	100% {
+		ry: 27.5px;
+	}
+}
+</style>
+<g clip-path="url(#clip_0_16)" width="300" height="300" data-name="Frame 1">
+	<rect width="126" height="19" fill="#87B289" data-name="Rectangle 1" class="Rectangle_1_474"/>
+	<g transform="translate(186.24 60)" class="Group_2_505" width="102.83" height="102.83" data-name="Group 2">
+		<ellipse fill="#87B289" data-name="Ellipse 22" class="Ellipse_22_338" transform="translate(51.41999999999999 51.42)" rx="51.415" ry="51.415"/>
+		<ellipse fill="white" data-name="Ellipse 21" class="Ellipse_21_657" transform="translate(52.25999999999999 51.5)" rx="27.5" ry="27.5"/>
+	</g>
+	<g transform="translate(10 60)" class="Group_1_745" width="102.83" height="102.83" data-name="Group 1">
+		<ellipse fill="#87B289" data-name="Ellipse 12" class="Ellipse_12_863" transform="translate(51.42 51.42)" rx="51.415" ry="51.415"/>
+		<ellipse fill="white" data-name="Ellipse 11" class="Ellipse_11_326" transform="translate(51.5 51.5)" rx="27.5" ry="27.5"/>
+	</g>
+</g>
+<defs><clipPath id="clip_0_16"><rect width="300" height="300"/></clipPath>
+</defs>
+</svg>

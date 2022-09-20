@@ -1,0 +1,4 @@
+Host: https://whyskin.com.ua
+User-agent: *
+Disallow: /error/
+Allow: /

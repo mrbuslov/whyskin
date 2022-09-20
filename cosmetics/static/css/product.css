@@ -1,0 +1,580 @@
+body{
+    overflow-x: hidden
+}
+.container {
+    width: 90%;
+    margin: 20px auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+.main_product_info_block{
+    display: flex;
+}
+.product_slider {
+    width: 40%;
+    display: flex;
+}
+.product_info {
+    flex: 1;
+}
+
+.images_slider {
+    width: 70px;
+    margin-right: 20px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 7px;
+    max-height: 500px;
+}
+.images_slider_item {
+    height: 60px;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #D9D9D9;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.images_slider_item:first-child{
+    border: 1px solid #424242;
+}
+.images_slider_item:not(:last-child) {
+    margin-bottom: 5px;
+}
+.images_slider_item img {
+    max-width: 90%;
+    max-height: 90%;
+}
+.images_slider::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #ccc;
+    box-shadow: inset 0 0 6px #ccc;
+    border-radius: 0.2rem;
+}
+.images_slider::-webkit-scrollbar-thumb {
+    background-color: rgb(212, 212, 212);
+    border-radius: 0.2rem;
+}
+.images_slider::-webkit-scrollbar {
+    width: 0.3rem;
+}
+
+
+
+.main_image_block {
+    background-color: #fff;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#main_image {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+}
+
+
+.product_info{
+    padding: 0 10px;
+    box-sizing: border-box;
+    margin: 0 10px;
+}
+.prod_title_other{
+    display: flex;
+    justify-content: space-between;
+}
+.comments{
+    display: flex;
+    align-items: center;
+}
+.star{
+    width: 18px;
+    cursor: pointer;
+}
+.leave_comment_a{
+    font-size: 11px;
+    color: rgb(176, 176, 176);
+    border-bottom: 1px solid rgb(176, 176, 176);
+    margin-left: 7px;
+}
+.vendor_code{
+    font-size: 14px;
+    color: rgb(176, 176, 176);
+    margin-left: auto;
+}
+
+
+.prod_action{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    /* justify-content: start; */
+    justify-content: space-between;
+}
+.prod_options{
+    display: flex;
+    align-items: center;
+}
+.prod_buy{
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background: var(--background-color);
+    box-sizing: border-box;
+    border-radius: 7px;
+    transition: color .3s ease;
+    height: 50px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: 30px;
+    cursor: pointer;
+    transition: color .3s ease;
+}
+.prod_buy:hover{
+    color: var(--font-dark);
+}
+.prod_add_to_cart{
+    margin-left: 30px;
+    height: 50px;
+    width: 250px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    font-size: 15px;
+    border: 2px solid var(--background-color);
+    border-radius: 7px;
+    color: var(--font-light);
+    transition: border .3s ease;
+    flex-direction: column;
+    cursor: pointer;
+    transition: border .3s ease;
+}
+.prod_add_to_cart:hover{
+    border: 2px solid var(--background-color-hover);
+}
+.prod_add_to_cart span{
+    font-size: 12px;
+    display: block;
+}
+.prod_price{
+    display: flex;
+    align-items:baseline;
+}
+.prod_price span{
+    font-size: initial;
+}
+.new_price{
+    font-size: 42px;
+    font-weight: bold;
+}
+.old_price{
+    margin-left: 10px;
+}
+.old_price, .old_price span{
+    font-size: 15px;
+    text-decoration: line-through;
+    color: rgb(156, 150, 150);
+}
+.prod_add_to_liked img{
+    width: 30px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+
+.prod_short_desc{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.prod_short_desc_h2{
+    font-size: 22px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.prod_short_desc span{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.act_comp_list{
+    list-style-type: "🌿"; 
+    /* 💚 */
+}
+.act_comp_list li{
+    margin-bottom: 3px;
+}
+.go_to_desc{
+    font-size: 14px;
+    color: rgb(141, 141, 141);
+    border-bottom: 1px solid rgb(141, 141, 141);
+    margin: 20px auto 0 0;
+    display: inline-block;
+    cursor: pointer;
+    transition: color .3s ease;
+}
+.go_to_desc:hover{
+    color: rgb(101, 101, 101);
+    border-bottom: 1px solid rgb(101, 101, 101);
+}
+
+
+
+
+
+.swiper {
+    width: 80%;
+    height: 260px;
+    overflow: hidden;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    color: #000;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.related_carousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-button-prev, .swiper-button-next{
+    left: initial;
+    right: initial;
+    position: relative;
+    display: block;
+    margin: 0;
+    top: initial;
+    justify-content: right;
+    display: flex;
+}
+.swiper-button-prev{
+    justify-content: left;
+}
+.swiper-button-prev::after, .swiper-button-next::after{
+    font-size: 20px;
+    font-weight: 700;
+    color: #5b915c;
+}
+.mySwiper{
+    margin: 0;
+    padding-bottom: 27px;
+}
+
+
+.rel_image_span{
+    height: 150px;
+}
+.rel_image{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+.rel_name{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 14px;
+    margin-top: 5px;
+    display: inline-block;
+    width: 100%;
+    border-bottom: 1px solid #fff;
+}
+.rel_name:hover{
+    border-bottom: 1px solid #424242;
+}
+.rel_action{
+    margin-top: auto;
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    margin-top: auto;
+}
+.rel_price{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    box-sizing: border-box;
+    padding-left: 10px;
+}
+.rel_old_price{
+    font-size: 14px;
+    text-decoration: line-through;
+    color: rgb(156, 150, 150);
+}
+.rel_new_price{
+    font-size: 28px;
+}
+.rel_new_price span, .rel_old_price span{
+    font-size: 13px;
+}
+.rel_old_price span{
+    color: rgb(156, 150, 150);
+}
+.rel_add_to_cart{
+    width: 40px;
+    margin-right: 10px;
+    align-self: center;
+}
+
+
+.description_block h2{
+    font-size: 24px;
+    text-align:center;
+}
+
+
+
+
+
+
+
+
+/*--------------------------------- ПЛАНШЕТ ВЕРТИКАЛЬНО --------------------------------------*/
+@media (orientation:portrait) and (max-width:1025px) and (max-height:1367px){
+    
+    .container{
+        width: 100%;
+        padding: 0 5px;
+        box-sizing: border-box;
+    }
+    .main_image_block{
+        text-align: center;
+    }
+    .main_product_info_block{
+        flex-direction: column;
+    }
+    .product_slider{
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+    .images_slider{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        overflow-y: hidden;
+        overflow-x: auto;
+        padding: 7px 0;
+    }
+    .images_slider_item{
+        width: 70px;
+        flex-shrink: 0;
+    }
+    .product_info{
+        margin: 0;
+        padding: 0;
+    }
+    .prod_title h1{
+        font-size: 24px;
+        font-weight: lighter;
+    }
+    .prod_title_other{
+        flex-direction: column;
+    }
+    .comments{
+        display: none;
+    }
+    .prod_action{
+        flex-direction: column;
+        align-items: flex-start;
+        flex-flow: wrap;
+        align-items: center;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    .prod_price{
+        flex-direction: column-reverse;
+        justify-content: end;
+    }
+    .old_price{
+        margin: 0;
+        margin-bottom: 5px;
+    }
+    .prod_options{
+        flex-direction: column;
+        width: 100%;
+    }
+    .prod_add_to_liked{
+        display: none;
+    }
+    .prod_adaptive_liked{
+        display: flex;
+    }
+    .prod_adaptive_liked img{
+        margin: 0;
+        width: 40px;
+    }
+    .prod_buy, .prod_add_to_cart{
+        margin: 0;
+        margin-top: 10px;
+        width: 95%;
+    }
+    .prod_buy{
+        margin-top: 30px;
+    }
+}
+@media (orientation:portrait) and (max-width:768px) and (max-height:1024px){ 	
+
+}
+@media (orientation:portrait) and (max-width:600px) and (max-height:960px){ 	
+
+}
+@media (orientation:portrait) and (max-width:540px) and (max-height:720px){ 	
+
+}
+
+/*--------------------------------- ПЛАНШЕТ ГОРИЗОНТАЛЬНО --------------------------------------*/
+@media (orientation:landscape) and (max-width:1367px) and (max-height:1025px){
+    .container{
+        width: 100%;
+        padding: 0 5px;
+        box-sizing: border-box;
+    }
+    .main_image_block{
+        text-align: center;
+    }
+    .main_product_info_block{
+        flex-direction: column;
+    }
+    .product_slider{
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+    .images_slider{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        overflow-y: hidden;
+        overflow-x: auto;
+        padding: 7px 0;
+    }
+    .images_slider_item{
+        width: 70px;
+        flex-shrink: 0;
+    }
+    .product_info{
+        margin: 0;
+        padding: 0;
+    }
+    .prod_title h1{
+        font-size: 24px;
+        font-weight: lighter;
+    }
+    .prod_title_other{
+        flex-direction: column;
+    }
+    .comments{
+        display: none;
+    }
+    .prod_action{
+        flex-direction: column;
+        align-items: flex-start;
+        flex-flow: wrap;
+        align-items: center;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    .prod_price{
+        flex-direction: column-reverse;
+        justify-content: end;
+    }
+    .old_price{
+        margin: 0;
+        margin-bottom: 5px;
+    }
+    .prod_options{
+        flex-direction: column;
+        width: 100%;
+    }
+    .prod_add_to_liked{
+        display: none;
+    }
+    .prod_adaptive_liked{
+        display: flex;
+    }
+    .prod_adaptive_liked img{
+        margin: 0;
+        width: 40px;
+    }
+    .prod_buy, .prod_add_to_cart{
+        margin: 0;
+        margin-top: 10px;
+        width: 95%;
+    }
+    .prod_buy{
+        margin-top: 30px;
+    }
+}
+
+
+@media (orientation:landscape) and (max-width:1024px) and (max-height:768px){
+    
+}
+
+
+/*--------------------------------- Телефон ВЕРТИКАЛЬНО --------------------------------------*/
+@media (orientation:portrait) and (max-width:480px){
+    
+}
+@media (max-width:420px){
+
+}
+@media (max-width:380px){
+
+}
+@media (max-width:360px){
+
+}
+@media (max-width:320px){
+
+}
+
+@media (max-width:280px){	
+
+}
+
+
+/*--------------------------------- Телефон Горизонтально --------------------------------------*/
+@media (orientation:landscape) and (max-width:900px){    
+    
+}
+@media (orientation:landscape) and (max-width:850px){
+    
+}
+@media (orientation:landscape) and (max-width:740px){
+    
+}
+@media (orientation:landscape) and (max-width:600px){
+
+}

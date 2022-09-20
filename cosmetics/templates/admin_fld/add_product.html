@@ -1,0 +1,169 @@
+{% load static %}  
+{% load i18n %} 
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% translate 'Добавление товара' %}</title>
+    <link href="{% static 'css/style.css' %}" type="text/css" rel="stylesheet">
+    <link href="{% static 'css/admin_pages.css' %}" type="text/css" rel="stylesheet">
+    {{form.media}}
+</head>
+<body>
+    <h1 class="add_h1">{% translate 'Добавление товара' %}</h1>
+
+    <form method="POST" id="ajax_images_upload">
+        <div class="image_upload_field">
+            <label for="img_upload" class="upload_image_button">
+                <img src="{% static 'img/upload.svg' %}" alt="{% translate 'Кнопка для загрузки фото' %}">
+                <span>{% translate 'Загрузить изображения' %}</span>
+            </label>
+            <input type="file" name="img" multiple id="img_upload" accept="image/*"/>
+        </div>
+    </form>
+
+    <div class="images_field"></div>
+
+    <form action="{% url 'cosmetics:add_new_product' %}" method="post" id="addProdForm">
+        {% csrf_token %}
+        
+        <div class="add_content">
+            <div class="add_main_info">
+                <div class="add_main_info_1_div">
+                    <span>{% translate 'Название' %}: {{form.name}}</span> 
+                    <span>
+                        {% translate 'Категория' %}: 
+                            <select name="category" required="" id="id_category">
+                                <option value="" selected>--- {% translate 'Категория' %} ---</option>
+                                {% for category in categories %}
+                                    <option value="{{category.id}}">{{category.name}}</option>
+                                {% endfor %}
+                            </select>
+                        <span class="subcategories"></span>
+                    </span>     
+                    <span>{% translate 'Цена' %}: {{form.price}} <span style="margin-left: 5px;">грн.</span></span> 
+                    <span>{% translate 'Старая цена' %} <span style="font-size: 11px; margin-left: 4px;"> (необяз)</span>: {{form.old_price}} <span style="margin-left: 5px;">грн.</span></span> 
+                    <span>{% translate 'Кол-во товаров на складе' %}: {{form.warehouse_amount}} <span style="margin-left: 5px;">шт.</span></span> 
+                    <span>{% translate 'Статус товара' %}: {{form.status}}</span> 
+                </div>
+                <div>
+                    <p class="add_desc_title">{% translate 'Описание товара' %}:</p>
+                    {{form.description}}
+                </div>
+            </div>
+            <h3 class="add_more_info_h2">{% translate 'Дополнительная информация' %}</h3>
+            <div class="add_more_info">
+                <span>{% translate 'Страна' %}: {{form.country}}</span>
+                <span>{% translate 'Производитель' %}: {{form.manufacturer}}</span>
+                <span><p style="margin: 10px 0;">{% translate 'Активные компоненты' %} <span style="font-size: 11px">({% translate 'необяз' %})</span>:</p> {{form.active_components}}</span>
+                <span>{% translate 'Назначение' %} <span style="font-size: 11px">({% translate 'необяз' %})</span>: {{form.purpose}}</span>
+                <span>{% translate 'Тип кожи' %} <span style="font-size: 11px">({% translate 'необяз' %})</span>: {{form.skin_type}}</span>
+                <span>{% translate 'Объём' %} <span style="font-size: 11px">({% translate 'необяз' %})</span>: {{form.volume}} {{form.measure}}</span>
+                <span><p style="margin: 10px 0;">{% translate 'Способы применения' %} <span style="font-size: 11px">({% translate 'необяз' %})</span>:</p> {{form.how_to_use}}</span>
+            </div>
+        </div>
+        <input type="submit" value="{% translate 'Добавить товар' %}" class="add_submit">
+        <input type="hidden" class="uploaded_images_ids" name="uploaded_images_ids">
+    </form>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+function getCookie(name) {
+  var matches = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"));
+  return matches ? decodeURIComponent(matches[1]) : undefined;
+}
+
+    function get_subcategories(category_id){
+        $.ajax({
+            url: '/add_new_product/',
+            type: 'GET',
+            data: {
+                'category_id':category_id,
+            },
+            dataType: 'json',
+            success: function(data){
+                subcategories = data['subcategories']
+                if(subcategories !== 'empty'){
+                    var subcategories_html = '<span style="margin-left:10px;">Подкатегория:'+ 
+                        '<select name="subcategory" required id="id_subcategory">'+
+                            '<option value="" selected>--- Подкатегория---</option>';
+                        
+                    for (var subcategory in subcategories) {
+                        subcategories_html += `<option value="${subcategory}">${subcategories[subcategory]}</option>`;
+                    }
+                    subcategories_html += '</select></span>';
+                    
+                    $('.subcategories').empty();
+                    $('.subcategories').append(subcategories_html);
+                }
+                else{
+                    alert('Нет подкатегорий')
+                }
+            },
+            error: function(){
+                alert('Error')
+            }
+        });
+    }
+
+    $("#id_category").change(function(){
+        get_subcategories($(this).children(":selected").val());
+    });
+
+
+$(document).ready(function() {
+    $('#img_upload').on('change', function(e) {
+        document.querySelector('.upload_image_button').classList.add('button_loading');
+        e.preventDefault(); 
+        var data = new FormData($('#ajax_images_upload')[0]);
+
+        $.ajax({
+            url: '/add_new_product/',
+            headers: { "X-CSRFToken": getCookie("csrftoken") },
+            type: 'POST',
+            data: data,
+            processData: false,
+            contentType: false,
+            success: function(data) {
+                uploaded_images = data['uploaded_images'];
+                var uploaded_images_html = '';
+                uploaded_images_ids = '';
+                for (var image in uploaded_images) {
+                    uploaded_images_html += `<img src="${uploaded_images[image]}" image-id="${image}" class="uploaded_image">`;
+                    uploaded_images_ids += image + ';';
+                }
+
+                $('.images_field').empty();
+                $('.images_field').append(uploaded_images_html);
+                $('.uploaded_images_ids').val(uploaded_images_ids);
+
+                document.querySelector('.upload_image_button').classList.remove('button_loading'); // добавляем крутилку на кнопку добавления фотографий
+                
+                
+
+                // $('#photo1').html('<img src="' + data.url1 + '" onError="this.style.display=\'none\'" style="object_fit: cover; width:100%; height:100%;" id="photo1_img"/>');
+                // $('#photo2').html('<img src="' + data.url2 + '" onError="this.style.display=\'none\'" style="object_fit: cover; width:100%; height:100%;" id="photo2_img"/>');
+                // $('#photo3').html('<img src="' + data.url3 + '" onError="this.style.display=\'none\'" style="object_fit: cover; width:100%; height:100%;" id="photo3_img"/>');
+                // document.querySelector('.upload_image_button').classList.remove('button_loading'); // добавляем крутилку на кнопку добавления фотографий
+                // help_image_text_show();
+
+                // $("#photo1_src").attr("value", $("#photo1_img").attr('src'));
+                // $("#photo2_src").attr("value", $("#photo2_img").attr('src'));
+                // $("#photo3_src").attr("value", $("#photo3_img").attr('src'));
+
+                // // Проверка, если есть изображение, отключаем эффекты
+                // photo1.style.boxShadow = "0 0 4px rgba(0, 0, 0, 0.3)";
+                // upload_image_button.style.animation = "none";
+
+                // photo1_img_uploaded = true;
+            }
+        });
+        return false;
+  });
+});
+</script>
+
+</html>

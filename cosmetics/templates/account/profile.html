@@ -1,0 +1,44 @@
+{% extends 'cosmetics/base.html' %} 
+{% load static %}
+{% load i18n %} 
+
+{% block title %}{% translate "Ваш профиль" %}{% endblock %}
+{% block head %}
+    <meta name="description" content="{% translate 'Дополните данные о себе, чтобы быстрее оформлять заказы' %}">   
+    <meta property="og:url" content="{{request.build_absolute_uri}}" />
+    <meta property="og:site_name" content="WhySkin"/>
+    <meta property="og:image" content="https://whyskin.com.ua{% static 'img/logo.jpg' %}"/>
+    <meta property="og:title" content="{% translate 'Ваш профиль' %}" />
+    <meta property="og:description" content="{% translate 'Дополните данные о себе, чтобы быстрее оформлять заказы' %}" />
+    <meta property="og:type" content="website" />
+{% endblock %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'css/profile.css' %}">
+{% endblock %}
+
+{% block content %} 
+    <h1 class='profile_header'>{% translate "Дополните данные о себе, чтобы быстрее оформлять заказы" %}😏</h1>
+
+    <form method="post" action="{% url 'account:profile' %}" enctype="multipart/form-data"> 
+        <div class="profile_data">
+            {% csrf_token %}
+            <div class="user_data">
+                <div class="user_data_labels">
+                    <p>Email:</p>
+                    <p>{% translate "Имя" %}:</p>
+                    <p>{% translate "Фамилия" %}:</p>
+                    <p>{% translate "Номер телефона" %}:</p>
+                </div>
+                <div class="user_data_fields">
+                    <p class="profile_email">{{account.email}}</p>
+                    <p>{{form.first_name}}</p>
+                    <p>{{form.last_name}}</p>
+                    <p>{{form.phone_number}}</p>
+                </div>
+            </div>
+        </div>
+        <input type="submit" id="profile_submit" value='{% translate "Изменить" %}'> 
+        <p style="text-align: center; margin-top: 20px"><a href="{% url 'account:reset_email' %}">{% translate 'Сменить пароль' %}</a></p>
+        <p style="text-align: center;margin-bottom: 50px"><a href="{% url 'account:logout' %}">{% translate 'Выйти' %}</a></p>
+    </form>
+{% endblock %}  

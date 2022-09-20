@@ -1,0 +1,2885 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-14 11:09+0300\n"
+"PO-Revision-Date: 2022-09-14 11:13+0202\n"
+"Last-Translator: Дмитро Буслов <buslovdmitrij0@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+"X-Translated-Using: django-rosetta 0.9.8\n"
+
+#: .\cosmetics\forms.py:15
+msgid "вводить через запятую"
+msgstr "вводить через запятую"
+
+#: .\cosmetics\forms.py:16
+msgid "Опишите товар как можно подробнее..."
+msgstr "Опишите товар как можно подробнее..."
+
+#: .\cosmetics\forms.py:17
+msgid "Напишите, как можно использовать этот товар"
+msgstr "Напишите, как можно использовать этот товар"
+
+#: .\cosmetics\forms.py:18
+msgid "Название + модель"
+msgstr "Название + модель"
+
+#: .\cosmetics\forms.py:39
+msgid "+380(__) ____-__-__"
+msgstr "+380(__) ____-__-__"
+
+#: .\cosmetics\forms.py:40
+msgid "Введите email"
+msgstr "Введите email"
+
+#: .\cosmetics\forms.py:41
+msgid "Введите имя"
+msgstr "Введите имя"
+
+#: .\cosmetics\forms.py:42
+msgid "Введите фамилию"
+msgstr "Введите фамилию"
+
+#: .\cosmetics\forms.py:43
+msgid "Введите отчество"
+msgstr "Введите отчество"
+
+#: .\cosmetics\forms.py:44
+msgid "Напишите, что мы должны знать об этом заказе..."
+msgstr "Напишите, что мы должны знать об этом заказе..."
+
+#: .\cosmetics\forms.py:56
+#| msgid "Название + модель"
+msgid "Название публикации..."
+msgstr "Название публикации..."
+
+#: .\cosmetics\forms.py:57
+#| msgid "Описание товара"
+msgid "Описание публикации..."
+msgstr "Описание публикации..."
+
+#: .\cosmetics\middleware.py:32
+msgid ""
+"Самой большой ошибкой, которую вы можете совершить в своей жизни, является "
+"постоянная боязнь ошибаться."
+msgstr ""
+"Самой большой ошибкой, которую вы можете совершить в своей жизни, является "
+"постоянная боязнь ошибаться."
+
+#: .\cosmetics\middleware.py:33
+msgid "Все ошибаются. Ведь даже на карандашах есть ластики."
+msgstr "Все ошибаются. Ведь даже на карандашах есть ластики."
+
+#: .\cosmetics\middleware.py:34
+msgid "Кто никогда не совершал ошибок, тот никогда не пробовал что-то новое."
+msgstr "Кто никогда не совершал ошибок, тот никогда не пробовал что-то новое."
+
+#: .\cosmetics\middleware.py:35
+msgid "А ведь именно ошибки делают нас интересными."
+msgstr "А ведь именно ошибки делают нас интересными."
+
+#: .\cosmetics\middleware.py:36
+msgid ""
+"Ошибки всегда можно себе простить, если только найдется смелость признать "
+"их."
+msgstr ""
+"Ошибки всегда можно себе простить, если только найдется смелость признать "
+"их."
+
+#: .\cosmetics\middleware.py:37
+msgid ""
+"Совершим все возможные ошибки, потому что иначе мы не узнаем, почему их не "
+"надо было делать."
+msgstr ""
+"Совершим все возможные ошибки, потому что иначе мы не узнаем, почему их не "
+"надо было делать."
+
+#: .\cosmetics\middleware.py:38
+msgid ""
+"Не ошибается тот, кто ничего не делает. Не бойтесь ошибаться — бойтесь "
+"повторять ошибки."
+msgstr ""
+"Не ошибается тот, кто ничего не делает. Не бойтесь ошибаться — бойтесь "
+"повторять ошибки."
+
+#: .\cosmetics\middleware.py:41
+msgid "Элберт Грин Хаббард"
+msgstr "Элберт Грин Хаббард"
+
+#: .\cosmetics\middleware.py:42
+msgid "Ленни Леонард (Симпсоны)"
+msgstr "Ленни Леонард (Симпсоны)"
+
+#: .\cosmetics\middleware.py:43
+msgid "Альберт Эйнштейн"
+msgstr "Альберт Эйнштейн"
+
+#: .\cosmetics\middleware.py:44
+msgid "Доктор Роберт Чейз (Доктор Хаус)"
+msgstr "Доктор Роберт Чейз (Доктор Хаус)"
+
+#: .\cosmetics\middleware.py:45
+msgid "Брюс Ли"
+msgstr "Брюс Ли"
+
+#: .\cosmetics\middleware.py:46
+msgid "Бернар Вербер"
+msgstr "Бернар Вербер"
+
+#: .\cosmetics\middleware.py:47
+msgid "Теодор Рузвельт"
+msgstr "Теодор Рузвельт"
+
+#: .\cosmetics\models.py:180
+msgid "Новая Почта"
+msgstr "Новая Почта"
+
+#: .\cosmetics\models.py:181
+msgid "Укрпочта"
+msgstr "Укрпочта"
+
+#: .\cosmetics\models.py:182 .\cosmetics\templates\cosmetics\order.html:82
+#: .\cosmetics\templates\others\delivery_and_payment.html:31
+#: .\cosmetics\templates\others\delivery_and_payment.html:32
+msgid "Самовывоз"
+msgstr "Самовывоз"
+
+#: .\cosmetics\models.py:190
+msgid "Оплата на карту"
+msgstr "Оплата на карту"
+
+#: .\cosmetics\models.py:191
+msgid "Наличные средства"
+msgstr "Наличные средства"
+
+#: .\cosmetics\models.py:192
+msgid "Наложенный платёж"
+msgstr "Наложенный платёж"
+
+#: .\cosmetics\models.py:197
+msgid "Подтверждён"
+msgstr "Подтверждён"
+
+#: .\cosmetics\models.py:198
+msgid "На рассмотрении"
+msgstr "На рассмотрении"
+
+#: .\cosmetics\models.py:199
+msgid "Оплачен"
+msgstr "Оплачен"
+
+#: .\cosmetics\models.py:200
+msgid "Отклонён"
+msgstr "Отклонён"
+
+#: .\cosmetics\templates\account\login.html:5
+#: .\cosmetics\templates\account\login.html:11
+#: .\cosmetics\templates\account\login.html:22
+#: .\cosmetics\templates\cosmetics\base.html:171
+#: .\cosmetics\templates\cosmetics\base.html:263
+msgid "Вход"
+msgstr "Вход"
+
+#: .\cosmetics\templates\account\login.html:7
+#: .\cosmetics\templates\account\login.html:12
+msgid "Войдите в свой аккаунт на WhySkin"
+msgstr "Войдите в свой аккаунт на WhySkin"
+
+#: .\cosmetics\templates\account\login.html:27
+msgid "Email"
+msgstr "Email"
+
+#: .\cosmetics\templates\account\login.html:39
+#: .\cosmetics\templates\account\registration.html:40
+msgid "Войти"
+msgstr "Войти"
+
+#: .\cosmetics\templates\account\login.html:42
+msgid "Ещё нет аккаунта?"
+msgstr "Ещё нет аккаунта?"
+
+#: .\cosmetics\templates\account\login.html:42
+msgid "Создайте"
+msgstr "Создайте"
+
+#: .\cosmetics\templates\account\login.html:43
+msgid "Забыли пароль?"
+msgstr "Забыли пароль?"
+
+#: .\cosmetics\templates\account\profile.html:5
+#: .\cosmetics\templates\account\profile.html:11
+msgid "Ваш профиль"
+msgstr "Ваш профиль"
+
+#: .\cosmetics\templates\account\profile.html:7
+#: .\cosmetics\templates\account\profile.html:12
+#: .\cosmetics\templates\account\profile.html:20
+msgid "Дополните данные о себе, чтобы быстрее оформлять заказы"
+msgstr "Дополните данные о себе, чтобы быстрее оформлять заказы"
+
+#: .\cosmetics\templates\account\profile.html:28
+msgid "Имя"
+msgstr "Имя"
+
+#: .\cosmetics\templates\account\profile.html:29
+msgid "Фамилия"
+msgstr "Фамилия"
+
+#: .\cosmetics\templates\account\profile.html:30
+msgid "Номер телефона"
+msgstr "Номер телефона"
+
+#: .\cosmetics\templates\account\profile.html:40
+msgid "Изменить"
+msgstr "Изменить"
+
+#: .\cosmetics\templates\account\profile.html:41
+msgid "Сменить пароль"
+msgstr "Сменить пароль"
+
+#: .\cosmetics\templates\account\profile.html:42
+msgid "Выйти"
+msgstr "Выйти"
+
+#: .\cosmetics\templates\account\registration.html:5
+#: .\cosmetics\templates\account\registration.html:11
+#: .\cosmetics\templates\account\registration.html:22
+#: .\cosmetics\templates\cosmetics\base.html:172
+#: .\cosmetics\templates\cosmetics\base.html:264
+msgid "Регистрация"
+msgstr "Регистрация"
+
+#: .\cosmetics\templates\account\registration.html:7
+#: .\cosmetics\templates\account\registration.html:12
+msgid "Страница регистрации на WhySkin"
+msgstr "Страница регистрации на WhySkin"
+
+#: .\cosmetics\templates\account\registration.html:35
+msgid "Я соглашаюсь с"
+msgstr "Я соглашаюсь с"
+
+#: .\cosmetics\templates\account\registration.html:35
+msgid "Политикой конфиденциальности"
+msgstr "Политикой конфиденциальности"
+
+#: .\cosmetics\templates\account\registration.html:35
+msgid "и даю согласие на обработку личных данных"
+msgstr "и даю согласие на обработку личных данных"
+
+#: .\cosmetics\templates\account\registration.html:38
+msgid "Зарегистрироваться"
+msgstr "Зарегистрироваться"
+
+#: .\cosmetics\templates\account\registration.html:40
+msgid "Уже есть аккаунт"
+msgstr "Уже есть аккаунт"
+
+#: .\cosmetics\templates\account\registration.html:41
+msgid "Забыли пароль"
+msgstr "Забыли пароль"
+
+#: .\cosmetics\templates\account\registration_success.html:5
+msgid "Вы с нами"
+msgstr "Вы с нами"
+
+#: .\cosmetics\templates\account\registration_success.html:7
+#: .\cosmetics\templates\account\registration_success.html:12
+msgid "Страница успешной регистрации"
+msgstr "Страница успешной регистрации"
+
+#: .\cosmetics\templates\account\registration_success.html:11
+msgid "Регистрация успешна"
+msgstr "Регистрация успешна"
+
+#: .\cosmetics\templates\account\registration_success.html:21
+msgid "Ура, теперь Вы с нами"
+msgstr "Ура, теперь Вы с нами"
+
+#: .\cosmetics\templates\account\registration_success.html:22
+msgid "Вскоре отправимся на поиски новой косметики"
+msgstr "Вскоре отправимся на поиски новой косметики"
+
+#: .\cosmetics\templates\account\registration_success.html:23
+msgid "Перейти в профиль"
+msgstr "Перейти в профиль"
+
+#: .\cosmetics\templates\account\registration_success.html:25
+#: .\cosmetics\templates\account\reset_email_success.html:26
+msgid "Вернуться на главную"
+msgstr "Вернуться на главную"
+
+#: .\cosmetics\templates\account\reset_email.html:5
+#: .\cosmetics\templates\account\reset_email.html:11
+msgid "Сброс пароля"
+msgstr "Сброс пароля"
+
+#: .\cosmetics\templates\account\reset_email.html:7
+#: .\cosmetics\templates\account\reset_email.html:12
+msgid "Страница сброса пароля"
+msgstr "Страница сброса пароля"
+
+#: .\cosmetics\templates\account\reset_email.html:21
+msgid "Введите Ваш email для сброса пароля"
+msgstr "Введите Ваш email для сброса пароля"
+
+#: .\cosmetics\templates\account\reset_email.html:28
+msgid "Отправить"
+msgstr "Отправить"
+
+#: .\cosmetics\templates\account\reset_email_success.html:5
+#: .\cosmetics\templates\account\reset_email_success.html:11
+msgid "Пароль сброшен"
+msgstr "Пароль сброшен"
+
+#: .\cosmetics\templates\account\reset_email_success.html:7
+#: .\cosmetics\templates\account\reset_email_success.html:12
+msgid "Страница успешного сброса пароля"
+msgstr "Страница успешного сброса пароля"
+
+#: .\cosmetics\templates\account\reset_email_success.html:21
+msgid "Мы отправили Вам письмо"
+msgstr "Мы отправили Вам письмо"
+
+#: .\cosmetics\templates\account\reset_email_success.html:22
+msgid ""
+"Проверьте почту. Если письма нет, подождите немного, Gmail делает проверку"
+msgstr ""
+"Проверьте почту. Если письма нет, подождите немного, Gmail делает проверку"
+
+#: .\cosmetics\templates\account\reset_email_success.html:23
+msgid "Если же его долго нет, посмотрите в папки \"Спам\" и \"Вся почта\""
+msgstr "Если же его долго нет, посмотрите в папки \"Спам\" и \"Вся почта\""
+
+#: .\cosmetics\templates\account\reset_email_success.html:25
+msgid "Войти в профиль"
+msgstr "Войти в профиль"
+
+#: .\cosmetics\templates\account\set_new_pswrd.html:5
+#: .\cosmetics\templates\account\set_new_pswrd.html:11
+#: .\cosmetics\templates\account\set_new_pswrd.html:21
+msgid "Введите новый пароль"
+msgstr "Введите новый пароль"
+
+#: .\cosmetics\templates\account\set_new_pswrd.html:7
+#: .\cosmetics\templates\account\set_new_pswrd.html:12
+msgid "Страница, где Вы можете ввести новый пароль"
+msgstr "Страница, где Вы можете ввести новый пароль"
+
+#: .\cosmetics\templates\account\set_new_pswrd.html:28
+msgid "Готово"
+msgstr "Готово"
+
+#: .\cosmetics\templates\admin_fld\add_product.html:10
+#: .\cosmetics\templates\admin_fld\add_product.html:16
+msgid "Добавление товара"
+msgstr "Добавление товара"
+
+#: .\cosmetics\templates\admin_fld\add_product.html:21
+msgid "Кнопка для загрузки фото"
+msgstr "Кнопка для загрузки фото"
+
+#: .\cosmetics\templates\admin_fld\add_product.html:22
+msgid "Загрузить изображения"
+msgstr "Загрузить изображения"
+
+#: .\cosmetics\templates\admin_fld\add_product.html:36
+msgid "Название"
+msgstr "Название"
+
+#: .\cosmetics\templates\admin_fld\add_product.html:38
+#: .\cosmetics\templates\admin_fld\add_product.html:40
+#: .\cosmetics\templates\cosmetics\product.html:96
+msgid "Категория"
+msgstr "Категория"
+
+#: .\cosmetics\templates\admin_fld\add_product.html:47
+msgid "Цена"
+msgstr "Цена"
+
+#: .\cosmetics\templates\admin_fld\add_product.html:48
+msgid "Старая цена"
+msgstr "Старая цена"
+
+#: .\cosmetics\templates\admin_fld\add_product.html:49
+msgid "Кол-во товаров на складе"
+msgstr "Кол-во товаров на складе"
+
+#: .\cosmetics\templates\admin_fld\add_product.html:50
+msgid "Статус товара"
+msgstr "Статус товара"
+
+#: .\cosmetics\templates\admin_fld\add_product.html:53
+msgid "Описание товара"
+msgstr "Описание товара"
+
+#: .\cosmetics\templates\admin_fld\add_product.html:57
+msgid "Дополнительная информация"
+msgstr "Дополнительная информация"
+
+#: .\cosmetics\templates\admin_fld\add_product.html:59
+#: .\cosmetics\templates\cosmetics\product.html:88
+msgid "Страна"
+msgstr "Страна"
+
+#: .\cosmetics\templates\admin_fld\add_product.html:60
+#: .\cosmetics\templates\cosmetics\product.html:89
+msgid "Производитель"
+msgstr "Производитель"
+
+#: .\cosmetics\templates\admin_fld\add_product.html:61
+#: .\cosmetics\templates\cosmetics\product.html:100
+msgid "Активные компоненты"
+msgstr "Активные компоненты"
+
+#: .\cosmetics\templates\admin_fld\add_product.html:61
+#: .\cosmetics\templates\admin_fld\add_product.html:62
+#: .\cosmetics\templates\admin_fld\add_product.html:63
+#: .\cosmetics\templates\admin_fld\add_product.html:64
+#: .\cosmetics\templates\admin_fld\add_product.html:65
+msgid "необяз"
+msgstr "необяз"
+
+#: .\cosmetics\templates\admin_fld\add_product.html:62
+#: .\cosmetics\templates\cosmetics\product.html:91
+msgid "Назначение"
+msgstr "Назначение"
+
+#: .\cosmetics\templates\admin_fld\add_product.html:63
+#: .\cosmetics\templates\cosmetics\product.html:94
+msgid "Тип кожи"
+msgstr "Тип кожи"
+
+#: .\cosmetics\templates\admin_fld\add_product.html:64
+#: .\cosmetics\templates\cosmetics\product.html:87
+msgid "Объём"
+msgstr "Объём"
+
+#: .\cosmetics\templates\admin_fld\add_product.html:65
+msgid "Способы применения"
+msgstr "Способы применения"
+
+#: .\cosmetics\templates\admin_fld\add_product.html:68
+msgid "Добавить товар"
+msgstr "Добавить товар"
+
+#: .\cosmetics\templates\cosmetics\base.html:49
+msgid "Ежедневно с"
+msgstr "Ежедневно с"
+
+#: .\cosmetics\templates\cosmetics\base.html:59
+#: .\cosmetics\templates\cosmetics\base.html:100
+msgid "Посмотреть корзину"
+msgstr "Посмотреть корзину"
+
+#: .\cosmetics\templates\cosmetics\base.html:60
+#: .\cosmetics\templates\cosmetics\base.html:99
+msgid "Понравившиеся товары"
+msgstr "Понравившиеся товары"
+
+#: .\cosmetics\templates\cosmetics\base.html:61
+msgid "Войти или зарегистрироваться"
+msgstr "Войти или зарегистрироваться"
+
+#: .\cosmetics\templates\cosmetics\base.html:63
+#: .\cosmetics\templates\cosmetics\base.html:102
+msgid "Добавить продукт"
+msgstr "Добавить продукт"
+
+#: .\cosmetics\templates\cosmetics\base.html:68
+#: .\cosmetics\templates\cosmetics\base.html:110
+msgid "Найти товар"
+msgstr "Найти товар"
+
+#: .\cosmetics\templates\cosmetics\base.html:71
+#: .\cosmetics\templates\cosmetics\base.html:98
+#: .\cosmetics\templates\cosmetics\base.html:113
+msgid "Поиск"
+msgstr "Поиск"
+
+#: .\cosmetics\templates\cosmetics\base.html:95
+msgid "Открыть меню"
+msgstr "Открыть меню"
+
+#: .\cosmetics\templates\cosmetics\base.html:138
+msgid "Дополнительно"
+msgstr "Дополнительно"
+
+#: .\cosmetics\templates\cosmetics\base.html:142
+msgid "Категории"
+msgstr "Категории"
+
+#: .\cosmetics\templates\cosmetics\base.html:142
+#: .\cosmetics\templates\cosmetics\base.html:147
+#: .\cosmetics\templates\cosmetics\base.html:183
+msgid "Стрелка"
+msgstr "Стрелка"
+
+#: .\cosmetics\templates\cosmetics\base.html:169
+#: .\cosmetics\templates\cosmetics\base.html:261
+#: .\cosmetics\templates\others\contacts.html:5
+#: .\cosmetics\templates\others\contacts.html:22
+msgid "Контакты"
+msgstr "Контакты"
+
+#: .\cosmetics\templates\cosmetics\base.html:170
+#: .\cosmetics\templates\cosmetics\base.html:262
+#: .\cosmetics\templates\others\delivery_and_payment.html:22
+msgid "Доставка и оплата"
+msgstr "Доставка и оплата"
+
+#: .\cosmetics\templates\cosmetics\base.html:173
+#: .\cosmetics\templates\cosmetics\base.html:265
+msgid "Корзина"
+msgstr "Корзина"
+
+#: .\cosmetics\templates\cosmetics\base.html:175
+#: .\cosmetics\templates\cosmetics\base.html:271
+#: .\cosmetics\templates\others\privacy_policy.html:5
+#: .\cosmetics\templates\others\privacy_policy.html:23
+msgid "Политика конфиденциальности"
+msgstr "Политика конфиденциальности"
+
+#: .\cosmetics\templates\cosmetics\base.html:176
+#: .\cosmetics\templates\cosmetics\base.html:272
+msgid "Публичная оферта"
+msgstr "Публичная оферта"
+
+#: .\cosmetics\templates\cosmetics\base.html:177
+#: .\cosmetics\templates\cosmetics\base.html:273
+#: .\cosmetics\templates\others\delivery_and_payment.html:5
+#: .\cosmetics\templates\others\exchange_and_return.html:5
+#: .\cosmetics\templates\others\exchange_and_return.html:22
+msgid "Обмен и возврат"
+msgstr "Обмен и возврат"
+
+#: .\cosmetics\templates\cosmetics\base.html:179
+#: .\cosmetics\templates\cosmetics\base.html:279
+msgid "О нас"
+msgstr "О нас"
+
+#: .\cosmetics\templates\cosmetics\base.html:180
+#: .\cosmetics\templates\cosmetics\base.html:280
+msgid "Наш блог"
+msgstr "Наш блог"
+
+#: .\cosmetics\templates\cosmetics\base.html:229
+msgid "Добавлено в корзинку"
+msgstr "Добавлено в корзинку"
+
+#: .\cosmetics\templates\cosmetics\base.html:230
+msgid "Посмотреть товары"
+msgstr "Посмотреть товары"
+
+#: .\cosmetics\templates\cosmetics\base.html:253
+msgid "Перейти на нашу страницу в Инстаграм"
+msgstr "Перейти на нашу страницу в Инстаграм"
+
+#: .\cosmetics\templates\cosmetics\base.html:254
+msgid "Перейти на нашу страницу в Тик Ток"
+msgstr "Перейти на нашу страницу в Тик Ток"
+
+#: .\cosmetics\templates\cosmetics\base.html:259
+msgid "Клиентам"
+msgstr "Клиентам"
+
+#: .\cosmetics\templates\cosmetics\base.html:269
+msgid "Важное"
+msgstr "Важное"
+
+#: .\cosmetics\templates\cosmetics\base.html:277
+msgid "Другое"
+msgstr "Другое"
+
+#: .\cosmetics\templates\cosmetics\cart.html:6
+#: .\cosmetics\templates\cosmetics\cart.html:22
+msgid "Ваша корзинка"
+msgstr "Ваша корзинка"
+
+#: .\cosmetics\templates\cosmetics\cart.html:8
+msgid "Корзинка с добавленными товарами"
+msgstr "Корзинка с добавленными товарами"
+
+#: .\cosmetics\templates\cosmetics\cart.html:12
+msgid "Ваша корзинка с добавленными товарами"
+msgstr "Ваша корзинка с добавленными товарами"
+
+#: .\cosmetics\templates\cosmetics\cart.html:13
+msgid "Подберите интересные товары и нажмите кнопку оформить заказ"
+msgstr "Подберите интересные товары и нажмите кнопку оформить заказ"
+
+#: .\cosmetics\templates\cosmetics\cart.html:29
+#: .\cosmetics\templates\cosmetics\order.html:57
+msgid "Изображение"
+msgstr "Изображение"
+
+#: .\cosmetics\templates\cosmetics\cart.html:48
+msgid "В корзинке пока нет товаров. Давайте"
+msgstr "В корзинке пока нет товаров. Давайте"
+
+#: .\cosmetics\templates\cosmetics\cart.html:48
+#: .\cosmetics\templates\cosmetics\liked.html:67
+msgid "поищем"
+msgstr "поищем"
+
+#: .\cosmetics\templates\cosmetics\cart.html:49
+#: .\cosmetics\templates\cosmetics\liked.html:68
+msgid "Фото корзинки"
+msgstr "Фото корзинки"
+
+#: .\cosmetics\templates\cosmetics\cart.html:55
+#: .\cosmetics\templates\cosmetics\order.html:181
+msgid "Оформить заказ"
+msgstr "Оформить заказ"
+
+#: .\cosmetics\templates\cosmetics\cosmetics_list.html:6
+#: .\cosmetics\templates\cosmetics\cosmetics_list.html:12
+msgid "Категория - "
+msgstr "Категория - "
+
+#: .\cosmetics\templates\cosmetics\cosmetics_list.html:8
+#: .\cosmetics\templates\cosmetics\cosmetics_list.html:13
+msgid "Найдите товары в категории"
+msgstr "Найдите товары в категории"
+
+#: .\cosmetics\templates\cosmetics\cosmetics_list.html:8
+#: .\cosmetics\templates\cosmetics\cosmetics_list.html:13
+msgid ",которые понравятся и подойдут Вам "
+msgstr ",которые понравятся и подойдут Вам "
+
+#: .\cosmetics\templates\cosmetics\cosmetics_list.html:29
+msgid "Продукты"
+msgstr "Продукты"
+
+#: .\cosmetics\templates\cosmetics\cosmetics_list.html:31
+msgid "Мы скоро добавим продукты в эту категорию"
+msgstr "Мы скоро добавим продукты в эту категорию"
+
+#: .\cosmetics\templates\cosmetics\cosmetics_list.html:42
+#: .\cosmetics\templates\cosmetics\index.html:65
+#: .\cosmetics\templates\cosmetics\liked.html:35
+#: .\cosmetics\templates\cosmetics\search.html:32
+msgid "Удалить из понравившихся"
+msgstr "Удалить из понравившихся"
+
+#: .\cosmetics\templates\cosmetics\cosmetics_list.html:44
+#: .\cosmetics\templates\cosmetics\index.html:67
+#: .\cosmetics\templates\cosmetics\liked.html:37
+#: .\cosmetics\templates\cosmetics\search.html:34
+msgid "Добавить в понравившиеся"
+msgstr "Добавить в понравившиеся"
+
+#: .\cosmetics\templates\cosmetics\cosmetics_list.html:47
+#: .\cosmetics\templates\cosmetics\index.html:70
+#: .\cosmetics\templates\cosmetics\liked.html:40
+#: .\cosmetics\templates\cosmetics\search.html:37
+msgid "Фото продукта"
+msgstr "Фото продукта"
+
+#: .\cosmetics\templates\cosmetics\cosmetics_list.html:63
+#: .\cosmetics\templates\cosmetics\index.html:86
+#: .\cosmetics\templates\cosmetics\liked.html:56
+#: .\cosmetics\templates\cosmetics\search.html:53
+msgid "Удалить из корзинки"
+msgstr "Удалить из корзинки"
+
+#: .\cosmetics\templates\cosmetics\cosmetics_list.html:65
+#: .\cosmetics\templates\cosmetics\index.html:88
+#: .\cosmetics\templates\cosmetics\liked.html:58
+#: .\cosmetics\templates\cosmetics\search.html:55
+msgid "Добавить в корзинку"
+msgstr "Добавить в корзинку"
+
+#: .\cosmetics\templates\cosmetics\cosmetics_list.html:81
+#: .\cosmetics\templates\cosmetics\search.html:73
+#: .\cosmetics\templates\others\blog.html:62
+msgid "из"
+msgstr "из"
+
+#: .\cosmetics\templates\cosmetics\index.html:6
+msgid "WhySkin - корейская косметика для тебя❤️"
+msgstr "WhySkin - корейская косметика для тебя❤️"
+
+#: .\cosmetics\templates\cosmetics\index.html:11
+#: .\cosmetics\templates\cosmetics\index.html:16
+msgid ""
+"Магазин корейской косметики с индивидуальным подходом❤️Всегда свежие новинки"
+" для всех типов кожи!"
+msgstr ""
+"Магазин корейской косметики с индивидуальным подходом❤️Всегда свежие новинки"
+" для всех типов кожи!"
+
+#: .\cosmetics\templates\cosmetics\index.html:15
+msgid "WhySkin на одной волне с косметикой!"
+msgstr "WhySkin на одной волне с косметикой!"
+
+#: .\cosmetics\templates\cosmetics\index.html:28
+#: .\cosmetics\templates\others\contacts.html:31
+msgid "Напишите нам"
+msgstr "Напишите нам"
+
+#: .\cosmetics\templates\cosmetics\index.html:28
+msgid "мы поможем подобрать нужный уход для Вас и на подарок"
+msgstr "мы поможем подобрать нужный уход для Вас и на подарок"
+
+#: .\cosmetics\templates\cosmetics\index.html:55
+msgid "Интересные товары"
+msgstr "Интересные товары"
+
+#: .\cosmetics\templates\cosmetics\liked.html:5
+#: .\cosmetics\templates\cosmetics\liked.html:7
+#: .\cosmetics\templates\cosmetics\liked.html:11
+#: .\cosmetics\templates\cosmetics\liked.html:25
+msgid "Приглянувшиеся товары"
+msgstr "Приглянувшиеся товары"
+
+#: .\cosmetics\templates\cosmetics\liked.html:67
+msgid "Понравившихся товаров пока нет. Давайте"
+msgstr "Понравившихся товаров пока нет. Давайте"
+
+#: .\cosmetics\templates\cosmetics\order.html:5
+#: .\cosmetics\templates\cosmetics\order.html:11
+#: .\cosmetics\templates\cosmetics\order.html:48
+msgid "Оформление заказа"
+msgstr "Оформление заказа"
+
+#: .\cosmetics\templates\cosmetics\order.html:7
+#: .\cosmetics\templates\cosmetics\order.html:12
+msgid "Страница оформления заказа"
+msgstr "Страница оформления заказа"
+
+#: .\cosmetics\templates\cosmetics\order.html:45
+msgid "Вы можете"
+msgstr "Вы можете"
+
+#: .\cosmetics\templates\cosmetics\order.html:45
+msgid "посмотреть больше"
+msgstr "посмотреть больше"
+
+#: .\cosmetics\templates\cosmetics\order.html:45
+msgid "товаров и добавить интересные в корзину"
+msgstr "товаров и добавить интересные в корзину"
+
+#: .\cosmetics\templates\cosmetics\order.html:52
+msgid "Ваш заказ"
+msgstr "Ваш заказ"
+
+#: .\cosmetics\templates\cosmetics\order.html:65
+msgid "Доставка"
+msgstr "Доставка"
+
+#: .\cosmetics\templates\cosmetics\order.html:67
+msgid "Кликните по способу доставки"
+msgstr "Кликните по способу доставки"
+
+#: .\cosmetics\templates\cosmetics\order.html:72
+#: .\cosmetics\templates\others\delivery_and_payment.html:27
+msgid "Новая почта"
+msgstr "Новая почта"
+
+#: .\cosmetics\templates\cosmetics\order.html:91
+msgid "В отделение"
+msgstr "В отделение"
+
+#: .\cosmetics\templates\cosmetics\order.html:96
+msgid "В почтомат"
+msgstr "В почтомат"
+
+#: .\cosmetics\templates\cosmetics\order.html:96
+msgid "(доставка дешевле)"
+msgstr "(доставка дешевле)"
+
+#: .\cosmetics\templates\cosmetics\order.html:101
+msgid "Введите и выберите Ваш город из списка"
+msgstr "Введите и выберите Ваш город из списка"
+
+#: .\cosmetics\templates\cosmetics\order.html:110
+msgid "Выберите отделение/почтомат"
+msgstr "Выберите отделение/почтомат"
+
+#: .\cosmetics\templates\cosmetics\order.html:115
+msgid "Рады, что увидим Вас"
+msgstr "Рады, что увидим Вас"
+
+#: .\cosmetics\templates\cosmetics\order.html:116
+msgid "Вы сможете забрать свой заказ по адресу"
+msgstr "Вы сможете забрать свой заказ по адресу"
+
+#: .\cosmetics\templates\cosmetics\order.html:116
+#: .\cosmetics\templates\others\delivery_and_payment.html:33
+msgid "пр. Гагарина 43, г. Днепр"
+msgstr "пр. Гагарина 43, г. Днепр"
+
+#: .\cosmetics\templates\cosmetics\order.html:116
+#: .\cosmetics\templates\others\delivery_and_payment.html:33
+msgid "ТЦ \"Лето\""
+msgstr "ТЦ \"Лето\""
+
+#: .\cosmetics\templates\cosmetics\order.html:120
+msgid "Введите Ваши данные"
+msgstr "Введите Ваши данные"
+
+#: .\cosmetics\templates\cosmetics\order.html:122
+#: .\cosmetics\templates\others\contacts.html:36
+msgid "Ваше Имя"
+msgstr "Ваше Имя"
+
+#: .\cosmetics\templates\cosmetics\order.html:124
+msgid "Ваша Фамилия"
+msgstr "Ваша Фамилия"
+
+#: .\cosmetics\templates\cosmetics\order.html:126
+msgid "Ваше Отчество"
+msgstr "Ваше Отчество"
+
+#: .\cosmetics\templates\cosmetics\order.html:128
+msgid "Ваш номер телефона"
+msgstr "Ваш номер телефона"
+
+#: .\cosmetics\templates\cosmetics\order.html:145
+msgid "Комментарий к заказу"
+msgstr "Комментарий к заказу"
+
+#: .\cosmetics\templates\cosmetics\order.html:145
+msgid "(необязательно)"
+msgstr "(необязательно)"
+
+#: .\cosmetics\templates\cosmetics\order.html:148
+msgid "К оплате"
+msgstr "К оплате"
+
+#: .\cosmetics\templates\cosmetics\order.html:169
+msgid "бесплатно"
+msgstr "бесплатно"
+
+#: .\cosmetics\templates\cosmetics\order_success.html:5
+msgid "Спасибо за заказ!"
+msgstr "Спасибо за заказ!"
+
+#: .\cosmetics\templates\cosmetics\order_success.html:7
+#: .\cosmetics\templates\cosmetics\order_success.html:12
+msgid "Страница успешного оформления заказа"
+msgstr "Страница успешного оформления заказа"
+
+#: .\cosmetics\templates\cosmetics\order_success.html:11
+msgid "Заказ оформлен успешно"
+msgstr "Заказ оформлен успешно"
+
+#: .\cosmetics\templates\cosmetics\order_success.html:44
+msgid "Что-то пошло не так... Нам не удалось сформировать заказ"
+msgstr "Что-то пошло не так... Нам не удалось сформировать заказ"
+
+#: .\cosmetics\templates\cosmetics\order_success.html:45
+msgid "Напишите"
+msgstr "Напишите"
+
+#: .\cosmetics\templates\cosmetics\order_success.html:45
+msgid "нам в Телеграме"
+msgstr "нам в Телеграме"
+
+#: .\cosmetics\templates\cosmetics\order_success.html:45
+msgid "или позвоните по номеру"
+msgstr "или позвоните по номеру"
+
+#: .\cosmetics\templates\cosmetics\order_success.html:45
+msgid "мы Вам лично соберём заказ"
+msgstr "мы Вам лично соберём заказ"
+
+#: .\cosmetics\templates\cosmetics\order_success.html:64
+msgid "И спасибо за заказ"
+msgstr "И спасибо за заказ"
+
+#: .\cosmetics\templates\cosmetics\order_success.html:65
+msgid ""
+"В ближашее время с Вами свяжется приятная девушка или парень, чтобы уточнить"
+" детали"
+msgstr ""
+"В ближашее время с Вами свяжется приятная девушка или парень, чтобы уточнить"
+" детали"
+
+#: .\cosmetics\templates\cosmetics\order_success.html:66
+msgid "Номер Вашего заказа"
+msgstr "Номер Вашего заказа"
+
+#: .\cosmetics\templates\cosmetics\order_success.html:67
+msgid "Перейти на главную"
+msgstr "Перейти на главную"
+
+#: .\cosmetics\templates\cosmetics\product.html:6
+#: .\cosmetics\templates\cosmetics\product.html:13
+msgid "купить на WhySkin"
+msgstr "купить на WhySkin"
+
+#: .\cosmetics\templates\cosmetics\product.html:8
+msgid ""
+"прямо из Кореи в Ваши руки – оригинальный продукт по низкой цене! "
+"Заказывайте, будете довольны"
+msgstr ""
+"прямо из Кореи в Ваши руки – оригинальный продукт по низкой цене! "
+"Заказывайте, будете довольны"
+
+#: .\cosmetics\templates\cosmetics\product.html:12
+msgid "купить по самой низкой и приятной цене в Украине на WhySkin.com.ua"
+msgstr "купить по самой низкой и приятной цене в Украине на WhySkin.com.ua"
+
+#: .\cosmetics\templates\cosmetics\product.html:48
+msgid "Оставить отзыв"
+msgstr "Оставить отзыв"
+
+#: .\cosmetics\templates\cosmetics\product.html:50
+msgid "Артикул (код товара)"
+msgstr "Артикул (код товара)"
+
+#: .\cosmetics\templates\cosmetics\product.html:65
+#: .\cosmetics\templates\cosmetics\product.html:79
+msgid "Убрать из избранных"
+msgstr "Убрать из избранных"
+
+#: .\cosmetics\templates\cosmetics\product.html:67
+#: .\cosmetics\templates\cosmetics\product.html:81
+msgid "Добавить в избранное"
+msgstr "Добавить в избранное"
+
+#: .\cosmetics\templates\cosmetics\product.html:70
+msgid "Купить"
+msgstr "Купить"
+
+#: .\cosmetics\templates\cosmetics\product.html:73 .\cosmetics\views.py:399
+#: .\cosmetics\views.py:400 .\cosmetics\views.py:405 .\cosmetics\views.py:406
+msgid "Добавлено в корзину"
+msgstr "Добавлено в корзину"
+
+#: .\cosmetics\templates\cosmetics\product.html:75
+#: .\cosmetics\templates\cosmetics\product.html:136
+#: .\cosmetics\templates\cosmetics\product.html:171 .\cosmetics\views.py:392
+msgid "Добавить в корзину"
+msgstr "Добавить в корзину"
+
+#: .\cosmetics\templates\cosmetics\product.html:75
+msgid "(и смотреть дальше)"
+msgstr "(и смотреть дальше)"
+
+#: .\cosmetics\templates\cosmetics\product.html:86
+msgid "Короткое описание"
+msgstr "Короткое описание"
+
+#: .\cosmetics\templates\cosmetics\product.html:109
+msgid "Перейти к полному описанию"
+msgstr "Перейти к полному описанию"
+
+#: .\cosmetics\templates\cosmetics\product.html:116
+msgid "Что Вам может понравиться"
+msgstr "Что Вам может понравиться"
+
+#: .\cosmetics\templates\cosmetics\product.html:182
+msgid "Описание"
+msgstr "Описание"
+
+#: .\cosmetics\templates\cosmetics\product.html:185
+msgid "Способ применения"
+msgstr "Способ применения"
+
+#: .\cosmetics\templates\cosmetics\search.html:5
+msgid "Запрос"
+msgstr "Запрос"
+
+#: .\cosmetics\templates\cosmetics\search.html:7
+#: .\cosmetics\templates\cosmetics\search.html:12
+msgid "Вот что мы нашли по вашему запросу"
+msgstr "Вот что мы нашли по вашему запросу"
+
+#: .\cosmetics\templates\cosmetics\search.html:11
+msgid "Ваш запрос"
+msgstr "Ваш запрос"
+
+#: .\cosmetics\templates\cosmetics\search.html:22
+msgid "Продукты по запросу"
+msgstr "Продукты по запросу"
+
+#: .\cosmetics\templates\cosmetics\search.html:80
+msgid "По запросу"
+msgstr "По запросу"
+
+#: .\cosmetics\templates\cosmetics\search.html:80
+msgid "ничего не найдено"
+msgstr "ничего не найдено"
+
+#: .\cosmetics\templates\cosmetics\search.html:81
+msgid "По Вашему запросу ничего не найдено"
+msgstr "По Вашему запросу ничего не найдено"
+
+#: .\cosmetics\templates\others\404.html:7
+#: .\cosmetics\templates\others\404.html:12
+msgid ""
+"404... Вы попали на эту страницу, потому что был указан неправильный адрес."
+msgstr ""
+"404... Вы попали на эту страницу, потому что был указан неправильный адрес."
+
+#: .\cosmetics\templates\others\404.html:11
+msgid "Whyskin 404 страница не найдена"
+msgstr "Whyskin 404 страница не найдена"
+
+#: .\cosmetics\templates\others\404.html:22
+msgid "Мы искали, но не наискали"
+msgstr "Мы искали, но не наискали"
+
+#: .\cosmetics\templates\others\404.html:22
+msgid "Попробуйте перейти на другую страницу"
+msgstr "Попробуйте перейти на другую страницу"
+
+#: .\cosmetics\templates\others\404.html:23
+#: .\cosmetics\templates\others\500.html:23
+#: .\cosmetics\templates\others\exception.html:23
+msgid "Вернуться назад"
+msgstr "Вернуться назад"
+
+#: .\cosmetics\templates\others\404.html:25
+msgid "Картинка *ищет"
+msgstr "Картинка *ищет"
+
+#: .\cosmetics\templates\others\500.html:7
+#: .\cosmetics\templates\others\500.html:12
+msgid ""
+"Вы попали на эту страницу, потому что сервер или упал, или что-то с ним не "
+"так."
+msgstr ""
+"Вы попали на эту страницу, потому что сервер или упал, или что-то с ним не "
+"так."
+
+#: .\cosmetics\templates\others\500.html:11
+msgid "WhySkin 500 проблема с сервером"
+msgstr "WhySkin 500 проблема с сервером"
+
+#: .\cosmetics\templates\others\500.html:22
+msgid ""
+"Похоже, возникла проблема с сервером. Вернитесь к нам позже, когда мы её "
+"решим"
+msgstr ""
+"Похоже, возникла проблема с сервером. Вернитесь к нам позже, когда мы её "
+"решим"
+
+#: .\cosmetics\templates\others\500.html:25
+msgid "Сервер заснул"
+msgstr "Сервер заснул"
+
+#: .\cosmetics\templates\others\blog.html:7
+msgid ""
+"Переходите к нам, расскажем много интересного по теме ухода! Раскроем "
+"секреты и лайфхаки!"
+msgstr ""
+"Переходите к нам, расскажем много интересного по теме ухода! Раскроем "
+"секреты и лайфхаки!"
+
+#: .\cosmetics\templates\others\blog.html:11
+#| msgid "Обмен и возврат онлайн-магазина WhySkin"
+msgid "Блог онлайн-магазина WhySkin"
+msgstr "Блог онлайн-магазина WhySkin"
+
+#: .\cosmetics\templates\others\blog.html:22
+#| msgid "Добавить продукт"
+msgid "Добавить новую статью"
+msgstr "Добавить новую статью"
+
+#: .\cosmetics\templates\others\blog.html:25
+msgid "WhySkin блог - полезные знания для Вашего ухода"
+msgstr "WhySkin блог - полезные знания для Вашего ухода"
+
+#: .\cosmetics\templates\others\blog.html:36
+msgid "Сегодня"
+msgstr "Сегодня"
+
+#: .\cosmetics\templates\others\blog.html:37
+#: .\cosmetics\templates\others\blog.html:40
+msgid "Свежее"
+msgstr "Свежее"
+
+#: .\cosmetics\templates\others\blog.html:39
+msgid "Вчера"
+msgstr "Вчера"
+
+#: .\cosmetics\templates\others\blog.html:50
+msgid "Публикаций пока нет, но мы вскоре напишем что-то интересное"
+msgstr "Публикаций пока нет, но мы вскоре напишем что-то интересное"
+
+#: .\cosmetics\templates\others\blog.html:62
+#| msgid "Страна"
+msgid "Страница"
+msgstr "Страница"
+
+#: .\cosmetics\templates\others\blog_post_add.html:59
+#| msgid "Добавить продукт"
+msgid "Добавить пост"
+msgstr "Добавить пост"
+
+#: .\cosmetics\templates\others\blog_post_add.html:65
+#| msgid "Добавить продукт"
+msgid "Добавить публикацию"
+msgstr "Добавить публикацию"
+
+#: .\cosmetics\templates\others\contacts.html:7
+msgid ""
+"Контакты команды магазина WhySkin. Обращайтесь, всегда рады "
+"проконсультировать и помочь с выбором!)"
+msgstr ""
+"Контакты команды магазина WhySkin. Обращайтесь, всегда рады "
+"проконсультировать и помочь с выбором!)"
+
+#: .\cosmetics\templates\others\contacts.html:11
+msgid "Контакты команды магазина WhySkin"
+msgstr "Контакты команды магазина WhySkin"
+
+#: .\cosmetics\templates\others\contacts.html:23
+msgid "Наши рабочие часы с"
+msgstr "Наши рабочие часы с"
+
+#: .\cosmetics\templates\others\contacts.html:23
+msgid ""
+"обращайтесь к нам в это время, мы всегда рады проконсультировать Вас и "
+"помочь с выбором!"
+msgstr ""
+"обращайтесь к нам в это время, мы всегда рады проконсультировать Вас и "
+"помочь с выбором!"
+
+#: .\cosmetics\templates\others\contacts.html:25
+msgid "Вы можете связаться к нами:"
+msgstr "Вы можете связаться к нами:"
+
+#: .\cosmetics\templates\others\contacts.html:25
+msgid "(перейдите по ссылке, чтобы начать чат или позвонить)"
+msgstr "(перейдите по ссылке, чтобы начать чат или позвонить)"
+
+#: .\cosmetics\templates\others\contacts.html:26
+msgid "Телефон"
+msgstr "Телефон"
+
+#: .\cosmetics\templates\others\contacts.html:32
+msgid "В ближайшее время мы ответим Вам"
+msgstr "В ближайшее время мы ответим Вам"
+
+#: .\cosmetics\templates\others\contacts.html:37
+msgid "Email / Номер телефона"
+msgstr "Email / Номер телефона"
+
+#: .\cosmetics\templates\others\contacts.html:38
+msgid ""
+"Напишите, что Вам интересно узнать, или же с чем Вам нужна помощь от нас"
+msgstr ""
+"Напишите, что Вам интересно узнать, или же с чем Вам нужна помощь от нас"
+
+#: .\cosmetics\templates\others\contract_offer.html:5
+msgid "Договор публичной оферты"
+msgstr "Договор публичной оферты"
+
+#: .\cosmetics\templates\others\contract_offer.html:7
+msgid ""
+"Договор публичной оферты онлайн-магазина WhySkin. Прочитайте договор оферты "
+"перед тем, как покупать товары в нашем онлайн-магазине."
+msgstr ""
+"Договор публичной оферты онлайн-магазина WhySkin. Прочитайте договор оферты "
+"перед тем, как покупать товары в нашем онлайн-магазине."
+
+#: .\cosmetics\templates\others\contract_offer.html:11
+msgid "Договор публичной оферты онлайн-магазина WhySkin"
+msgstr "Договор публичной оферты онлайн-магазина WhySkin"
+
+#: .\cosmetics\templates\others\contract_offer.html:23
+msgid "Условия использования сайта"
+msgstr "Условия использования сайта"
+
+#: .\cosmetics\templates\others\contract_offer.html:24
+msgid ""
+"Мы с полной серьёзностью относимся к работе с клиентом и налаживанию "
+"положительных взамоотношений с ним. Поэтому мы написани договор публичной "
+"оферты для описания нашей работы с точки зрения закона, чтобы наши "
+"Покупатели знали правила, по которым будет осуществляться это "
+"взаимодействие."
+msgstr ""
+"Мы с полной серьёзностью относимся к работе с клиентом и налаживанию "
+"положительных взамоотношений с ним. Поэтому мы написани договор публичной "
+"оферты для описания нашей работы с точки зрения закона, чтобы наши "
+"Покупатели знали правила, по которым будет осуществляться это "
+"взаимодействие."
+
+#: .\cosmetics\templates\others\contract_offer.html:27
+#: .\cosmetics\templates\others\privacy_policy.html:44
+msgid "Общие положения "
+msgstr "Общие положения "
+
+#: .\cosmetics\templates\others\contract_offer.html:28
+msgid ""
+"1.1. Настоящее Соглашение определяет условия использования Пользователями "
+"(Покупателями) материалов и сервисов сайта https://whyskin.com.ua/  (далее –"
+" Сайт, веб-сайт, интернет-магазин) "
+msgstr ""
+"1.1. Настоящее Соглашение определяет условия использования Пользователями "
+"(Покупателями) материалов и сервисов сайта https://whyskin.com.ua/  (далее –"
+" Сайт, веб-сайт, интернет-магазин) "
+
+#: .\cosmetics\templates\others\contract_offer.html:29
+msgid ""
+"1.2. Данное соглашение в соответствии со ст. ст. 633, 641 и гл. 63 "
+"Гражданского кодекса Украины является публичным договором (офертой) и "
+"адресовано неопределенному кругу лиц не зависимо от статуса (физическое "
+"лицо, юридическое лицо, физическое лицо – предприниматель), желающим "
+"приобрести товары в интернет-магазине https://whyskin.com.uа . Продавцами "
+"товара могут быть иные третьи лица (не Администрация), которые пользуються "
+"услугами https://whyskin.com.ua/ для реализации своих товаров в сети "
+"Интернет. Информация о таких продавцах предоставляется Администрацией по "
+"запросу Пользователя (Покупателя) "
+msgstr ""
+"1.2. Данное соглашение в соответствии со ст. ст. 633, 641 и гл. 63 "
+"Гражданского кодекса Украины является публичным договором (офертой) и "
+"адресовано неопределенному кругу лиц не зависимо от статуса (физическое "
+"лицо, юридическое лицо, физическое лицо – предприниматель), желающим "
+"приобрести товары в интернет-магазине https://whyskin.com.uа . Продавцами "
+"товара могут быть иные третьи лица (не Администрация), которые пользуються "
+"услугами https://whyskin.com.ua/ для реализации своих товаров в сети "
+"Интернет. Информация о таких продавцах предоставляется Администрацией по "
+"запросу Пользователя (Покупателя) "
+
+#: .\cosmetics\templates\others\contract_offer.html:30
+msgid ""
+"1.3. Поскольку настоящее Соглашение является публичной офертой, то получая "
+"доступ к материалам Сайта Пользователь (Покупатель) считается "
+"присоединившимся к настоящему Соглашению. "
+msgstr ""
+"1.3. Поскольку настоящее Соглашение является публичной офертой, то получая "
+"доступ к материалам Сайта Пользователь (Покупатель) считается "
+"присоединившимся к настоящему Соглашению. "
+
+#: .\cosmetics\templates\others\contract_offer.html:31
+msgid ""
+"1.4. Администрация Сайта (владелец сайта https://whyskin.com.ua/ и/или "
+"уполномоченные им лица) вправе в любое время в одностороннем порядке "
+"изменять условия настоящего Соглашения. Новое или измененное Соглашение "
+"становятся действительными после размещения его на Сайте. При несогласии "
+"Пользователя с внесенными изменениями он обязан отказаться от доступа к "
+"Сайту, прекратить использование материалов и сервисов Сайта.  "
+msgstr ""
+"1.4. Администрация Сайта (владелец сайта https://whyskin.com.ua/ и/или "
+"уполномоченные им лица) вправе в любое время в одностороннем порядке "
+"изменять условия настоящего Соглашения. Новое или измененное Соглашение "
+"становятся действительными после размещения его на Сайте. При несогласии "
+"Пользователя с внесенными изменениями он обязан отказаться от доступа к "
+"Сайту, прекратить использование материалов и сервисов Сайта.  "
+
+#: .\cosmetics\templates\others\contract_offer.html:32
+msgid ""
+"1.5.Покупатель соглашается с данной публичной офертой в целом и без оговорок"
+" при оформлении заказа в онлайн-магазине. "
+msgstr ""
+"1.5.Покупатель соглашается с данной публичной офертой в целом и без оговорок"
+" при оформлении заказа в онлайн-магазине. "
+
+#: .\cosmetics\templates\others\contract_offer.html:33
+msgid ""
+"1.6.Посетитель (Покупатель) соглашается с тем, что все условия настоящего "
+"Пользовательского Соглашения ему понятны и он принимает его полностью. Если "
+"же непонятно, он обратится к Администрации онлайн-магазина. "
+msgstr ""
+"1.6.Посетитель (Покупатель) соглашается с тем, что все условия настоящего "
+"Пользовательского Соглашения ему понятны и он принимает его полностью. Если "
+"же непонятно, он обратится к Администрации онлайн-магазина. "
+
+#: .\cosmetics\templates\others\contract_offer.html:36
+msgid "2. Регистрация на Сайте "
+msgstr "2. Регистрация на Сайте "
+
+#: .\cosmetics\templates\others\contract_offer.html:37
+msgid ""
+"2.1. Для формирования заказов на Сайте Пользователь (Покупатель) может "
+"пройти процедуру регистрации и внести необходимые данные, согласно анкете. "
+msgstr ""
+"2.1. Для формирования заказов на Сайте Пользователь (Покупатель) может "
+"пройти процедуру регистрации и внести необходимые данные, согласно анкете. "
+
+#: .\cosmetics\templates\others\contract_offer.html:38
+msgid ""
+"2.2. При регистрации на Сайте Пользователь (Покупатель) обязуется "
+"предоставить достоверную и точную информацию о себе и своих контактных "
+"данных, для исполнения Администрацией Сайта своих обязательств перед "
+"Пользователем (Покупателем) и доставки ему оплаченного Товара. "
+msgstr ""
+"2.2. При регистрации на Сайте Пользователь (Покупатель) обязуется "
+"предоставить достоверную и точную информацию о себе и своих контактных "
+"данных, для исполнения Администрацией Сайта своих обязательств перед "
+"Пользователем (Покупателем) и доставки ему оплаченного Товара. "
+
+#: .\cosmetics\templates\others\contract_offer.html:39
+msgid ""
+"2.3. В процессе регистрации на Сайте Пользователь (Покупатель) указывает "
+"логин (его e-mail) и пароль, за безопасность которых он несет "
+"ответственность. Пользователь (Покупатель) обязуется не сообщать третьим "
+"лицам логин и пароль, указанные при регистрации, хранить эти данные в "
+"недоступном для посторонних месте. За все действия, совершаемые от его "
+"имени, то есть с использованием его логина и пароля, ответственность несет "
+"исключительно Покупатель. "
+msgstr ""
+"2.3. В процессе регистрации на Сайте Пользователь (Покупатель) указывает "
+"логин (его e-mail) и пароль, за безопасность которых он несет "
+"ответственность. Пользователь (Покупатель) обязуется не сообщать третьим "
+"лицам логин и пароль, указанные при регистрации, хранить эти данные в "
+"недоступном для посторонних месте. За все действия, совершаемые от его "
+"имени, то есть с использованием его логина и пароля, ответственность несет "
+"исключительно Покупатель. "
+
+#: .\cosmetics\templates\others\contract_offer.html:42
+msgid "3. Конфиденциальность и персональные данные "
+msgstr "3. Конфиденциальность и персональные данные "
+
+#: .\cosmetics\templates\others\contract_offer.html:43
+msgid ""
+"3.1. Информация, предоставляемая Пользователем (Покупателем) является "
+"конфиденциальной. Администрация сайта использует информацию о Пользователе "
+"(Покупателя) с цель выполнения Заказов Посетителя (Покупателя), если иных "
+"целей не указано в данном Соглашении. "
+msgstr ""
+"3.1. Информация, предоставляемая Пользователем (Покупателем) является "
+"конфиденциальной. Администрация сайта использует информацию о Пользователе "
+"(Покупателя) с цель выполнения Заказов Посетителя (Покупателя), если иных "
+"целей не указано в данном Соглашении. "
+
+#: .\cosmetics\templates\others\contract_offer.html:44
+msgid ""
+"3.2. Заполнение регистрационной анкеты на сайте https://whyskin.com.ua/  "
+"Посетитель (Покупатель) добровольно дает согласие на сбор и обработку своих "
+"персональных данных Администрацией Сайта с последующей целью: данные, "
+"которые предоставляет Посетитель (Покупатель) во время регистрации на Сайте "
+"будут использоваться для обработки Заказов на приобретение Товаров, "
+"получения информации о Заказе, отправка телекоммуникационными средствами "
+"связи (по электронной почте, мобильной связью) рекламных и специальных "
+"предложений, информации об акциях, розыгрыши или любой другой информации о "
+"деятельности Веб-сайта https://whyskin.com.ua/ , в других коммерческих "
+"целях. "
+msgstr ""
+"3.2. Заполнение регистрационной анкеты на сайте https://whyskin.com.ua/  "
+"Посетитель (Покупатель) добровольно дает согласие на сбор и обработку своих "
+"персональных данных Администрацией Сайта с последующей целью: данные, "
+"которые предоставляет Посетитель (Покупатель) во время регистрации на Сайте "
+"будут использоваться для обработки Заказов на приобретение Товаров, "
+"получения информации о Заказе, отправка телекоммуникационными средствами "
+"связи (по электронной почте, мобильной связью) рекламных и специальных "
+"предложений, информации об акциях, розыгрыши или любой другой информации о "
+"деятельности Веб-сайта https://whyskin.com.ua/ , в других коммерческих "
+"целях. "
+
+#: .\cosmetics\templates\others\contract_offer.html:45
+msgid ""
+"3.3. Для целей, предусмотренных настоящим пунктом, Администрация вправе "
+"направлять письма, сообщения и материалы на почтовый адрес, e-mail "
+"Посетителя (Покупателя), а также отправлять sms-сообщения, совершать звонки "
+"на указанный в анкете номер, если это необходимо для выполнения заказа "
+"Пользователя (Покупателя). Администрация имеет право осуществлять запись "
+"телефонных звонков с Посетителем (Покупателем) с целью улучшения качества "
+"обслуживания последнего, на что Посетитель (Покупатель) дает свое "
+"безоговорочное согласие. "
+msgstr ""
+"3.3. Для целей, предусмотренных настоящим пунктом, Администрация вправе "
+"направлять письма, сообщения и материалы на почтовый адрес, e-mail "
+"Посетителя (Покупателя), а также отправлять sms-сообщения, совершать звонки "
+"на указанный в анкете номер, если это необходимо для выполнения заказа "
+"Пользователя (Покупателя). Администрация имеет право осуществлять запись "
+"телефонных звонков с Посетителем (Покупателем) с целью улучшения качества "
+"обслуживания последнего, на что Посетитель (Покупатель) дает свое "
+"безоговорочное согласие. "
+
+#: .\cosmetics\templates\others\contract_offer.html:46
+msgid ""
+"3.4. Посетитель (Покупатель) дает согласие на использование Администрацией "
+"технологии cookie. Файлы cookie не содержат личной информации и не могут "
+"никоим образом считывать информацию жесткого диска Посетителя (Покупателя). "
+"Файлы cookie используются для того, чтобы повышать качество предоставляемых "
+"услуг в т.ч.: для быстрой идентификации Посетителя (Покупателя); сохранения "
+"настроек Посетителя (Покупателя), его персональных предпочтений, "
+"отслеживания состояния сессии доступа Посетителя (Покупателя) и характерных "
+"для него тенденций. Администрация также использует файлы cookie в рекламных "
+"целях, в том числе чтобы управлять объявлениями на сайтах в сети Интернет. "
+"При отключении технологии cookie Посетителем (Покупателем), Администрация не"
+" гарантирует полную работоспособность веб-сайта https://whyskin.com.ua/ или "
+"некоторых его сервисов. "
+msgstr ""
+"3.4. Посетитель (Покупатель) дает согласие на использование Администрацией "
+"технологии cookie. Файлы cookie не содержат личной информации и не могут "
+"никоим образом считывать информацию жесткого диска Посетителя (Покупателя). "
+"Файлы cookie используются для того, чтобы повышать качество предоставляемых "
+"услуг в т.ч.: для быстрой идентификации Посетителя (Покупателя); сохранения "
+"настроек Посетителя (Покупателя), его персональных предпочтений, "
+"отслеживания состояния сессии доступа Посетителя (Покупателя) и характерных "
+"для него тенденций. Администрация также использует файлы cookie в рекламных "
+"целях, в том числе чтобы управлять объявлениями на сайтах в сети Интернет. "
+"При отключении технологии cookie Посетителем (Покупателем), Администрация не"
+" гарантирует полную работоспособность веб-сайта https://whyskin.com.ua/ или "
+"некоторых его сервисов. "
+
+#: .\cosmetics\templates\others\contract_offer.html:47
+msgid ""
+"3.4. Покупатель дает право Администрации осуществлять обработку его "
+"персональных данных, в том числе: помещать персональные данные в базы данных"
+" Администрации (без дополнительного уведомления об этом), осуществлять "
+"пожизненное хранение данных, их накопление, обновление, изменение (по мере "
+"необходимости). Администрация обязуется обеспечить защиту данных от "
+"несанкционированного доступа третьих лиц, не распространять и не передавать "
+"данные любой третьей стороне (кроме передачи данных связанным лицам, "
+"коммерческим партнерам, лицам, уполномоченным Администрацией на "
+"осуществление непосредственной обработки данных для указанных целей, а также"
+" на обязательный запрос компетентного государственного органа). "
+msgstr ""
+"3.4. Покупатель дает право Администрации осуществлять обработку его "
+"персональных данных, в том числе: помещать персональные данные в базы данных"
+" Администрации (без дополнительного уведомления об этом), осуществлять "
+"пожизненное хранение данных, их накопление, обновление, изменение (по мере "
+"необходимости). Администрация обязуется обеспечить защиту данных от "
+"несанкционированного доступа третьих лиц, не распространять и не передавать "
+"данные любой третьей стороне (кроме передачи данных связанным лицам, "
+"коммерческим партнерам, лицам, уполномоченным Администрацией на "
+"осуществление непосредственной обработки данных для указанных целей, а также"
+" на обязательный запрос компетентного государственного органа). "
+
+#: .\cosmetics\templates\others\contract_offer.html:48
+msgid ""
+"3.5. В случае нежелания получать рассылку о рекламных акциях, новых "
+"продуктах и т.д., Посетитель (Покупатель) имеет право отказаться от нее, "
+"путем отправки письма Администрации и/или проставления соответствующей "
+"отметки в личном кабинете. "
+msgstr ""
+"3.5. В случае нежелания получать рассылку о рекламных акциях, новых "
+"продуктах и т.д., Посетитель (Покупатель) имеет право отказаться от нее, "
+"путем отправки письма Администрации и/или проставления соответствующей "
+"отметки в личном кабинете. "
+
+#: .\cosmetics\templates\others\contract_offer.html:49
+msgid ""
+"3.6. Администрация не несет ответственности за содержание и достоверность "
+"информации, предоставляемой Посетителем (Покупателем) при регистрации на "
+"веб-сайте https://whyskin.com.ua/  и оформлении Заказа. Посетитель "
+"(Покупатель) несет ответственность за достоверность указанной при "
+"регистрации на веб-сайте и оформлении Заказа информации соглашается на все "
+"риски, связанные с недостоверностью такой информации. "
+msgstr ""
+"3.6. Администрация не несет ответственности за содержание и достоверность "
+"информации, предоставляемой Посетителем (Покупателем) при регистрации на "
+"веб-сайте https://whyskin.com.ua/  и оформлении Заказа. Посетитель "
+"(Покупатель) несет ответственность за достоверность указанной при "
+"регистрации на веб-сайте и оформлении Заказа информации соглашается на все "
+"риски, связанные с недостоверностью такой информации. "
+
+#: .\cosmetics\templates\others\contract_offer.html:52
+msgid "4. Порядок оформления Заказов, ценообразование, обмен. "
+msgstr "4. Порядок оформления Заказов, ценообразование, обмен. "
+
+#: .\cosmetics\templates\others\contract_offer.html:53
+msgid ""
+"4.1. Посетитель (Покупатель) может оформить заказ самостоятельно, путем "
+"нажатия кнопки “купить” и “оформить заказ” или по телефону, указанному в "
+"верхней части страницы. После оформления заказа покупателю будет направлено "
+"уведомление о подтверждении заказа, на указанные при оформлении заказа "
+"контакты, и наличии товара либо о предполагаемой дате поступления товара в "
+"случае его отсутствия. При оформлении заказа по телефону уведомление "
+"осуществляется посредством телефонной связи. "
+msgstr ""
+"4.1. Посетитель (Покупатель) может оформить заказ самостоятельно, путем "
+"нажатия кнопки “купить” и “оформить заказ” или по телефону, указанному в "
+"верхней части страницы. После оформления заказа покупателю будет направлено "
+"уведомление о подтверждении заказа, на указанные при оформлении заказа "
+"контакты, и наличии товара либо о предполагаемой дате поступления товара в "
+"случае его отсутствия. При оформлении заказа по телефону уведомление "
+"осуществляется посредством телефонной связи. "
+
+#: .\cosmetics\templates\others\contract_offer.html:54
+msgid ""
+"4.3. В случае отсутствия товара, указанного на Сайте, вследствие технических"
+" неполадок, а также по иным причинам, не зависящим от Администрации, "
+"указанный заказ аннулируется полностью или частично, а Посетитель "
+"(Покупатель) информируется путём направления ему уведомления. "
+msgstr ""
+"4.3. В случае отсутствия товара, указанного на Сайте, вследствие технических"
+" неполадок, а также по иным причинам, не зависящим от Администрации, "
+"указанный заказ аннулируется полностью или частично, а Посетитель "
+"(Покупатель) информируется путём направления ему уведомления. "
+
+#: .\cosmetics\templates\others\contract_offer.html:55
+msgid ""
+"4.4. Присоединяясь к данному Соглашению и оформляя заказ, Пользователь "
+"(покупатель) подтверждает, что ознакомлен с разделами Сайта «Доставка и "
+"оплата» , «О магазине»; соглашается с ними и понимает их в полной мере. "
+"Администрация оставляет за собой право изменить срок доставки заказа с "
+"последющим уведомлением Пользователя. "
+msgstr ""
+"4.4. Присоединяясь к данному Соглашению и оформляя заказ, Пользователь "
+"(покупатель) подтверждает, что ознакомлен с разделами Сайта «Доставка и "
+"оплата» , «О магазине»; соглашается с ними и понимает их в полной мере. "
+"Администрация оставляет за собой право изменить срок доставки заказа с "
+"последющим уведомлением Пользователя. "
+
+#: .\cosmetics\templates\others\contract_offer.html:56
+msgid ""
+"4.5.Посетитель (Покупатель) соглашается с тем, что цена на товар, отложенный"
+" им в «корзину», его ассортимент и количество, будут  актуальными лишь на "
+"момент формирования «корзины» и могут изменяться, если покупка не была "
+"окончательно оформлена путем нажатия кнопки «оформить заказ», «купить». "
+msgstr ""
+"4.5.Посетитель (Покупатель) соглашается с тем, что цена на товар, отложенный"
+" им в «корзину», его ассортимент и количество, будут  актуальными лишь на "
+"момент формирования «корзины» и могут изменяться, если покупка не была "
+"окончательно оформлена путем нажатия кнопки «оформить заказ», «купить». "
+
+#: .\cosmetics\templates\others\contract_offer.html:57
+msgid ""
+"4.6. Посетитель (Покупатель) соглашается с тем, что приобретенный им Товар "
+"не подлежит  обмену и возврату в следующих случаях: "
+msgstr ""
+"4.6. Посетитель (Покупатель) соглашается с тем, что приобретенный им Товар "
+"не подлежит  обмену и возврату в следующих случаях: "
+
+#: .\cosmetics\templates\others\contract_offer.html:58
+msgid "4.6.1. С момента покупки Товара прошло более 14 календарных дней; "
+msgstr "4.6.1. С момента покупки Товара прошло более 14 календарных дней; "
+
+#: .\cosmetics\templates\others\contract_offer.html:59
+msgid ""
+"4.6.2. С момента приобретения Товара не прошло 14 календарных дней, но товар"
+" был в употреблении, нарушена целостность упаковки и/или комплектность,  "
+"отсутствуют бирки/ценника и т.д. "
+msgstr ""
+"4.6.2. С момента приобретения Товара не прошло 14 календарных дней, но товар"
+" был в употреблении, нарушена целостность упаковки и/или комплектность,  "
+"отсутствуют бирки/ценника и т.д. "
+
+#: .\cosmetics\templates\others\contract_offer.html:60
+msgid ""
+"4.6.3. Товар содержится в перечне товаров, которые возврату и обмену не "
+"подлежат, согласно Постановлению Кабинета Министров Украины №172 от 19 марта"
+" 1994 года (в действующей редакции)"
+msgstr ""
+"4.6.3. Товар содержится в перечне товаров, которые возврату и обмену не "
+"подлежат, согласно Постановлению Кабинета Министров Украины №172 от 19 марта"
+" 1994 года (в действующей редакции)"
+
+#: .\cosmetics\templates\others\contract_offer.html:60
+msgid "а именно:"
+msgstr "а именно:"
+
+#: .\cosmetics\templates\others\contract_offer.html:62
+msgid ""
+"Продовольственные товары, лекарственные препараты и средства, предметы "
+"сангигиены. "
+msgstr ""
+"Продовольственные товары, лекарственные препараты и средства, предметы "
+"сангигиены. "
+
+#: .\cosmetics\templates\others\contract_offer.html:63
+msgid "А также непродовольственные товары: "
+msgstr "А также непродовольственные товары: "
+
+#: .\cosmetics\templates\others\contract_offer.html:65
+msgid "фотопленки, фотопластинки, фотографическая бумага"
+msgstr "фотопленки, фотопластинки, фотографическая бумага"
+
+#: .\cosmetics\templates\others\contract_offer.html:66
+msgid "корсетные товары"
+msgstr "корсетные товары"
+
+#: .\cosmetics\templates\others\contract_offer.html:67
+msgid "парфюмерно-косметические изделия"
+msgstr "парфюмерно-косметические изделия"
+
+#: .\cosmetics\templates\others\contract_offer.html:68
+msgid "перо-пуховые изделия"
+msgstr "перо-пуховые изделия"
+
+#: .\cosmetics\templates\others\contract_offer.html:69
+msgid "детские игрушки мягкие"
+msgstr "детские игрушки мягкие"
+
+#: .\cosmetics\templates\others\contract_offer.html:70
+msgid "детские игрушки резиновые надувные"
+msgstr "детские игрушки резиновые надувные"
+
+#: .\cosmetics\templates\others\contract_offer.html:71
+msgid "зубные щетки"
+msgstr "зубные щетки"
+
+#: .\cosmetics\templates\others\contract_offer.html:72
+msgid "мундштуки"
+msgstr "мундштуки"
+
+#: .\cosmetics\templates\others\contract_offer.html:73
+msgid "аппараты для бритья"
+msgstr "аппараты для бритья"
+
+#: .\cosmetics\templates\others\contract_offer.html:74
+msgid "помазки для бритья"
+msgstr "помазки для бритья"
+
+#: .\cosmetics\templates\others\contract_offer.html:75
+msgid "расчески, гребенци и щетки массажные"
+msgstr "расчески, гребенци и щетки массажные"
+
+#: .\cosmetics\templates\others\contract_offer.html:76
+msgid "сурдины (для духовых музыкальных инструментов)"
+msgstr "сурдины (для духовых музыкальных инструментов)"
+
+#: .\cosmetics\templates\others\contract_offer.html:77
+msgid "скрипичные подбородок"
+msgstr "скрипичные подбородок"
+
+#: .\cosmetics\templates\others\contract_offer.html:78
+msgid "перчатки"
+msgstr "перчатки"
+
+#: .\cosmetics\templates\others\contract_offer.html:79
+msgid "ткани"
+msgstr "ткани"
+
+#: .\cosmetics\templates\others\contract_offer.html:80
+msgid "тюлегардинные и кружевные полотна"
+msgstr "тюлегардинные и кружевные полотна"
+
+#: .\cosmetics\templates\others\contract_offer.html:81
+msgid "ковровые изделия метражные"
+msgstr "ковровые изделия метражные"
+
+#: .\cosmetics\templates\others\contract_offer.html:82
+msgid "белье нательное"
+msgstr "белье нательное"
+
+#: .\cosmetics\templates\others\contract_offer.html:83
+msgid "белье постельное"
+msgstr "белье постельное"
+
+#: .\cosmetics\templates\others\contract_offer.html:84
+msgid "чулочно-носочные изделия"
+msgstr "чулочно-носочные изделия"
+
+#: .\cosmetics\templates\others\contract_offer.html:85
+msgid "товары в аэрозольной упаковке"
+msgstr "товары в аэрозольной упаковке"
+
+#: .\cosmetics\templates\others\contract_offer.html:86
+msgid "печатные издания"
+msgstr "печатные издания"
+
+#: .\cosmetics\templates\others\contract_offer.html:87
+msgid ""
+"линейный и листовой металлопрокат, трубная продукция, пиломатериалы, "
+"погонажные (плинтус, наличник), плитные"
+msgstr ""
+"линейный и листовой металлопрокат, трубная продукция, пиломатериалы, "
+"погонажные (плинтус, наличник), плитные"
+
+#: .\cosmetics\templates\others\contract_offer.html:88
+msgid "материалы (древесноволокнистые и древесностружечные плиты,"
+msgstr "материалы (древесноволокнистые и древесностружечные плиты,"
+
+#: .\cosmetics\templates\others\contract_offer.html:89
+msgid ""
+"фанера) и стекло, нарезанные или раскроенные под размер, определенный "
+"покупателем (заказчиком)"
+msgstr ""
+"фанера) и стекло, нарезанные или раскроенные под размер, определенный "
+"покупателем (заказчиком)"
+
+#: .\cosmetics\templates\others\contract_offer.html:90
+msgid "аудио-, видеокассеты, диски для лазерных систем считывания с записью"
+msgstr "аудио-, видеокассеты, диски для лазерных систем считывания с записью"
+
+#: .\cosmetics\templates\others\contract_offer.html:91
+msgid "изделия из натуральных и искусственных волос (парики)"
+msgstr "изделия из натуральных и искусственных волос (парики)"
+
+#: .\cosmetics\templates\others\contract_offer.html:92
+msgid ""
+"товары для новорожденных (пеленки, соски, бутылочки для кормления тому "
+"подобное)"
+msgstr ""
+"товары для новорожденных (пеленки, соски, бутылочки для кормления тому "
+"подобное)"
+
+#: .\cosmetics\templates\others\contract_offer.html:93
+msgid "инструменты для маникюра, педикюра (ножницы, пилочки и т.п.)"
+msgstr "инструменты для маникюра, педикюра (ножницы, пилочки и т.п.)"
+
+#: .\cosmetics\templates\others\contract_offer.html:94
+msgid ""
+"ювелирные изделия из драгоценных металлов, драгоценных камней, драгоценных "
+"камней органогенного образования и полудрагоценных камней"
+msgstr ""
+"ювелирные изделия из драгоценных металлов, драгоценных камней, драгоценных "
+"камней органогенного образования и полудрагоценных камней"
+
+#: .\cosmetics\templates\others\contract_offer.html:97
+msgid ""
+"4.6.4. Посетитель (Покупатель) отказывается предоставить фото- или "
+"видеоматериалы бракованного и/или неисправного на его взгляд товара."
+msgstr ""
+"4.6.4. Посетитель (Покупатель) отказывается предоставить фото- или "
+"видеоматериалы бракованного и/или неисправного на его взгляд товара."
+
+#: .\cosmetics\templates\others\contract_offer.html:98
+msgid ""
+"4.6.5. Посетитель (Покупатель) подтверждает свою осведомленность о том, что "
+"промо-коды или сертификаты не могут быть обменены на денежный эквивалент, "
+"могут быть применены один раз и в случае применения разница между номиналом "
+"сертификата и суммой заказа не компенсируется."
+msgstr ""
+"4.6.5. Посетитель (Покупатель) подтверждает свою осведомленность о том, что "
+"промо-коды или сертификаты не могут быть обменены на денежный эквивалент, "
+"могут быть применены один раз и в случае применения разница между номиналом "
+"сертификата и суммой заказа не компенсируется."
+
+#: .\cosmetics\templates\others\contract_offer.html:99
+msgid ""
+"4.6.6. Посетитель (Покупатель) подтверждает свою осведомленность о том, что "
+"при возврате товара, оплаченного частично или полностью при помощи кода "
+"сертификата, денежный эквивалент номинала сертификата не возвращается, код "
+"сертификата автоматически восстанавливается и считается не использованным."
+msgstr ""
+"4.6.6. Посетитель (Покупатель) подтверждает свою осведомленность о том, что "
+"при возврате товара, оплаченного частично или полностью при помощи кода "
+"сертификата, денежный эквивалент номинала сертификата не возвращается, код "
+"сертификата автоматически восстанавливается и считается не использованным."
+
+#: .\cosmetics\templates\others\contract_offer.html:100
+msgid ""
+"4.7. Данным Соглашением Пользователь (Покупатель) подтверждает свою "
+"осведомленность в том, что обмену или возврату подлежит только новый товар, "
+"который не был в употреблении и не имеет следов использования: царапин, "
+"сколов, потёртостей, должны быть сохранены: полный комплект товара, "
+"целостность и все компоненты упаковки, ярлыки, заводская маркировка и "
+"Посетитель (Покупатель) имеет оригинал документа, подтверждающий факт "
+"покупки соответствующего Товара. Нарушение любого из этих пунктов оставляет "
+"за Администрацией право отказать Посетителю (Покупателю) в обмене или "
+"возврате товара."
+msgstr ""
+"4.7. Данным Соглашением Пользователь (Покупатель) подтверждает свою "
+"осведомленность в том, что обмену или возврату подлежит только новый товар, "
+"который не был в употреблении и не имеет следов использования: царапин, "
+"сколов, потёртостей, должны быть сохранены: полный комплект товара, "
+"целостность и все компоненты упаковки, ярлыки, заводская маркировка и "
+"Посетитель (Покупатель) имеет оригинал документа, подтверждающий факт "
+"покупки соответствующего Товара. Нарушение любого из этих пунктов оставляет "
+"за Администрацией право отказать Посетителю (Покупателю) в обмене или "
+"возврате товара."
+
+#: .\cosmetics\templates\others\contract_offer.html:101
+msgid ""
+"4.8. При заказе товара на сайте Пользователь (Покупатель) подтверждает свое "
+"согласие получать информацию о дате производства, сроки хранения продукции в"
+" формате, предусмотренном брендом-производителем, в частности при помощи "
+"батч-кода, нанесенного на упаковку продукта или других маркировок "
+"производителя. "
+msgstr ""
+"4.8. При заказе товара на сайте Пользователь (Покупатель) подтверждает свое "
+"согласие получать информацию о дате производства, сроки хранения продукции в"
+" формате, предусмотренном брендом-производителем, в частности при помощи "
+"батч-кода, нанесенного на упаковку продукта или других маркировок "
+"производителя. "
+
+#: .\cosmetics\templates\others\contract_offer.html:102
+msgid ""
+"4.9. При заказе товара на сайте Пользователь (Покупатель) подтверждает "
+"согласие на объединение оформленных на одного получателя заказов в одной "
+"упаковке и получение одной посылкой. В случае объединения заказов "
+"Пользователь (Получатель) будет уведомлен при помощи сообщения на указанную "
+"при оформлении электронную почту. "
+msgstr ""
+"4.9. При заказе товара на сайте Пользователь (Покупатель) подтверждает "
+"согласие на объединение оформленных на одного получателя заказов в одной "
+"упаковке и получение одной посылкой. В случае объединения заказов "
+"Пользователь (Получатель) будет уведомлен при помощи сообщения на указанную "
+"при оформлении электронную почту. "
+
+#: .\cosmetics\templates\others\contract_offer.html:103
+msgid ""
+"4.10 Админитрация сайта сообщает, а Пользователь (Покупатель) предоставляет "
+"свою свое согласие на то, что при осуществлении заказа товаров под торговыми"
+" марками Lancome, Yves Saint Laurent, Prada, Valentino, Biotherm, Armani, "
+"Vichy, La Roche-Posay, Kerastase он имеет право осуществить покупку не более"
+" 5-ти единиц товаров с одинаковым кодом в одном заказе."
+msgstr ""
+"4.10 Админитрация сайта сообщает, а Пользователь (Покупатель) предоставляет "
+"свою свое согласие на то, что при осуществлении заказа товаров под торговыми"
+" марками Lancome, Yves Saint Laurent, Prada, Valentino, Biotherm, Armani, "
+"Vichy, La Roche-Posay, Kerastase он имеет право осуществить покупку не более"
+" 5-ти единиц товаров с одинаковым кодом в одном заказе."
+
+#: .\cosmetics\templates\others\contract_offer.html:104
+msgid ""
+"4.11 При отказе Посетителя (Покупателя) от товара Администрация возвращает "
+"ему сумму, уплаченную Покупателем, за исключением расходов Продавца на "
+"доставку от Покупателя возвращенного товара."
+msgstr ""
+"4.11 При отказе Посетителя (Покупателя) от товара Администрация возвращает "
+"ему сумму, уплаченную Покупателем, за исключением расходов Продавца на "
+"доставку от Покупателя возвращенного товара."
+
+#: .\cosmetics\templates\others\contract_offer.html:107
+msgid "5. Ограничение ответственности Администрации"
+msgstr "5. Ограничение ответственности Администрации"
+
+#: .\cosmetics\templates\others\contract_offer.html:108
+msgid ""
+"5.1. Администрация  не несет никакой ответственности за любые ошибки, "
+"опечатки и неточности, которые могут быть обнаружены в материалах, "
+"содержащихся на данном веб-сайте. Администрация прикладывает все необходимые"
+" усилия, чтобы обеспечить точность и достоверность представляемой на сайте "
+"Интернет-магазина информации. Вся информация и материалы предоставляются на "
+"условиях \"как есть\", без каких либо гарантий, как явных, так и "
+"подразумеваемых."
+msgstr ""
+"5.1. Администрация  не несет никакой ответственности за любые ошибки, "
+"опечатки и неточности, которые могут быть обнаружены в материалах, "
+"содержащихся на данном веб-сайте. Администрация прикладывает все необходимые"
+" усилия, чтобы обеспечить точность и достоверность представляемой на сайте "
+"Интернет-магазина информации. Вся информация и материалы предоставляются на "
+"условиях \"как есть\", без каких либо гарантий, как явных, так и "
+"подразумеваемых."
+
+#: .\cosmetics\templates\others\contract_offer.html:109
+msgid ""
+"5.2. Администрация  не несет никакой ответственности за высказывания и "
+"мнения Посетителей (Покупателе) веб-сайта, оставленные в качестве "
+"комментариев или обзоров."
+msgstr ""
+"5.2. Администрация  не несет никакой ответственности за высказывания и "
+"мнения Посетителей (Покупателе) веб-сайта, оставленные в качестве "
+"комментариев или обзоров."
+
+#: .\cosmetics\templates\others\contract_offer.html:110
+msgid ""
+"5.3. Администрация не несет ответственность за возможные противоправные "
+"действия Посетителя (Покупателя) относительно третьих лиц, либо третьих лиц "
+"относительно Посетителя/Покупателя."
+msgstr ""
+"5.3. Администрация не несет ответственность за возможные противоправные "
+"действия Посетителя (Покупателя) относительно третьих лиц, либо третьих лиц "
+"относительно Посетителя/Покупателя."
+
+#: .\cosmetics\templates\others\contract_offer.html:111
+msgid ""
+"5.4. Администрация не несет ответственности за ущерб, убытки или расходы "
+"(реальные либо возможные), возникшие в связи с настоящим веб-сайтом, его "
+"использованием или невозможностью использования."
+msgstr ""
+"5.4. Администрация не несет ответственности за ущерб, убытки или расходы "
+"(реальные либо возможные), возникшие в связи с настоящим веб-сайтом, его "
+"использованием или невозможностью использования."
+
+#: .\cosmetics\templates\others\contract_offer.html:112
+msgid ""
+"5.5. Администрация не несет ответственности за утерю Пользователем "
+"(Покупателем) возможности доступа к своему аккаунту — учетной записи на "
+"сайте https://whyskin.com.ua/ (утрату логина, пароля, иной информации)."
+msgstr ""
+"5.5. Администрация не несет ответственности за утерю Пользователем "
+"(Покупателем) возможности доступа к своему аккаунту — учетной записи на "
+"сайте https://whyskin.com.ua/ (утрату логина, пароля, иной информации)."
+
+#: .\cosmetics\templates\others\contract_offer.html:113
+msgid ""
+"5.6. В целях вышеизложенного Администрация оставляет за собой право удалять "
+"размещенную на Сайте информацию и предпринимать технические и юридические "
+"меры для прекращения доступа к Интернет-магазину Пользователей "
+"(Покупателей),  создающих проблемы в использовании Интернет-магазина другими"
+" Посетителями (Покупателями), Пользователей (Покупателей) в случае каких-"
+"либо недобросовестных злоупотреблений с их стороны при заказах товара, не "
+"имеющих цели его приобретения, или Посетителей (Покупателей), нарушающих "
+"требования Соглашения. При этои такая блокировка осуществляется на "
+"усмотрение администрации без последующего уведомления таких Пользователей "
+"(Покупателей). "
+msgstr ""
+"5.6. В целях вышеизложенного Администрация оставляет за собой право удалять "
+"размещенную на Сайте информацию и предпринимать технические и юридические "
+"меры для прекращения доступа к Интернет-магазину Пользователей "
+"(Покупателей),  создающих проблемы в использовании Интернет-магазина другими"
+" Посетителями (Покупателями), Пользователей (Покупателей) в случае каких-"
+"либо недобросовестных злоупотреблений с их стороны при заказах товара, не "
+"имеющих цели его приобретения, или Посетителей (Покупателей), нарушающих "
+"требования Соглашения. При этои такая блокировка осуществляется на "
+"усмотрение администрации без последующего уведомления таких Пользователей "
+"(Покупателей). "
+
+#: .\cosmetics\templates\others\contract_offer.html:114
+msgid "5.7. Администрация веб-сайта в т.ч. не несет ответственности за:"
+msgstr "5.7. Администрация веб-сайта в т.ч. не несет ответственности за:"
+
+#: .\cosmetics\templates\others\contract_offer.html:115
+msgid ""
+"5.7.1.  Задержки или сбои в процессе совершения операции, возникшие "
+"вследствие непреодолимой силы, а также любого случая неполадок в "
+"телекоммуникационных, компьютерных, электрических и иных смежных системах."
+msgstr ""
+"5.7.1.  Задержки или сбои в процессе совершения операции, возникшие "
+"вследствие непреодолимой силы, а также любого случая неполадок в "
+"телекоммуникационных, компьютерных, электрических и иных смежных системах."
+
+#: .\cosmetics\templates\others\contract_offer.html:116
+msgid ""
+"5.7.2. Действия систем переводов, банков, платежных систем и за задержки "
+"связанные с их работой."
+msgstr ""
+"5.7.2. Действия систем переводов, банков, платежных систем и за задержки "
+"связанные с их работой."
+
+#: .\cosmetics\templates\others\contract_offer.html:117
+msgid ""
+"5.7.3. Надлежащее функционирование Сайта, в случае, если Посетитель "
+"(Покупатель) не имеет необходимых технических средств для его использования,"
+" а также не несет никаких обязательств по обеспечению Пользователей такими "
+"средствами."
+msgstr ""
+"5.7.3. Надлежащее функционирование Сайта, в случае, если Посетитель "
+"(Покупатель) не имеет необходимых технических средств для его использования,"
+" а также не несет никаких обязательств по обеспечению Пользователей такими "
+"средствами."
+
+#: .\cosmetics\templates\others\contract_offer.html:120
+msgid "6. Исключительные права"
+msgstr "6. Исключительные права"
+
+#: .\cosmetics\templates\others\contract_offer.html:121
+msgid ""
+"6.1. Все объекты, доступные с помощью сервисов Сайта https://whyskin.com.ua/"
+"  в том числе элементы дизайна, текст, графические изображения, иллюстрации,"
+" видео, программы для ЭВМ, базы данных, музыка, звуки и другие объекты "
+"(далее - содержание сервисов), а также любой контент, размещенный на веб-"
+"сайте https://whyskin.com.ua/ , являются объектами исключительных прав "
+"Администрации, Пользователей и других правообладателей."
+msgstr ""
+"6.1. Все объекты, доступные с помощью сервисов Сайта https://whyskin.com.ua/"
+"  в том числе элементы дизайна, текст, графические изображения, иллюстрации,"
+" видео, программы для ЭВМ, базы данных, музыка, звуки и другие объекты "
+"(далее - содержание сервисов), а также любой контент, размещенный на веб-"
+"сайте https://whyskin.com.ua/ , являются объектами исключительных прав "
+"Администрации, Пользователей и других правообладателей."
+
+#: .\cosmetics\templates\others\contract_offer.html:122
+msgid ""
+"6.2. Использование контента, а также любых других элементов сервисов "
+"возможно только в рамках функционала, предлагаемого тем или иным сервисом. "
+"Никакие элементы содержания сервисов Сайта https://whyskin.com.ua/  а также "
+"любой контент, размещенный на сервисах Сайта https://whyskin.com.ua/  не "
+"могут быть использованы иным образом без предварительного разрешения / "
+"согласия правообладателя. Под использованием подразумеваются, в том числе: "
+"воспроизведение, копирование, переработка, распространение на любой основе, "
+"отображение во фрейме и так далее. Исключение составляют случаи, прямо "
+"предусмотренные законодательством Украины. Использование Пользователем "
+"элементов содержания сервисов, а также любого контента для личного "
+"некоммерческого использования, допускается при условии сохранения всех "
+"знаков охраны авторского права, смежных прав, товарных знаков, других "
+"уведомлений об авторстве, сохранения имени (или псевдонима) автора / "
+"наименования правообладателя в неизменном виде, сохранении соответствующего "
+"объекта в неизменном виде. Исключение составляют случаи, прямо "
+"предусмотренные законодательством Украины."
+msgstr ""
+"6.2. Использование контента, а также любых других элементов сервисов "
+"возможно только в рамках функционала, предлагаемого тем или иным сервисом. "
+"Никакие элементы содержания сервисов Сайта https://whyskin.com.ua/  а также "
+"любой контент, размещенный на сервисах Сайта https://whyskin.com.ua/  не "
+"могут быть использованы иным образом без предварительного разрешения / "
+"согласия правообладателя. Под использованием подразумеваются, в том числе: "
+"воспроизведение, копирование, переработка, распространение на любой основе, "
+"отображение во фрейме и так далее. Исключение составляют случаи, прямо "
+"предусмотренные законодательством Украины. Использование Пользователем "
+"элементов содержания сервисов, а также любого контента для личного "
+"некоммерческого использования, допускается при условии сохранения всех "
+"знаков охраны авторского права, смежных прав, товарных знаков, других "
+"уведомлений об авторстве, сохранения имени (или псевдонима) автора / "
+"наименования правообладателя в неизменном виде, сохранении соответствующего "
+"объекта в неизменном виде. Исключение составляют случаи, прямо "
+"предусмотренные законодательством Украины."
+
+#: .\cosmetics\templates\others\contract_offer.html:123
+msgid ""
+"6.3. По всем вопросам относительно прав, а также с другими вопросами и "
+"предложениями Вы можете связаться с нами по электронному адресу: "
+"help@whyskin.com.ua. "
+msgstr ""
+"6.3. По всем вопросам относительно прав, а также с другими вопросами и "
+"предложениями Вы можете связаться с нами по электронному адресу: "
+"help@whyskin.com.ua. "
+
+#: .\cosmetics\templates\others\contract_offer.html:124
+msgid ""
+"Если же Вы хотите получить ответ быстрее, свяжитесь к нами по контактам, "
+"перейдя по"
+msgstr ""
+"Если же Вы хотите получить ответ быстрее, свяжитесь к нами по контактам, "
+"перейдя по"
+
+#: .\cosmetics\templates\others\contract_offer.html:124
+#: .\cosmetics\templates\others\exchange_and_return.html:45
+msgid "этой ссылке"
+msgstr "этой ссылке"
+
+#: .\cosmetics\templates\others\delivery_and_payment.html:7
+msgid ""
+"Доставка и оплата онлайн-магазина WhySkin. Прочитайте доставку и оплату "
+"перед тем, как покупать товары в нашем онлайн-магазине."
+msgstr ""
+"Доставка и оплата онлайн-магазина WhySkin. Прочитайте доставку и оплату "
+"перед тем, как покупать товары в нашем онлайн-магазине."
+
+#: .\cosmetics\templates\others\delivery_and_payment.html:11
+msgid "Доставка и оплата онлайн-магазина WhySkin"
+msgstr "Доставка и оплата онлайн-магазина WhySkin"
+
+#: .\cosmetics\templates\others\delivery_and_payment.html:23
+msgid "Способы доставки"
+msgstr "Способы доставки"
+
+#: .\cosmetics\templates\others\delivery_and_payment.html:26
+msgid "Доставка по Новой Почте"
+msgstr "Доставка по Новой Почте"
+
+#: .\cosmetics\templates\others\delivery_and_payment.html:28
+msgid "В почтомат/отделение"
+msgstr "В почтомат/отделение"
+
+#: .\cosmetics\templates\others\delivery_and_payment.html:36
+msgid "Оплата удобным способом"
+msgstr "Оплата удобным способом"
+
+#: .\cosmetics\templates\others\delivery_and_payment.html:38
+msgid ""
+"Наложенный платеж — оплата наличными или картой при получении через "
+"курьерскую службу"
+msgstr ""
+"Наложенный платеж — оплата наличными или картой при получении через "
+"курьерскую службу"
+
+#: .\cosmetics\templates\others\delivery_and_payment.html:39
+msgid "Оплата переводом на карту"
+msgstr "Оплата переводом на карту"
+
+#: .\cosmetics\templates\others\delivery_and_payment.html:40
+msgid "Наличные деньги (при самовывозе)"
+msgstr "Наличные деньги (при самовывозе)"
+
+#: .\cosmetics\templates\others\exception.html:5
+msgid "ошибка"
+msgstr "ошибка"
+
+#: .\cosmetics\templates\others\exception.html:7
+#: .\cosmetics\templates\others\exception.html:12
+msgid "Случилась непредвиденная ошибка, стоит попробовать ещё раз"
+msgstr "Случилась непредвиденная ошибка, стоит попробовать ещё раз"
+
+#: .\cosmetics\templates\others\exception.html:11
+msgid "WhySkin Ошибка"
+msgstr "WhySkin Ошибка"
+
+#: .\cosmetics\templates\others\exception.html:21
+msgid "ошибка, попробуйте ещё раз"
+msgstr "ошибка, попробуйте ещё раз"
+
+#: .\cosmetics\templates\others\exception.html:22
+msgid "Мы уже получили эту ошибку, работаем над ней"
+msgstr "Мы уже получили эту ошибку, работаем над ней"
+
+#: .\cosmetics\templates\others\exchange_and_return.html:7
+msgid ""
+"Обмен и возврат онлайн-магазина WhySkin. Прочитайте обмен и возврат перед "
+"тем, как покупать товары в нашем онлайн-магазине."
+msgstr ""
+"Обмен и возврат онлайн-магазина WhySkin. Прочитайте обмен и возврат перед "
+"тем, как покупать товары в нашем онлайн-магазине."
+
+#: .\cosmetics\templates\others\exchange_and_return.html:11
+msgid "Обмен и возврат онлайн-магазина WhySkin"
+msgstr "Обмен и возврат онлайн-магазина WhySkin"
+
+#: .\cosmetics\templates\others\exchange_and_return.html:23
+msgid ""
+"Мы всегда стараемся пойти навстречу Покупателю, если он обнаружил "
+"несоответсвие товара с его заказом."
+msgstr ""
+"Мы всегда стараемся пойти навстречу Покупателю, если он обнаружил "
+"несоответсвие товара с его заказом."
+
+#: .\cosmetics\templates\others\exchange_and_return.html:24
+msgid ""
+"Ниже мы привели условия, при которых мы можем принять товар обратно, и "
+"действия, которые Вы должны совершить при его возвращении."
+msgstr ""
+"Ниже мы привели условия, при которых мы можем принять товар обратно, и "
+"действия, которые Вы должны совершить при его возвращении."
+
+#: .\cosmetics\templates\others\exchange_and_return.html:27
+msgid "Условия, при которых мы можем принять товар:"
+msgstr "Условия, при которых мы можем принять товар:"
+
+#: .\cosmetics\templates\others\exchange_and_return.html:29
+msgid "При получении посылки товар не соответствует заказу."
+msgstr "При получении посылки товар не соответствует заказу."
+
+#: .\cosmetics\templates\others\exchange_and_return.html:30
+msgid ""
+"Товар пришёл в упаковке без обёртывания (если это не предусмотрено "
+"производителем)."
+msgstr ""
+"Товар пришёл в упаковке без обёртывания (если это не предусмотрено "
+"производителем)."
+
+#: .\cosmetics\templates\others\exchange_and_return.html:31
+msgid ""
+"Фактический литраж/вес продукта не соотвествует литражу/весу, обозначенным "
+"производителем."
+msgstr ""
+"Фактический литраж/вес продукта не соотвествует литражу/весу, обозначенным "
+"производителем."
+
+#: .\cosmetics\templates\others\exchange_and_return.html:32
+msgid ""
+"Если товар не открыт, а целостность упаковки не нарушена, в течение 14 дней "
+"с момента покупки вы можете вернуть продукт."
+msgstr ""
+"Если товар не открыт, а целостность упаковки не нарушена, в течение 14 дней "
+"с момента покупки вы можете вернуть продукт."
+
+#: .\cosmetics\templates\others\exchange_and_return.html:34
+msgid "Действия, которые Вам нужно предпринять для возвращения товара:"
+msgstr "Действия, которые Вам нужно предпринять для возвращения товара:"
+
+#: .\cosmetics\templates\others\exchange_and_return.html:36
+msgid "Свяжитесь с администрацией онлайн-магазина"
+msgstr "Свяжитесь с администрацией онлайн-магазина"
+
+#: .\cosmetics\templates\others\exchange_and_return.html:36
+msgid "Контакты Вы можете найти здесь."
+msgstr "Контакты Вы можете найти здесь."
+
+#: .\cosmetics\templates\others\exchange_and_return.html:37
+msgid ""
+"Опишите проблему максимально подробно. В случае необходимости мы попросим "
+"Вас предоставить фото/видеоматериалы для подтверждения брака/повреждения "
+"товара."
+msgstr ""
+"Опишите проблему максимально подробно. В случае необходимости мы попросим "
+"Вас предоставить фото/видеоматериалы для подтверждения брака/повреждения "
+"товара."
+
+#: .\cosmetics\templates\others\exchange_and_return.html:38
+msgid ""
+"Обязательно сохраняйте товары, входившие в набор (без повреждений во время "
+"распаковки и использования),  все комплектующие и упаковку товара со штрих-"
+"кодом производителя а также документ или номер заказа, подтверждающий "
+"приобретение товара у нас."
+msgstr ""
+"Обязательно сохраняйте товары, входившие в набор (без повреждений во время "
+"распаковки и использования),  все комплектующие и упаковку товара со штрих-"
+"кодом производителя а также документ или номер заказа, подтверждающий "
+"приобретение товара у нас."
+
+#: .\cosmetics\templates\others\exchange_and_return.html:41
+msgid ""
+"В течение 14 дней (не больше 30 дней) после получения посылки мы изучаем "
+"возвращенные позиции, принимаем решение о возврате денежных средств на "
+"указанный счет. "
+msgstr ""
+"В течение 14 дней (не больше 30 дней) после получения посылки мы изучаем "
+"возвращенные позиции, принимаем решение о возврате денежных средств на "
+"указанный счет. "
+
+#: .\cosmetics\templates\others\exchange_and_return.html:42
+msgid ""
+"Если вы не использовали карту для оплаты, для возврата средств, нам нужно "
+"будет уточнить номер карты для осуществления возврата и ФИО владельца карты."
+" "
+msgstr ""
+"Если вы не использовали карту для оплаты, для возврата средств, нам нужно "
+"будет уточнить номер карты для осуществления возврата и ФИО владельца карты."
+" "
+
+#: .\cosmetics\templates\others\exchange_and_return.html:43
+msgid ""
+"Единственная просьба: не возвращайте нам товары, приобретенные в другом "
+"магазине, продукцию, которой вы пользовались, а также изделия, по которым "
+"нет аргументированных причин для обмена или возврата. Во всех остальных "
+"ситуациях мы постараемся помочь быстро и легко оформить обмен или возврат. "
+msgstr ""
+"Единственная просьба: не возвращайте нам товары, приобретенные в другом "
+"магазине, продукцию, которой вы пользовались, а также изделия, по которым "
+"нет аргументированных причин для обмена или возврата. Во всех остальных "
+"ситуациях мы постараемся помочь быстро и легко оформить обмен или возврат. "
+
+#: .\cosmetics\templates\others\exchange_and_return.html:45
+msgid "По всем вопросам Вы можете связаться по контактам в"
+msgstr "По всем вопросам Вы можете связаться по контактам в"
+
+#: .\cosmetics\templates\others\privacy_policy.html:7
+msgid ""
+"Политика конфиденциальности онлайн-магазина WhySkin. Прочитайте Политику "
+"конфиденциальности перед тем, как использовать онлайн-магазин."
+msgstr ""
+"Политика конфиденциальности онлайн-магазина WhySkin. Прочитайте Политику "
+"конфиденциальности перед тем, как использовать онлайн-магазин."
+
+#: .\cosmetics\templates\others\privacy_policy.html:11
+msgid "Политика конфиденциальности онлайн-магазина WhySkin"
+msgstr "Политика конфиденциальности онлайн-магазина WhySkin"
+
+#: .\cosmetics\templates\others\privacy_policy.html:24
+msgid "Обновлено"
+msgstr "Обновлено"
+
+#: .\cosmetics\templates\others\privacy_policy.html:25
+msgid ""
+"Администрация (далее команда, мы, нас, наш) WhySkin беспокоится об "
+"обеспечении безопасности данных наших Пользователей - поэтому мы составили "
+"Политику конфиденциальности, чтобы Вы не беспокоились о нашей работе с "
+"Вашими данными, которые были предоставлены нашему онлайн-магазину, как при "
+"регистрации, так и после"
+msgstr ""
+"Администрация (далее команда, мы, нас, наш) WhySkin беспокоится об "
+"обеспечении безопасности данных наших Пользователей - поэтому мы составили "
+"Политику конфиденциальности, чтобы Вы не беспокоились о нашей работе с "
+"Вашими данными, которые были предоставлены нашему онлайн-магазину, как при "
+"регистрации, так и после"
+
+#: .\cosmetics\templates\others\privacy_policy.html:26
+msgid ""
+"Политика конфиденциальности, далее – Политика, действует в отношении "
+"обработки персональных данных, которые может получить онлайн-магазин WhySkin"
+" (whyskin.com.ua, https://whyskin.com.ua) от физических лиц-Пользователей"
+msgstr ""
+"Политика конфиденциальности, далее – Политика, действует в отношении "
+"обработки персональных данных, которые может получить онлайн-магазин WhySkin"
+" (whyskin.com.ua, https://whyskin.com.ua) от физических лиц-Пользователей"
+
+#: .\cosmetics\templates\others\privacy_policy.html:29
+msgid "Данная Политика конфиденциальности разработана, чтобы рассказать Вам:"
+msgstr "Данная Политика конфиденциальности разработана, чтобы рассказать Вам:"
+
+#: .\cosmetics\templates\others\privacy_policy.html:31
+msgid "общие положения по Политике;"
+msgstr "общие положения по Политике;"
+
+#: .\cosmetics\templates\others\privacy_policy.html:32
+msgid "какие Ваши персональные данные мы собираем;"
+msgstr "какие Ваши персональные данные мы собираем;"
+
+#: .\cosmetics\templates\others\privacy_policy.html:33
+msgid "как и почему мы используем их;"
+msgstr "как и почему мы используем их;"
+
+#: .\cosmetics\templates\others\privacy_policy.html:34
+msgid "администрация – кому можно обрабатывать данные;"
+msgstr "администрация – кому можно обрабатывать данные;"
+
+#: .\cosmetics\templates\others\privacy_policy.html:35
+msgid "Пользовательские права;"
+msgstr "Пользовательские права;"
+
+#: .\cosmetics\templates\others\privacy_policy.html:36
+msgid "безопасность данных;"
+msgstr "безопасность данных;"
+
+#: .\cosmetics\templates\others\privacy_policy.html:37
+msgid "изменение Политики конфиденциальности;"
+msgstr "изменение Политики конфиденциальности;"
+
+#: .\cosmetics\templates\others\privacy_policy.html:38
+msgid "к кому Вы можете обратиться для защиты Ваших персональных данных."
+msgstr "к кому Вы можете обратиться для защиты Ваших персональных данных."
+
+#: .\cosmetics\templates\others\privacy_policy.html:40
+msgid ""
+"Мы с полной серьёзностью относимся к безопасности личных данных как прежних,"
+" так и потенциальных Пользователей, обратившихся к нам, поэтому стремимся "
+"защищать конфиденциальность персональных данных. Команда WhySkin обязуется "
+"принять все необходимые меры для предотвращения злоупотребления Вашими "
+"персональными данными, которые становятся нам известны. Мы будем "
+"обрабатывать их в строгом соответствии с требованиями Закона Украины «О "
+"защите персональных данных», исключительно при наличии законных оснований на"
+" такую обработку, в частности правилами, описанными в Политике "
+"конфиденциальности (далее)"
+msgstr ""
+"Мы с полной серьёзностью относимся к безопасности личных данных как прежних,"
+" так и потенциальных Пользователей, обратившихся к нам, поэтому стремимся "
+"защищать конфиденциальность персональных данных. Команда WhySkin обязуется "
+"принять все необходимые меры для предотвращения злоупотребления Вашими "
+"персональными данными, которые становятся нам известны. Мы будем "
+"обрабатывать их в строгом соответствии с требованиями Закона Украины «О "
+"защите персональных данных», исключительно при наличии законных оснований на"
+" такую обработку, в частности правилами, описанными в Политике "
+"конфиденциальности (далее)"
+
+#: .\cosmetics\templates\others\privacy_policy.html:41
+msgid ""
+"Хотим заметить, что Вы абсолютно не обязаны раскрывать нам персональные "
+"данные, но без определенной информации о Вас мы не сможем предоставить "
+"большую часть функционала нашего онлайн-магазина"
+msgstr ""
+"Хотим заметить, что Вы абсолютно не обязаны раскрывать нам персональные "
+"данные, но без определенной информации о Вас мы не сможем предоставить "
+"большую часть функционала нашего онлайн-магазина"
+
+#: .\cosmetics\templates\others\privacy_policy.html:45
+msgid ""
+"Цель данной Политики заключается в доведении до Вас необходимой информации, "
+"которая позволяет оценить, какие персональные данные и с какими целями "
+"обрабатываются командой WhySkin, методы их обработки и обеспечения "
+"безопасности."
+msgstr ""
+"Цель данной Политики заключается в доведении до Вас необходимой информации, "
+"которая позволяет оценить, какие персональные данные и с какими целями "
+"обрабатываются командой WhySkin, методы их обработки и обеспечения "
+"безопасности."
+
+#: .\cosmetics\templates\others\privacy_policy.html:46
+msgid ""
+"Личные данные как наших Пользователей обрабатываются на удалённых защищённых"
+" серверах, находящихся за пределами страны Украины."
+msgstr ""
+"Личные данные как наших Пользователей обрабатываются на удалённых защищённых"
+" серверах, находящихся за пределами страны Украины."
+
+#: .\cosmetics\templates\others\privacy_policy.html:47
+msgid ""
+"Используя онлайн-магазин whyskin.com.ua Пользователь предоставляет своё "
+"согласие на обработку своих личных данных, таких как: адрес электронной "
+"почты (email); контактный телефон; имя и фамилия, город и адрес доставки - "
+"при оформлении заказа; а также даёт своё согласие на передачу своих "
+"персональных данных третьим лицам, в том числе  за границу, в любую третью "
+"страну, в соответствии с данной Политикой."
+msgstr ""
+"Используя онлайн-магазин whyskin.com.ua Пользователь предоставляет своё "
+"согласие на обработку своих личных данных, таких как: адрес электронной "
+"почты (email); контактный телефон; имя и фамилия, город и адрес доставки - "
+"при оформлении заказа; а также даёт своё согласие на передачу своих "
+"персональных данных третьим лицам, в том числе  за границу, в любую третью "
+"страну, в соответствии с данной Политикой."
+
+#: .\cosmetics\templates\others\privacy_policy.html:48
+msgid ""
+"При использовании онлайн-онлайн-магазина WhySkin, Вы, сообщив нам свои "
+"личные данные, признаете свое согласие на обработку своих персональных "
+"данных в соответствии с Политикой конфиденциальности. В случае несогласия с "
+"условиями Политики, Вы обязаны прекратить использовать данный сервис."
+msgstr ""
+"При использовании онлайн-онлайн-магазина WhySkin, Вы, сообщив нам свои "
+"личные данные, признаете свое согласие на обработку своих персональных "
+"данных в соответствии с Политикой конфиденциальности. В случае несогласия с "
+"условиями Политики, Вы обязаны прекратить использовать данный сервис."
+
+#: .\cosmetics\templates\others\privacy_policy.html:49
+msgid ""
+"Команда сайта не проверяет достоверность персональных данных, "
+"предоставляемых Пользователем, поэтому не имеет возможности оценивать его "
+"дееспособность. Однако мы исходим из того, что Пользователь действует "
+"добровольно, добросовестно, осмотрительно, предоставляет достоверные "
+"персональные данные и не нарушает права третьих лиц."
+msgstr ""
+"Команда сайта не проверяет достоверность персональных данных, "
+"предоставляемых Пользователем, поэтому не имеет возможности оценивать его "
+"дееспособность. Однако мы исходим из того, что Пользователь действует "
+"добровольно, добросовестно, осмотрительно, предоставляет достоверные "
+"персональные данные и не нарушает права третьих лиц."
+
+#: .\cosmetics\templates\others\privacy_policy.html:50
+msgid ""
+"Соглашаясь с условиями Политики, Вы подтверждаете, что в момент сбора "
+"персональных данных Вы уведомлены о лицах, которым передаются персональные "
+"данные, содержании и целях сбора персональных данных. Вы подтверждаете "
+"(гарантируете), что персональные данные, которые переданы нам на обработку, "
+"переданы с согласия владельцев персональных данных и в рамках "
+"Законодательства."
+msgstr ""
+"Соглашаясь с условиями Политики, Вы подтверждаете, что в момент сбора "
+"персональных данных Вы уведомлены о лицах, которым передаются персональные "
+"данные, содержании и целях сбора персональных данных. Вы подтверждаете "
+"(гарантируете), что персональные данные, которые переданы нам на обработку, "
+"переданы с согласия владельцев персональных данных и в рамках "
+"Законодательства."
+
+#: .\cosmetics\templates\others\privacy_policy.html:51
+msgid ""
+"Сервис WhySkin и его администрация освобождается от ответственности за "
+"последствия, наступившие в связи с обработкой ими персональных данных, в "
+"случае если они не несут ответственности за событие, повлекшее наступление "
+"таких последствий."
+msgstr ""
+"Сервис WhySkin и его администрация освобождается от ответственности за "
+"последствия, наступившие в связи с обработкой ими персональных данных, в "
+"случае если они не несут ответственности за событие, повлекшее наступление "
+"таких последствий."
+
+#: .\cosmetics\templates\others\privacy_policy.html:52
+msgid ""
+"Мы не стремимся целенаправленно собирать персональную информацию лиц моложе "
+"18 лет. Родителям и/или опекуна рекомендуется контролировать связанную с "
+"этим деятельность своих детей."
+msgstr ""
+"Мы не стремимся целенаправленно собирать персональную информацию лиц моложе "
+"18 лет. Родителям и/или опекуна рекомендуется контролировать связанную с "
+"этим деятельность своих детей."
+
+#: .\cosmetics\templates\others\privacy_policy.html:53
+msgid ""
+"Хотим предупредить, что ссылки, которые предоставляются сторонними лицами, "
+"могут быть небезопасны, и администрация сайта не сможет помочь Пользователю "
+"в случае утери данных и других непредвиденных обстоятельствах, потому что "
+"информация о Пользователях собирается вне прямого контроля онлайн-магазина "
+"WhySkin и его команды. Будьте осторожны! Если у Вас возникли какие-либо "
+"проблемы с этим, обратитесь в нашу службу поддержки, мы постараемся Вам "
+"помочь! :)"
+msgstr ""
+"Хотим предупредить, что ссылки, которые предоставляются сторонними лицами, "
+"могут быть небезопасны, и администрация сайта не сможет помочь Пользователю "
+"в случае утери данных и других непредвиденных обстоятельствах, потому что "
+"информация о Пользователях собирается вне прямого контроля онлайн-магазина "
+"WhySkin и его команды. Будьте осторожны! Если у Вас возникли какие-либо "
+"проблемы с этим, обратитесь в нашу службу поддержки, мы постараемся Вам "
+"помочь! :)"
+
+#: .\cosmetics\templates\others\privacy_policy.html:54
+msgid ""
+"Администрация сайта не может проверить на правдивость информацию, "
+"публикуемую другими Пользователями, поэтому не может нести ответственность "
+"за достоверность."
+msgstr ""
+"Администрация сайта не может проверить на правдивость информацию, "
+"публикуемую другими Пользователями, поэтому не может нести ответственность "
+"за достоверность."
+
+#: .\cosmetics\templates\others\privacy_policy.html:57
+msgid "Какие Ваши персональные данные мы собираем"
+msgstr "Какие Ваши персональные данные мы собираем"
+
+#: .\cosmetics\templates\others\privacy_policy.html:58
+msgid ""
+"Администрация, для осуществления своей деятельности и для выполнения своих "
+"обязательств, обрабатывает персональные данные Пользователя, предоставленные"
+" им при регистрации на сайте whyskin.com.ua и хранящиеся в личном кабинете. "
+"К персональным данным Пользователя относятся: адрес электронной почты "
+"(email); контактный телефон, имя, фамилия, отчество (при оформлении заказа);"
+" город и адрес доставки (при оформлении заказа). "
+msgstr ""
+"Администрация, для осуществления своей деятельности и для выполнения своих "
+"обязательств, обрабатывает персональные данные Пользователя, предоставленные"
+" им при регистрации на сайте whyskin.com.ua и хранящиеся в личном кабинете. "
+"К персональным данным Пользователя относятся: адрес электронной почты "
+"(email); контактный телефон, имя, фамилия, отчество (при оформлении заказа);"
+" город и адрес доставки (при оформлении заказа). "
+
+#: .\cosmetics\templates\others\privacy_policy.html:59
+msgid ""
+"Мы просим Вас сообщать только те персональные данные, которые необходимы для"
+" регистрации, ответа на Ваш запрос или замечание онлайн-магазину. В тоже "
+"время, если Вы решите сообщить нам дополнительные персональные данные, мы "
+"будем этому рады и обязуемся обработать их с необходимым уровнем защиты."
+msgstr ""
+"Мы просим Вас сообщать только те персональные данные, которые необходимы для"
+" регистрации, ответа на Ваш запрос или замечание онлайн-магазину. В тоже "
+"время, если Вы решите сообщить нам дополнительные персональные данные, мы "
+"будем этому рады и обязуемся обработать их с необходимым уровнем защиты."
+
+#: .\cosmetics\templates\others\privacy_policy.html:60
+msgid ""
+"Пользователи несут ответственность за всю информацию, которую они размещают "
+"в общедоступных записях. "
+msgstr ""
+"Пользователи несут ответственность за всю информацию, которую они размещают "
+"в общедоступных записях. "
+
+#: .\cosmetics\templates\others\privacy_policy.html:61
+msgid ""
+"При обслуживании посетителей сайта команда WhySkin вправе собирать личную "
+"информацию для выполнения запроса Пользователя и, в случае необходимости, "
+"обратного ответа."
+msgstr ""
+"При обслуживании посетителей сайта команда WhySkin вправе собирать личную "
+"информацию для выполнения запроса Пользователя и, в случае необходимости, "
+"обратного ответа."
+
+#: .\cosmetics\templates\others\privacy_policy.html:62
+msgid ""
+"Мы не собираем и, соответственно, не обрабатываем персональные данные о "
+"расовом или этническом происхождении, политических, мировоззренческих или "
+"религиозных убеждениях, членстве в политических партиях и проф. союзах, "
+"осуждения к уголовному наказанию, а также данных, касающихся здоровья, "
+"половой жизни, биометрических и генетических данных."
+msgstr ""
+"Мы не собираем и, соответственно, не обрабатываем персональные данные о "
+"расовом или этническом происхождении, политических, мировоззренческих или "
+"религиозных убеждениях, членстве в политических партиях и проф. союзах, "
+"осуждения к уголовному наказанию, а также данных, касающихся здоровья, "
+"половой жизни, биометрических и генетических данных."
+
+#: .\cosmetics\templates\others\privacy_policy.html:65
+msgid "Как и почему мы используем их"
+msgstr "Как и почему мы используем их"
+
+#: .\cosmetics\templates\others\privacy_policy.html:66
+msgid ""
+"Наш сервис использует Cookies (куки). Это небольшие по размеру файлы с "
+"данными, расположенные на устройстве Пользователя, которые не представляют "
+"угрозу и помогают запоминать Ваши предпочтения. Полный перечень Вы можете "
+"увидеть, перейдя в консоль разработчика -> Application -> Cookies -> дальше "
+"из выпавшего меню выбираете сервис WhySkin и просматриваете."
+msgstr ""
+"Наш сервис использует Cookies (куки). Это небольшие по размеру файлы с "
+"данными, расположенные на устройстве Пользователя, которые не представляют "
+"угрозу и помогают запоминать Ваши предпочтения. Полный перечень Вы можете "
+"увидеть, перейдя в консоль разработчика -> Application -> Cookies -> дальше "
+"из выпавшего меню выбираете сервис WhySkin и просматриваете."
+
+#: .\cosmetics\templates\others\privacy_policy.html:67
+msgid ""
+"Цели, для которых онлайн-сервис WhySkin собирает и обрабатывает данные:"
+msgstr ""
+"Цели, для которых онлайн-сервис WhySkin собирает и обрабатывает данные:"
+
+#: .\cosmetics\templates\others\privacy_policy.html:68
+msgid ""
+"Возможность посетителям пользоваться основным функционалом сайта (сбор на "
+"регистрации)."
+msgstr ""
+"Возможность посетителям пользоваться основным функционалом сайта (сбор на "
+"регистрации)."
+
+#: .\cosmetics\templates\others\privacy_policy.html:69
+msgid "Возможность оформления заказа и отправления Вам товара."
+msgstr "Возможность оформления заказа и отправления Вам товара."
+
+#: .\cosmetics\templates\others\privacy_policy.html:70
+msgid ""
+"Сроки обработки персональных данных определяются исходя из целей обработки, "
+"но не дольше чем это определено Законодательством. Мы также учитываем "
+"периоды, для которых нам, возможно, потребуется сохранить Ваши персональные "
+"данные для выполнения наших юридических обязательств перед Вами или "
+"контролирующими органами. "
+msgstr ""
+"Сроки обработки персональных данных определяются исходя из целей обработки, "
+"но не дольше чем это определено Законодательством. Мы также учитываем "
+"периоды, для которых нам, возможно, потребуется сохранить Ваши персональные "
+"данные для выполнения наших юридических обязательств перед Вами или "
+"контролирующими органами. "
+
+#: .\cosmetics\templates\others\privacy_policy.html:73
+msgid "Администрация – кому можно обрабатывать данные"
+msgstr "Администрация – кому можно обрабатывать данные"
+
+#: .\cosmetics\templates\others\privacy_policy.html:74
+msgid ""
+" К обработке персональных данных допущены только те сотрудники "
+"администрации, на которых возложена такая обязанность в соответствии с их "
+"служебными обязанностями. Доступ других сотрудников может быть предоставлен "
+"исключительно в предусмотренных Законом случаях. Команда WhySkin гарантирует"
+" от своих сотрудников соблюдения конфиденциальности и обеспечения "
+"безопасности персональных данных при их обработке."
+msgstr ""
+" К обработке персональных данных допущены только те сотрудники "
+"администрации, на которых возложена такая обязанность в соответствии с их "
+"служебными обязанностями. Доступ других сотрудников может быть предоставлен "
+"исключительно в предусмотренных Законом случаях. Команда WhySkin гарантирует"
+" от своих сотрудников соблюдения конфиденциальности и обеспечения "
+"безопасности персональных данных при их обработке."
+
+#: .\cosmetics\templates\others\privacy_policy.html:75
+msgid ""
+" Администрация имеет право передать персональные данные третьим лицам в "
+"следующих случаях:"
+msgstr ""
+" Администрация имеет право передать персональные данные третьим лицам в "
+"следующих случаях:"
+
+#: .\cosmetics\templates\others\privacy_policy.html:77
+msgid ""
+"субъект персональных данных письменно выразил свое согласие на данные "
+"действия. Передача происходит на основании заключенного с третьим лицом "
+"договора, условием которого является соблюдение конфиденциальности и "
+"неразглашении персональных данных;"
+msgstr ""
+"субъект персональных данных письменно выразил свое согласие на данные "
+"действия. Передача происходит на основании заключенного с третьим лицом "
+"договора, условием которого является соблюдение конфиденциальности и "
+"неразглашении персональных данных;"
+
+#: .\cosmetics\templates\others\privacy_policy.html:78
+msgid ""
+"передача предусмотрена украинским или другим соответствующим "
+"законодательством в рамках установленной законодательством процедуры. "
+msgstr ""
+"передача предусмотрена украинским или другим соответствующим "
+"законодательством в рамках установленной законодательством процедуры. "
+
+#: .\cosmetics\templates\others\privacy_policy.html:79
+msgid ""
+"по требованию представителей органов государственной власти, в том числе, "
+"контролирующих, надзорных, правоохранительных и других органов в объеме и "
+"порядке, определенном Законодательством (при наличии соответственного "
+"официального документа, гласящий о предоставлении данных)."
+msgstr ""
+"по требованию представителей органов государственной власти, в том числе, "
+"контролирующих, надзорных, правоохранительных и других органов в объеме и "
+"порядке, определенном Законодательством (при наличии соответственного "
+"официального документа, гласящий о предоставлении данных)."
+
+#: .\cosmetics\templates\others\privacy_policy.html:83
+msgid "Пользовательские права"
+msgstr "Пользовательские права"
+
+#: .\cosmetics\templates\others\privacy_policy.html:84
+msgid ""
+"Пользователи, которые зарегистрировались и/или разместили объявление(я) на "
+"сайте whyskin.com.ua, имеют непосредственный доступ к информации, а также "
+"возможность исправления и/или удаления, которую они предоставляют (не "
+"включая email). Незарегистрированные посетители имеют возможность только "
+"просматривать все публикации сайта. Пользователь несет ответственность за "
+"точность и достоверность предоставляемых данных на сервисе."
+msgstr ""
+"Пользователи, которые зарегистрировались и/или разместили объявление(я) на "
+"сайте whyskin.com.ua, имеют непосредственный доступ к информации, а также "
+"возможность исправления и/или удаления, которую они предоставляют (не "
+"включая email). Незарегистрированные посетители имеют возможность только "
+"просматривать все публикации сайта. Пользователь несет ответственность за "
+"точность и достоверность предоставляемых данных на сервисе."
+
+#: .\cosmetics\templates\others\privacy_policy.html:85
+msgid "Пользователь имеет право:"
+msgstr "Пользователь имеет право:"
+
+#: .\cosmetics\templates\others\privacy_policy.html:86
+msgid ""
+"знать об источниках сбора, местонахождения своих персональных данных, цели "
+"их обработки, местонахождение распорядителя персональных данных;"
+msgstr ""
+"знать об источниках сбора, местонахождения своих персональных данных, цели "
+"их обработки, местонахождение распорядителя персональных данных;"
+
+#: .\cosmetics\templates\others\privacy_policy.html:87
+msgid "на доступ к своим персональным данным;"
+msgstr "на доступ к своим персональным данным;"
+
+#: .\cosmetics\templates\others\privacy_policy.html:88
+msgid ""
+"получать не позднее, чем за тридцать календарных дней со дня поступления "
+"запроса, кроме случаев, предусмотренных Законом, ответ о том, обрабатываются"
+" ли его персональные данные, а также получать содержание таких персональных "
+"данных;"
+msgstr ""
+"получать не позднее, чем за тридцать календарных дней со дня поступления "
+"запроса, кроме случаев, предусмотренных Законом, ответ о том, обрабатываются"
+" ли его персональные данные, а также получать содержание таких персональных "
+"данных;"
+
+#: .\cosmetics\templates\others\privacy_policy.html:89
+msgid ""
+"предъявлять мотивированное требование с возражением против обработки своих "
+"персональных данных или об изменении, или уничтожение своих персональных "
+"данных, если данные обрабатываются незаконно или являются недостоверными;"
+msgstr ""
+"предъявлять мотивированное требование с возражением против обработки своих "
+"персональных данных или об изменении, или уничтожение своих персональных "
+"данных, если данные обрабатываются незаконно или являются недостоверными;"
+
+#: .\cosmetics\templates\others\privacy_policy.html:90
+msgid ""
+"обращаться с жалобами на обработку своих персональных данных к администрации"
+" к Уполномоченному Верховной Рады Украины по правам человека или в суд, а "
+"также применять средства правовой защиты в случае нарушения законодательства"
+" о защите персональных данных;"
+msgstr ""
+"обращаться с жалобами на обработку своих персональных данных к администрации"
+" к Уполномоченному Верховной Рады Украины по правам человека или в суд, а "
+"также применять средства правовой защиты в случае нарушения законодательства"
+" о защите персональных данных;"
+
+#: .\cosmetics\templates\others\privacy_policy.html:91
+msgid ""
+"вносить оговорки об ограничении права на обработку своих персональных данных"
+" при предоставлении согласия, а также отозвать согласие на обработку "
+"персональных данных;"
+msgstr ""
+"вносить оговорки об ограничении права на обработку своих персональных данных"
+" при предоставлении согласия, а также отозвать согласие на обработку "
+"персональных данных;"
+
+#: .\cosmetics\templates\others\privacy_policy.html:92
+msgid "на информацию;"
+msgstr "на информацию;"
+
+#: .\cosmetics\templates\others\privacy_policy.html:93
+msgid "знать механизм автоматической обработки персональных данных;"
+msgstr "знать механизм автоматической обработки персональных данных;"
+
+#: .\cosmetics\templates\others\privacy_policy.html:94
+msgid "на исправление личных данных."
+msgstr "на исправление личных данных."
+
+#: .\cosmetics\templates\others\privacy_policy.html:95
+msgid ""
+"Наша команда всегда рада и готова предоставлять Вам информацию о том, какие "
+"из Ваших личных данных мы обрабатываем. Для этого Вы можете сделать запрос "
+"на эту информацию в любое время, в том числе, путем обращения к "
+"администрации. При обращении Вы должны сообщить нам свои конкретные "
+"требования, чтобы мы могли на законных основаниях рассмотреть Ваш запрос и "
+"дать ответ."
+msgstr ""
+"Наша команда всегда рада и готова предоставлять Вам информацию о том, какие "
+"из Ваших личных данных мы обрабатываем. Для этого Вы можете сделать запрос "
+"на эту информацию в любое время, в том числе, путем обращения к "
+"администрации. При обращении Вы должны сообщить нам свои конкретные "
+"требования, чтобы мы могли на законных основаниях рассмотреть Ваш запрос и "
+"дать ответ."
+
+#: .\cosmetics\templates\others\privacy_policy.html:96
+msgid ""
+"Хотим обратить Ваше внимание, что в случае, если мы не сможем удостоверить "
+"Вашу личность путем обмена электронными сообщениями или во время Вашего "
+"обращения по телефону, или в случае обоснованных сомнений относительно Вашей"
+" личности, мы можем попросить Вас предоставить документ, удостоверяющий "
+"личность, в том числе путем личной явки по адресу места нахождения "
+"администрации. Только таким образом мы сможем избежать огласки Ваших "
+"персональных данных лицу, которое может выдавать себя за Вас."
+msgstr ""
+"Хотим обратить Ваше внимание, что в случае, если мы не сможем удостоверить "
+"Вашу личность путем обмена электронными сообщениями или во время Вашего "
+"обращения по телефону, или в случае обоснованных сомнений относительно Вашей"
+" личности, мы можем попросить Вас предоставить документ, удостоверяющий "
+"личность, в том числе путем личной явки по адресу места нахождения "
+"администрации. Только таким образом мы сможем избежать огласки Ваших "
+"персональных данных лицу, которое может выдавать себя за Вас."
+
+#: .\cosmetics\templates\others\privacy_policy.html:99
+msgid "Безопасность данных"
+msgstr "Безопасность данных"
+
+#: .\cosmetics\templates\others\privacy_policy.html:100
+msgid ""
+"Данные, которые мы собираем и обрабатываем, защищены техническими средствами"
+" и процедурами обеспечения безопасности в целях предотвращения "
+"несанкционированного доступа или их использования."
+msgstr ""
+"Данные, которые мы собираем и обрабатываем, защищены техническими средствами"
+" и процедурами обеспечения безопасности в целях предотвращения "
+"несанкционированного доступа или их использования."
+
+#: .\cosmetics\templates\others\privacy_policy.html:103
+msgid "Изменение Политики конфиденциальности"
+msgstr "Изменение Политики конфиденциальности"
+
+#: .\cosmetics\templates\others\privacy_policy.html:104
+msgid ""
+"Политика может быть изменена или прекращена администрацией в одностороннем "
+"порядке без предварительного уведомления Пользователей, в том числе, если "
+"этого требует законодательство. Новая редакция Политики вступает в силу с "
+"момента ее размещения в онлайн-сервисе, поэтому мы просим Вас посещать "
+"онлайн-сервис whyskin.com.ua, чтобы убедиться в том, что Вы обладаете "
+"актуальной информацией."
+msgstr ""
+"Политика может быть изменена или прекращена администрацией в одностороннем "
+"порядке без предварительного уведомления Пользователей, в том числе, если "
+"этого требует законодательство. Новая редакция Политики вступает в силу с "
+"момента ее размещения в онлайн-сервисе, поэтому мы просим Вас посещать "
+"онлайн-сервис whyskin.com.ua, чтобы убедиться в том, что Вы обладаете "
+"актуальной информацией."
+
+#: .\cosmetics\templates\others\privacy_policy.html:105
+msgid ""
+"В случае если были внесены изменения в Политику конфиденциальности, с "
+"которыми Пользователь не согласен, он обязан прекратить использование "
+"онлайн-магазина. Факт продолжения использования сайта является "
+"подтверждением согласия и принятия Пользователем соответствующей редакции "
+"Политики конфиденциальности."
+msgstr ""
+"В случае если были внесены изменения в Политику конфиденциальности, с "
+"которыми Пользователь не согласен, он обязан прекратить использование "
+"онлайн-магазина. Факт продолжения использования сайта является "
+"подтверждением согласия и принятия Пользователем соответствующей редакции "
+"Политики конфиденциальности."
+
+#: .\cosmetics\templates\others\privacy_policy.html:108
+msgid "К кому Вы можете обратиться для защиты Ваших персональных данных"
+msgstr "К кому Вы можете обратиться для защиты Ваших персональных данных"
+
+#: .\cosmetics\templates\others\privacy_policy.html:109
+msgid ""
+"Если у Вас возникнут вопросы, замечания, жалобы или пожелания в отношении "
+"защиты и обработки персональных данных, Вы можете обращаться к администрации"
+" онлайн-магазина WhySkin еmail: help@whyskin.com.ua. ответ будет отправлен в"
+" кратчайшие сроки."
+msgstr ""
+"Если у Вас возникнут вопросы, замечания, жалобы или пожелания в отношении "
+"защиты и обработки персональных данных, Вы можете обращаться к администрации"
+" онлайн-магазина WhySkin еmail: help@whyskin.com.ua. ответ будет отправлен в"
+" кратчайшие сроки."
+
+#: .\cosmetics\templates\others\privacy_policy.html:110
+msgid ""
+"Пожалуйста, указывайте свои имя, фамилию, адрес электронной почты, а также "
+"подробные вопросы, замечания, жалобы или требования."
+msgstr ""
+"Пожалуйста, указывайте свои имя, фамилию, адрес электронной почты, а также "
+"подробные вопросы, замечания, жалобы или требования."
+
+#: .\cosmetics\templates\others\privacy_policy.html:111
+msgid ""
+"Административный орган по защите персональных данных в Украине - Управление "
+"по вопросам защиты персональных данных Секретариата Уполномоченного "
+"Верховной Рады Украины по правам человека. Вы можете обращаться к нему с "
+"жалобами или предложениями, если считаете, что нарушены Ваши права в связи с"
+" обработкой персональных данных. "
+msgstr ""
+"Административный орган по защите персональных данных в Украине - Управление "
+"по вопросам защиты персональных данных Секретариата Уполномоченного "
+"Верховной Рады Украины по правам человека. Вы можете обращаться к нему с "
+"жалобами или предложениями, если считаете, что нарушены Ваши права в связи с"
+" обработкой персональных данных. "
+
+#: .\cosmetics\views.py:391
+msgid "Удалено с корзины"
+msgstr "Удалено с корзины"
+
+#: .\cosmetics\views.py:392 .\cosmetics\views.py:463
+msgid "и смотреть дальше"
+msgstr "и смотреть дальше"
+
+#: .\cosmetics\views.py:462
+msgid "Удалено с"
+msgstr "Удалено с"
+
+#: .\cosmetics\views.py:463
+msgid "Добавить в"
+msgstr "Добавить в"
+
+#: .\cosmetics\views.py:470 .\cosmetics\views.py:471 .\cosmetics\views.py:476
+#: .\cosmetics\views.py:477
+msgid "Добавлено в"
+msgstr "Добавлено в"
+
+#: .\cosmetics\views.py:532
+msgid "Стандартная упаковка"
+msgstr "Стандартная упаковка"
+
+#: .\cosmetics\views.py:535
+msgid "Пакет-банан"
+msgstr "Пакет-банан"
+
+#: .\cosmetics\views.py:542
+msgid "К сожалению, такого товара мы не нашли"
+msgstr "К сожалению, такого товара мы не нашли"
+
+#: .\cosmetics\views.py:729
+msgid "Отправлено!"
+msgstr "Отправлено!"
+
+#: .\store\settings.py:72
+msgid "Russian"
+msgstr "Russian"
+
+#: .\store\settings.py:73
+msgid "Ukrainian"
+msgstr "Ukrainian"

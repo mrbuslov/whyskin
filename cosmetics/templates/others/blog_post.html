@@ -1,0 +1,51 @@
+{% extends 'cosmetics/base.html' %} 
+{% load static %} 
+{% load i18n %} 
+
+
+{% block title %}{{blog_obj.title}} - WhySkin{% endblock %}
+{% block head %}
+    <meta name="description" content="{{blog_obj.content|truncatechars:150}}">   
+    <meta property="og:url" content="{{request.build_absolute_uri}}" />
+    <meta property="og:site_name" content="WhySkin"/>
+    <meta class="og_blog_image" property="og:image" content="https://whyskin.com.ua{% static 'img/logo.svg' %}"/>
+    <meta property="og:title" content="{{blog_obj.title|truncatechars:60}}" />
+    <meta property="og:description" content="{{blog_obj.content|truncatechars:150}}" />
+    <meta property="og:type" content="website" />
+{% endblock %}
+
+{% block styles %}
+    <link href="{% static 'css/blog.css' %}" type="text/css" rel="stylesheet">
+{% endblock %}
+
+{% block content %}  
+    <div class="blog">
+        <div class="blog_block">
+            <h1 class="blog_h1">{{blog_obj.title}}</h1>
+            <span class="blog_publ">
+                <span>{{blog_obj.published|date:"d E Y"}}</span>
+            </span>
+            <div class="blog_content">
+                {% autoescape off %}
+                    {{blog_obj.content|linebreaks}}
+                {% endautoescape %}
+            </div>
+        </div>
+    </div>
+    
+{% endblock %}
+
+{% block scripts %}  
+<script>
+    if($('.blog_content').find('img').length){
+        console.log('img')
+        if($('.blog_content').find('img').attr('src').indexOf("https://") >= 0){
+            $('.og_blog_image').attr('content', $('.blog_content').find('img').attr('src'))
+        }
+        else{
+            $('.og_blog_image').attr('content', 'https://whyskin.com.ua' + $('.blog_content').find('img').attr('src'))
+        }
+    }
+    console.log($('.og_blog_image').attr('content'))
+</script>
+{% endblock %}

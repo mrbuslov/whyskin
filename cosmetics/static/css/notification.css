@@ -1,0 +1,45 @@
+.notification{
+    position: fixed;
+    /* right: -500px; */
+    left: 100%;
+    top: 60px;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    max-width: 270px;
+    z-index: 100;
+    background: #698e6a;
+    color: #fff;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    align-items: center;
+    transition: left .6s cubic-bezier(0.25, 0.1, 0.16, 1.22);
+}
+.notif_text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.notif_main{
+    font-size: 13px;
+    display: block;
+    text-align: center;
+}
+.notif_goto_cart{
+    font-size: 15px;
+    border-bottom: 1px solid;
+    color: #fff;
+    margin-top: 5px;
+    transition: color .2s ease;
+    display: block;
+}
+.notif_goto_cart:hover{
+    color: #e1e1e1;
+}
+.notif_close{
+    margin: 0 10px 0 auto;
+    font-size: 30px;
+    transform: rotate(45deg);
+    cursor: pointer;
+}

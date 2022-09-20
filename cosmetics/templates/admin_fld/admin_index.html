@@ -1,0 +1,50 @@
+{% load static %}  
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Админ-панель</title>
+    
+    <link href="{% static 'css/style.css' %}" type="text/css" rel="stylesheet">
+    <style>
+        .admin_header{
+            display: flex;
+            flex-direction: row;
+            padding: 20px 10%;
+            justify-content: space-between;
+        }
+        .admin_header a{
+            color: initial;
+        }
+        .admin_header a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="admin_header">
+        <a href="{% url 'cosmetics:my_admin' %}">Все Заказы</a>
+        <a href="{% url 'cosmetics:all_products_admin' %}">Все Продукты</a>
+        <a href="{% url 'cosmetics:add_new_product' %}">Добавить Продукт</a>
+    </div>
+    <h1 style="text-align: center;">Все заказы</h1>
+    <table>
+        {% for order in orders %}
+            <tr style="margin-bottom: 10px;">
+            <td style="width: 20%; padding-bottom:15px;"><img src="https://whyskin.com.ua{{image.image.url}}" alt="Фото товару {{product.product.name}}" style="height: 140px; object-fit: cover; width: 100%;"></td>
+            <td style="width: 70%; vertical-align: baseline; padding-bottom:15px;">
+                <div style="margin: 0 10px; box-sizing: border-box; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; ">
+                <a href="https://whyskin.com.ua/{{product.product.slug}}/" style="font-size: 16px; text-decoration: none; color: #5d64ec;">{{product.product.name}}</a>
+                <span style="margin-top: 5px; display: block;">Кількість: {{product.quantity}}</span>
+                </div>
+            </td>
+            <td style="vertical-align: baseline; padding-bottom:15px;"><span style="font-size: 18px; white-space: nowrap; text-align: right; display: block; ">{{product.total_price}} ₴</span></td>
+            </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

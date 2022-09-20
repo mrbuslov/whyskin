@@ -1,0 +1,45 @@
+{% extends 'cosmetics/base.html' %}
+{% load static %} 
+{% load i18n %} 
+
+{% block title %}{% translate "Контакты" %} WhySkin{% endblock %}
+{% block head %}
+    <meta name="description" content="{% translate 'Контакты команды магазина WhySkin. Обращайтесь, всегда рады проконсультировать и помочь с выбором!)' %}">   
+    <meta property="og:url" content="{{request.build_absolute_uri}}" />
+    <meta property="og:site_name" content="WhySkin"/>
+    <meta property="og:image" content="https://whyskin.com.ua/{% static 'img/logo.jpg' %}"/>
+    <meta property="og:title" content="{% translate 'Контакты команды магазина WhySkin' %}" />
+    <meta property="og:description" content="Контакты команды магазина WhySkin. Обращайтесь, всегда рады проконсультировать и помочь с выбором!)" />
+    <meta property="og:type" content="website" />
+{% endblock %}
+{% block styles %}
+    <link href="{% static 'css/privacy.css' %}" type="text/css" rel="stylesheet">
+{% endblock %}
+
+{% block content %} 
+<div class="rules_field">
+    <div class="rules_block">
+        <p class="rules_title">{% translate "Контакты" %} </p>
+        <p style="text-align: center;">{% translate "Наши рабочие часы с" %} <strong>8:55</strong> до <strong>20:00</strong> - {% translate "обращайтесь к нам в это время, мы всегда рады проконсультировать Вас и помочь с выбором!" %}  </p>
+        <br>
+        <div class="rules_header">{% translate "Вы можете связаться к нами:" %} <span style="font-size: 13px;">{% translate "(перейдите по ссылке, чтобы начать чат или позвонить)" %}</span></div>
+        <p>{% translate "Телефон" %}: <a href="tel:0674216364">067 421 63 64</a></p>
+        <p>Telegram: <a href="https://t.me/whyskin" target="_blank">@whyskin</a></p>
+        <p>Viber: <a href="viber://chat?number=%2B380674216364">WhySkin</a></p>
+        <p>Instagram: <a href="https://www.instagram.com/why_skin/" target="_blank">why_skin</a></p>
+        <br>
+        <p class="rules_title">{% translate "Напишите нам" %}!</p>
+        <p style="text-align: center;">{% translate "В ближайшее время мы ответим Вам" %}❤️</p>
+        <form action="{% url 'cosmetics:contacts' %}" method="post" id="contactForm">
+            {% csrf_token %}
+            <div class="contact_us">
+                <input required type="text" class="contact_us_name" placeholder="{% translate 'Ваше Имя' %}">
+                <input required type="text" class="contact_us_email" placeholder="{% translate 'Email / Номер телефона' %}">
+                <textarea required class="contact_us_text" placeholder="{% translate 'Напишите, что Вам интересно узнать, или же с чем Вам нужна помощь от нас' %}"></textarea>
+                <span class="contact_us_submit"><input type="submit" class="contact_us_submit_input" value="Отправить"></span>
+            </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

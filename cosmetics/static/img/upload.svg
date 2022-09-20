@@ -1,0 +1,6 @@
+<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M15 56C12.2386 56 10 58.2386 10 61V81C10 83.7614 12.2386 86 15 86H85C87.7614 86 90 83.7614 90 81V61C90 58.2386 87.7614 56 85 56C82.7909 56 81 57.7909 81 60V74C81 76.7614 78.7614 79 76 79H23C20.2386 79 18 76.7614 18 74V59C18 57.3431 16.6569 56 15 56Z" fill="black"/>
+<rect x="46" y="10" width="8" height="53" rx="4" fill="black"/>
+<rect x="49.3494" y="9" width="8" height="34.252" rx="4" transform="rotate(44.8057 49.3494 9)" fill="black"/>
+<rect width="8" height="34.252" rx="4" transform="matrix(-0.7095 0.704705 0.704705 0.7095 50.676 9)" fill="black"/>
+</svg>

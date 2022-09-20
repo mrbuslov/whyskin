@@ -1,0 +1,134 @@
+.header_categories{
+    display: none;
+}
+
+.box{
+    width: 400px;
+    background: #fff;
+    padding: 40px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    margin: auto;
+}
+.input_textbox{
+    position: relative;
+}
+
+.input_textbox input{
+    width: 100%;
+    padding: 10px 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: 1px solid var(--green-color);
+    outline: none;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.input_textbox input:focus{
+    border: 1.3px solid var(--green-color);
+}
+#phone_number{
+    margin-bottom: 0;
+}
+#phone_error_text{
+    color: #f00;
+    font-size: 12px;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: 5px;
+}
+.login_header{
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+.button{
+    width: 100%;
+    padding: 13px 0;
+    border-radius: 10px;
+    border: 0;
+    color: #000;
+    box-sizing: border-box;
+    background: var(--background-color);
+    font-size: 17px;
+    cursor: pointer;
+    transition: background .3s ease;
+}
+.button:hover{
+    background: var(--background-color-hover);
+}
+.go_to_register, .forgot_password{
+    text-align: center;
+    font-size: 15px;
+}
+
+.agree_checkbox{
+    display: none;
+}
+.agree_over{
+	display: inline-block;
+	position: relative;
+	width: 20px;
+    height: 20px;
+	top: 3px;
+    border: 1px solid #4f4f4f;
+	box-sizing: border-box;
+	transition: 0.25s;
+	border-radius: 5px;
+	transition: .5s ease-out;
+  
+	background: linear-gradient(45deg, var(--background-color-hover) 50%, #fff 50%) right;
+	background-size: 300%;
+}
+.agree_checkbox:checked + .agree_over{
+	background-position: left;
+	border: 0;
+}
+.agree_checkbox:checked + .agree_over:before{
+	opacity: 1;
+	transform: rotate(0) translate(-7px, 0);
+}
+.agree_checkbox_label{
+    font-size: 12px;
+    text-align: center;
+    display:block;
+    margin-bottom: 15px;
+}
+/*------------------------------ Reset Email success -----------------------------------------------*/
+.registration_greeting{
+    text-align: center;
+}
+.registration_greeting_h2{
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.email_not_sent{
+    display: block;
+    text-align: center;
+    margin: 8px;
+    font-weight: normal;
+}
+.go_to_index{
+    display: block;
+    text-align: center;
+}
+/*------------------------------ Registration success -----------------------------------------------*/
+
+
+
+
+/*--------------------------------- Телефон ВЕРТИКАЛЬНО --------------------------------------*/
+@media (orientation:portrait) and (max-width:480px){
+    .box{
+        width: 100%;
+    }
+    .main{
+        min-height: 70vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .registration_greeting_h2, .registration_greeting{
+        padding: 0 20px;
+    }
+}

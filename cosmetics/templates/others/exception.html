@@ -1,0 +1,29 @@
+{% extends 'cosmetics/base.html' %} 
+{% load static %} 
+{% load i18n %} 
+
+{% block title %} WhySkin {% translate "ошибка" %}{% endblock %}
+{% block head %}
+    <meta name="description" content="{% translate 'Случилась непредвиденная ошибка, стоит попробовать ещё раз' %}">   
+    <meta property="og:url" content="{{request.build_absolute_uri}}" />
+    <meta property="og:site_name" content="WhySkin"/>
+    <meta property="og:image" content="https://whyskin.com.ua{% static 'img/search_empty.svg' %}"/>
+    <meta property="og:title" content="{% translate 'WhySkin Ошибка' %}" />
+    <meta property="og:description" content="{% translate 'Случилась непредвиденная ошибка, стоит попробовать ещё раз' %}" />
+    <meta property="og:type" content="website" />
+{% endblock %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'css/error_pages.css' %}">
+{% endblock %}
+
+
+{% block content %}  
+    <h1 class="h1_error">WhySkin {% translate "ошибка, попробуйте ещё раз" %}</h1>
+    <h3 class="h3_error">{% translate 'Мы уже получили эту ошибку, работаем над ней' %}</h3>
+    <span class="span_error"><a a href="#" onclick="history.back();">< {% translate "Вернуться назад" %}</a></span>
+
+    <div class="quote">
+        <div class="quote_text">{{quote}}</div>
+        <div class="quote_author">{{author}}</div>
+    </div>
+{% endblock %}

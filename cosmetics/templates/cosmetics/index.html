@@ -1,0 +1,108 @@
+{% extends 'cosmetics/base.html' %}
+{% load static %} 
+{% load i18n %} 
+
+
+{% block title %}{% translate 'WhySkin - корейская косметика для тебя❤️' %}{% endblock %}
+{% block head %}
+    <meta name="google-site-verification" content="pi6tfWOEkHBpwB5T84lW7sqTOWUj1iUU2In_FY4bFbg" />
+    <meta name="yandex-verification" content="92c6ba81bb633cfc" />
+    
+    <meta name="description" content="{% translate 'Магазин корейской косметики с индивидуальным подходом❤️Всегда свежие новинки для всех типов кожи!' %}">   
+    <meta property="og:url" content="{{request.build_absolute_uri}}" />
+    <meta property="og:site_name" content="WhySkin"/>
+    <meta property="og:image" content="https://whyskin.com.ua{% static 'img/logo.jpg' %}"/>
+    <meta property="og:title" content="{% translate 'WhySkin на одной волне с косметикой!' %}!" />
+    <meta property="og:description" content="{% translate 'Магазин корейской косметики с индивидуальным подходом❤️Всегда свежие новинки для всех типов кожи!' %}" />
+    <meta property="og:type" content="website" />
+    
+    
+{% endblock %}
+{% block styles %}
+    <link href="{% static 'css/cosmetics_list.css' %}" type="text/css" rel="stylesheet">
+{% endblock %}
+
+
+{% block index_offer_header %}
+    <div class="header_offer">
+    <a href="{% url 'cosmetics:contacts' %}">{% translate 'Напишите нам' %}</a> - {% translate 'мы поможем подобрать нужный уход для Вас и на подарок' %} ❤️
+    </div>
+{% endblock %}
+
+{% block content %}
+    <style>
+        .products_block_index{
+            width: 90%;
+        }
+        .product_item_index{
+            width: 20%;
+        }
+        /* скрываем остальные фото нашего лсайдера, потому что при плохом Интернете они отображаются при загрузке - так не должно быть */
+        .swiper-slide:not(:first-child){
+            display: none;
+        }
+    </style>
+    <div class="swiper mySwiper swiper-initialized swiper-horizontal mySwiperIndex">
+        <div class="swiper-button-prev swiper-button-prev-index"></div>
+        <div class="swiper-wrapper">
+            <a href="https://whyskin.com.ua/product/maska-z-ekstraktom-polunits-ta-molochnimi-protenami-apieu-milk-strawberry-milk-one-pack/" class="swiper-slide"><img src="{% static 'img/slider/slider-1.jpg' %}" style="height:100%"></a>
+            <a href="https://whyskin.com.ua/product/konditsoner-opolskuvach-dlya-volossya-na-osnov-malinovogo-otstu-esthetic-house-cp-1-raspberry-treatment-vinegar/" class="swiper-slide"><img src="{% static 'img/slider/slider-2.jpg' %}" style="height:100%"></a>
+            <a href="https://whyskin.com.ua/product/pnka-dlya-vmivannya-z-ekstraktom-zelenogo-chayu-farmstay-green-tea-seed-pure-cleansing-foam/" class="swiper-slide"><img src="{% static 'img/slider/slider-3.jpg' %}" style="height:100%"></a>
+        </div>
+        <div class="swiper-button-next swiper-button-next-index"></div>
+    </div>
+
+    <h1 class="index_h1">{% translate 'Интересные товары' %}:</h1>
+
+    <div class="products_block products_block_index">
+        <div class="products_filters"></div>
+        <div class="items">
+            {% for product, image, is_added_to_cart, is_added_to_liked in products %}
+                <div class="product_item product_item_index">
+                    <span class="item_add_to_liked">
+                        <span class="loading_when_clicked"></span>
+                        {% if is_added_to_liked %}
+                            <img src="{% static 'img/full_add_to_liked.svg' %}" alt="{% translate 'Удалить из понравившихся' %}" title="{% translate 'Удалить из понравившихся' %}">
+                        {% else %}
+                            <img src="{% static 'img/empty_add_to_liked.svg' %}" alt="{% translate 'Добавить в понравившиеся' %}" title="{% translate 'Добавить в понравившиеся' %}">
+                        {% endif %}
+                    </span>
+                    <a href="{% url 'cosmetics:product' product.slug %}" class="cover_image_span"><img src="{{image.image.url}}" alt="{% translate 'Фото продукта' %} {{product.name}}" class="item_img"></a>
+                    <a href="{% url 'cosmetics:product' product.slug %}" class="item_name">{{product.name}}</a> 
+                    <div class="item_brand">{{product.manufacturer}}</div>
+                    <div class="item_options">
+                        <div class="item_prices">
+                            {% if product.old_price %}
+                                <div class="item_old_price">
+                                    {{product.old_price|floatformat:"0" }} <span>₴</span>
+                                </div>
+                            {% endif %}
+                            <div class="item_price">
+                                {{product.price|floatformat:"0" }} <span>₴</span>
+                            </div>
+                        </div>
+                        <span class="item_add_to_cart">
+                            {% if is_added_to_cart %}
+                                <img src="{% static 'img/full_add_to_cart.svg' %}" alt="{% translate 'Удалить из корзинки' %}" title="{% translate 'Удалить из корзинки' %}" class="add_to_cart_img">
+                            {% else %}
+                                <img src="{% static 'img/empty_add_to_cart.svg' %}" alt="{% translate 'Добавить в корзинку' %}" title="{% translate 'Добавить в корзинку' %}" class="add_to_cart_img">
+                            {% endif %}
+                        </span>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock %}
+
+
+
+
+{% block scripts %}
+    <!-- Переместили свайпер наверх, потому что при первой загрузке стр по-каличному отображается (из-за того, что ещё не успел загрузиться) -->
+    <link rel="stylesheet" href="{% static 'css/swiper.min.css' %}">
+    <script src="{% static 'js/swiper.min.js' %}"></script>
+    <script src="{% static 'js/swiper_carousel.js' %}"></script>
+
+{% endblock %}

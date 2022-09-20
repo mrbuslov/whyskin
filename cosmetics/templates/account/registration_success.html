@@ -1,0 +1,26 @@
+{% extends 'cosmetics/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}{% translate "Вы с нами" %}!{% endblock %}
+{% block head %}
+    <meta name="description" content="{% translate 'Страница успешной регистрации' %}">   
+    <meta property="og:url" content="{{request.build_absolute_uri}}" />
+    <meta property="og:site_name" content="WhySkin"/>
+    <meta property="og:image" content="https://whyskin.com.ua{% static 'img/logo.jpg' %}"/>
+    <meta property="og:title" content="{% translate 'Регистрация успешна' %}!" />
+    <meta property="og:description" content="{% translate 'Страница успешной регистрации' %}" />
+    <meta property="og:type" content="website" />
+{% endblock %}
+{% block styles %}
+    <link href="{% static 'css/registration.css' %}" type="text/css" rel="stylesheet">
+{% endblock %}
+
+
+{% block content %}
+    <h1 class="registration_greeting">{% translate "Ура, теперь Вы с нами" %}!</h1>
+    <h2 class="registration_greeting_h2">{% translate "Вскоре отправимся на поиски новой косметики" %}!</h2>
+    <a href="{% url 'account:profile' %}" class="go_to_index">{% translate "Перейти в профиль" %}</a>
+    <br>
+    <a href="{% url 'cosmetics:index' %}" class="go_to_index">{% translate "Вернуться на главную" %}</a>
+{% endblock %}

@@ -1,0 +1,47 @@
+{% extends 'cosmetics/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}{% translate "Вход" %} на Whyskin{% endblock %}
+{% block head %}
+    <meta name="description" content="{% translate 'Войдите в свой аккаунт на WhySkin' %}">   
+    <meta property="og:url" content="{{request.build_absolute_uri}}" />
+    <meta property="og:site_name" content="WhySkin"/>
+    <meta property="og:image" content="https://whyskin.com.ua{% static 'img/logo.jpg' %}"/>
+    <meta property="og:title" content="{% translate 'Вход' %} на Whyskin" />
+    <meta property="og:description" content="{% translate 'Войдите в свой аккаунт на WhySkin' %}" />
+    <meta property="og:type" content="website" />
+{% endblock %}
+{% block styles %}
+    <link href="{% static 'css/registration.css' %}" type="text/css" rel="stylesheet">
+{% endblock %}
+
+
+{% block content %}
+    <div class="box"> 
+        <h1 class="login_header">{% translate "Вход" %}</h1>
+
+        <form method="post" action="{% url 'account:login' %}" id="loginForm"> 
+            {% csrf_token %}
+            <div class="input_textbox">
+                <input type="email" name="email" required="" autofocus id="email_login" placeholder="{% translate 'Email' %}"><br>
+                <span id="email_error_text"></span>
+            </div>
+            <div class="input_textbox">
+                <input type="password" id="password" name="password" required="" placeholder="Пароль"><br>
+            </div>		    
+
+            {% if request.GET.next %}
+                <input type="hidden" name="next" value="{{request.GET.next}}">
+            {% endif %}
+
+            <button type="submit" class="button">
+                <span class="button_text">{% translate "Войти" %}</span>
+            </button>
+
+            <p class="go_to_register">{% translate "Ещё нет аккаунта?" %} <a href="{% url 'account:registration' %}">{% translate "Создайте" %}</a></p>
+            <p class="forgot_password"><a href="{% url 'account:reset_email' %}">{% translate "Забыли пароль?" %}</a></p>
+
+        </form>
+    </div>
+{% endblock %}

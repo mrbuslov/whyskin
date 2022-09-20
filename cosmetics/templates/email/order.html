@@ -1,0 +1,80 @@
+{% autoescape off %}
+<div style="max-width: 650px; padding: 28px 24px 10px;  margin: 0 auto; font-family: sans-serif; font-size: 16px;">
+    <div style="margin-bottom: 35px;">
+      <a href="https://whyskin.com.ua/" style="text-decoration: none;font-size: 27px; color: initial; text-align: center;">
+        <span>WhySkin</span>     
+      </a>
+      <span style="float: right;">
+        <div>№ замовлення: <strong>{{order.order_num}}</strong></div>
+        <div style="color: #898989;">щодня з 8:55 до 20:00</div>
+      </span>
+    </div>
+
+    <div style="margin-bottom: 35px;">
+      <h1 style="font-size: 25px; text-align:center;font-weight:100; margin: 0; margin-top: 15px;">Вітаємо, {{order.author_name}}!</h1>
+      <div style="color: #898989; font-size: 15px; text-align: center;margin-bottom: 10px;">Ми дуже цінуємо ❤️ Вас за те, що обрали нас!</div>
+      <div style="text-align: center;">Найближчим часом ми зв'яжемося з Вами через дзвінок або месенджер</div>
+    </div>
+    
+    <div style="border: 2px solid #DED293; border-radius: 10px; padding: 15px; box-sizing: border-box; margin-top: 20px;">
+      <div style="font-size: 18px; margin-bottom: 10px; padding-bottom: 10px; border-bottom: 1px solid #DED293;">
+        <span style="width: 50%;">Замовлення № <strong>{{order.order_num}}</strong></span>
+        <span style="width: 48%; text-align: right;">{{order.published|date:"d.m.Y"}}</span>
+      </div>
+      <table style="table-layout:fixed;width:100%;">
+        {% for product, image in ordered_products %}
+          <tr style="margin-bottom: 10px;">
+            <td style="width: 20%; padding-bottom:15px; text-align: center;"><img src="https://whyskin.com.ua{{image.image.url}}" alt="Фото товару {{product.product.name}}" style="height: 140px; object-fit: cover;"></td>
+            <td style="width: 70%; vertical-align: baseline; padding-bottom:15px;">
+              <div style="margin: 0 10px; box-sizing: border-box; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; ">
+                <a href="https://whyskin.com.ua/{{product.product.slug}}/" style="font-size: 16px; text-decoration: none; color: #5d64ec;">{{product.product.name}}</a>
+                <span style="margin-top: 5px; display: block;">Кількість: {{product.quantity}}</span>
+              </div>
+            </td>
+            <td style="vertical-align: baseline; padding-bottom:15px;"><span style="font-size: 18px; white-space: nowrap; text-align: right; display: block; ">{{product.total_price}} ₴</span></td>
+          </tr>
+        {% endfor %}
+        {% if order.delivery_company == 'np' %}
+          <tr>
+            <td style="text-align: center;vertical-align: baseline; padding-bottom:15px;">(додатково)</td>
+            <td style="width: 70%; vertical-align: baseline; padding-bottom:15px;">
+              <div style="margin: 0 10px; box-sizing: border-box; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; ">
+                <span style="font-size: 16px; text-decoration: none;">Стандартне пакування</span>
+                <span style="margin-top: 5px; display: block;">Кількість: 1</span>
+              </div>
+            </td>
+            <td style="vertical-align: baseline; padding-bottom:15px;"><span style="font-size: 18px; white-space: nowrap; text-align: right; display: block;">7 ₴</span></td>
+          </tr>
+        {% elif order.delivery_company == 'pickup' %}
+        <tr>
+          <td style="text-align: center;vertical-align: baseline; padding-bottom:15px;">(додатково)</td>
+          <td style="width: 70%; vertical-align: baseline; padding-bottom:15px;">
+            <div style="margin: 0 10px; box-sizing: border-box; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; ">
+              <span style="font-size: 16px; text-decoration: none;">Пакет-банан</span>
+              <span style="margin-top: 5px; display: block;">Кількість: 1</span>
+            </div>
+          </td>
+          <td style="vertical-align: baseline; padding-bottom:15px;"><span style="font-size: 18px; white-space: nowrap; text-align: right; display: block;">0 ₴</span></td>
+        </tr>
+      {% endif %}
+    </table>
+
+      <div style="margin-top: 10px; padding-top: 10px;border-top: 1px solid #DED293; font-size: 25px;text-align: end;">{{order.total_price|floatformat:"0"}} ₴</div>
+    </div>
+
+    <div style="margin-top: 20px; font-size: 15px;">
+      <div style="font-size: 16px;">Виникли додаткові запитання?</div>
+      <div>
+        <div style="margin-top: 7px;"><strong>Наші контакти:</strong></div>
+        <div style="margin-top: 5px; color: #898989;">Номер телефону: <a href="tel:+380986225033" style="text-decoration: underline; color: #898989;">+380(98) 622-50-33</a></div>
+        <div style="margin-top: 5px; color: #898989;">Телеграм: <a href="https://t.me/whyskin" style="text-decoration: underline; color: #898989;">@whyskin</a></div>
+      </div>
+    </div>
+
+    <div style="max-width: 540px; margin: 30px auto; border-top: 1px solid #dedede; color: #a5a5a5;
+    font-size: 14px; line-height: 18px; text-align: center; padding: 30px 24px 32px;">
+      WhySkin - магазин корейської косметики з індивідуальним підходом❤️ <br>
+      Завжди свіжі новинки для всіх типів шкіри!
+    </div>
+</div>
+{% endautoescape %}

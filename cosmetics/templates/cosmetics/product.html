@@ -1,0 +1,197 @@
+{% extends 'cosmetics/base.html' %}
+{% load static %} 
+{% load i18n %} 
+
+
+{% block title %}{{product.name}} - {% translate 'купить на WhySkin' %}{% endblock %}
+{% block head %}
+    <meta name="description" content="{{product.name}} - {% translate 'прямо из Кореи в Ваши руки – оригинальный продукт по низкой цене! Заказывайте, будете довольны' %}!">   
+    <meta property="og:url" content="{{request.build_absolute_uri}}" />
+    <meta property="og:site_name" content="WhySkin" />
+    <meta property="og:image" content="https://whyskin.com.ua{{images.0.image.url}}"/>
+    <!-- {% translate 'купить по самой низкой и приятной цене в Украине на WhySkin.com.ua' %} -->
+    <meta property="og:title" content="{{product.name|truncatechars:40}} - {% translate 'купить на WhySkin' %}!" /> 
+    <meta property="og:description" content="{{product.description|striptags|safe|truncatechars:150}}" />
+    <meta property="og:type" content="website" />
+{% endblock %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'css/swiper.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/product.css' %}">
+{% endblock %}
+
+
+{% block content %}
+<div class="container">
+    <div class="main_product_info_block">
+        <div class="product_slider">
+            <div class="images_slider">
+                {% for img_obj in images %}
+                    <div class="images_slider_item" tabindex="0"><img src="{{img_obj.image.url}}" title="Фото {{forloop.counter}} - {{product.name}}" alt="Фото {{forloop.counter}} - {{product.name}}"></div>
+                {% endfor %}
+            </div>
+            <div class="main_image_block">
+                <img src="{{images.0.image.url}}" id="main_image" title="Фото 1 - {{product.name}}" alt="Фото 1 - {{product.name}}">
+            </div>
+        </div>
+        <div class="product_info">
+            <div class="prod_title">
+                <h1>{{product.name}}</h1>
+                <div class="prod_title_other">
+                    <span class="comments">
+                        <span>
+                            <img src="{% static 'img/empty_star.svg' %}" class="star">
+                            <img src="{% static 'img/empty_star.svg' %}" class="star">
+                            <img src="{% static 'img/empty_star.svg' %}" class="star">
+                            <img src="{% static 'img/empty_star.svg' %}" class="star">
+                            <img src="{% static 'img/empty_star.svg' %}" class="star">
+                        </span>
+                        <a href="#" class="leave_comment_a">{% translate 'Оставить отзыв' %}</a>
+                    </span>
+                    <span class="vendor_code">{% translate 'Артикул (код товара)' %}': <strong style="color: initial;">{{product.vendor_code}}</strong></span>
+                </div>
+            </div>
+            <div class="prod_action">
+                <span class="prod_price">
+                    <div class="new_price">
+                        {{product.price|floatformat:"0" }} <span>₴</span>
+                    </div>
+                    {% if product.old_price %}
+                    <div class="old_price">
+                        {{product.old_price|floatformat:"0" }} <span>₴</span>
+                    </div>
+                    {% endif %}
+                </span>
+                {% if product_in_liked %}
+                    <span class="prod_add_to_liked prod_adaptive_liked"><img src="{% static 'img/full_add_to_liked.svg' %}" alt="{% translate 'Убрать из избранных' %}"></span>
+                {% else %}
+                    <span class="prod_add_to_liked prod_adaptive_liked"><img src="{% static 'img/empty_add_to_liked.svg' %}" alt="{% translate 'Добавить в избранное' %}"></span>
+                {% endif %}
+                <div class="prod_options">
+                    <a href="{% url 'cosmetics:order' %}?vendor_code={{product.vendor_code}}" class="prod_buy">{% translate 'Купить' %}</a>
+                    <span class="prod_add_to_cart">
+                        {% if product_in_cart %}
+                            {% translate 'Добавлено в корзину' %}!✅
+                        {% else %}
+                            <div>{% translate 'Добавить в корзину' %}</div> <span>{% translate '(и смотреть дальше)' %}</span>
+                        {% endif %}
+                    </span>
+                    {% if product_in_liked %}
+                        <span class="prod_add_to_liked"><img src="{% static 'img/full_add_to_liked.svg' %}" alt="{% translate 'Убрать из избранных' %}"></span>
+                    {% else %}
+                        <span class="prod_add_to_liked"><img src="{% static 'img/empty_add_to_liked.svg' %}" alt="{% translate 'Добавить в избранное' %}"></span>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="prod_short_desc">
+                <h2 class="prod_short_desc_h2">{% translate 'Короткое описание' %}:</h2>
+                <span><strong>{% translate 'Объём' %}:</strong> {{product.volume}} {{product.measure}}</span>
+                <span><strong>{% translate 'Страна' %}:</strong> {{product.country}}</span>
+                <span><strong>{% translate 'Производитель' %}:</strong> {{product.manufacturer}}</span>
+                {% if product.purpose %}
+                <span><strong>{% translate 'Назначение' %}:</strong> {{product.purpose}}</span>
+                {% endif %}
+                {% if product.skin_type %}
+                <span><strong>{% translate 'Тип кожи' %}:</strong> {{product.skin_type}}</span>
+                {% endif %}
+                <span><strong>{% translate 'Категория' %}:</strong> {{product.category}}</span>
+
+                {% if product.active_components %}
+                <span>
+                    <strong>{% translate 'Активные компоненты' %}:</strong> 
+                    <ul class="act_comp_list">
+                        {% for component in product.split_active_components %}
+                            <li>{{component}}</li>
+                        {% endfor %}
+                    </ul>
+                </span>
+                {% endif %}
+                
+                <span class="go_to_desc">{% translate 'Перейти к полному описанию' %}</span>
+            </div>
+        </div>
+    </div>
+
+    {% if related_products|length >= 4 %}
+        <div class="products_you_may_like">
+            <h2>{% translate 'Что Вам может понравиться' %}:</h2>
+        
+            <div class="related_carousel">
+                <div class="swiper-button-prev"></div>
+
+                <div class="swiper mySwiper swiper-initialized swiper-horizontal swiper-pointer-events">
+                    <div class="swiper-wrapper">
+                    {% for related_product in related_products %}
+                        <a href="{% url 'cosmetics:product' related_product.slug %}" class="swiper-slide">
+                            <span class="rel_image_span">
+                                <img class="rel_image" src="{{related_product.get_prod_img_url}}" title="{{related_product.name}} - фото" alt="{{related_product.name}} - фото">
+                            </span>
+                            <span class="rel_name">{{related_product.name}}</span>
+                            <span class="rel_action">
+                                <span class="rel_price">
+                                    {% if related_product.old_price %}
+                                    <span class="rel_old_price">{{related_product.old_price|floatformat:"0" }} <span>₴</span></span>
+                                    {% endif %}
+                                    <span class="rel_new_price">{{related_product.price|floatformat:"0" }} <span>₴</span></span>
+                                </span>
+                                <img class="rel_add_to_cart" src="{% static 'img/empty_add_to_cart.svg' %}" title="{% translate 'Добавить в корзину' %}" alt="{% translate 'Добавить в корзину' %}">
+                            </span>
+                        </a>
+                    {% endfor %}
+                    </div>
+                </div>
+
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    {% elif related_products|length == 0 %}
+    {% elif related_products|length <= 4 %}
+        <style>
+            .swiper-wrapper{justify-content:center;}
+            .swiper-slide-duplicate{display:none;}
+        </style>
+        <div class="products_you_may_like">
+            <h2>Что Вам может понравиться:</h2>
+
+            <div class="related_carousel">
+                <div class="swiper mySwiper swiper-initialized swiper-horizontal">
+                    <div class="swiper-wrapper">
+                {% for related_product in related_products %}
+                    <a href="{% url 'cosmetics:product' related_product.slug %}" class="swiper-slide">
+                        <span class="rel_image_span">
+                            <img class="rel_image" src="{{related_product.get_prod_img_url}}" title="{{related_product.name}} - фото" alt="{{related_product.name}} - фото">
+                        </span>
+                        <span class="rel_name">{{related_product.name}}</span>
+                        <span class="rel_action">
+                            <span class="rel_price">
+                                {% if related_product.old_price %}
+                                <span class="rel_old_price">{{related_product.old_price|floatformat:"0" }} <span>₴</span></span>
+                                {% endif %}
+                                <span class="rel_new_price">{{related_product.price|floatformat:"0" }} <span>₴</span></span>
+                            </span>
+                            <img class="rel_add_to_cart" src="{% static 'img/empty_add_to_cart.svg' %}" title="{% translate 'Добавить в корзину' %}" alt="{% translate 'Добавить в корзину' %}">
+                        </span>
+                    </a>
+                {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+
+    <div class="description_block">
+        <h2>{% translate 'Описание' %}</h2>
+        <!-- {{product.description|linebreaks}} -->
+        {{product.description|safe}}
+
+        <h2>{% translate 'Способ применения' %}</h2>
+        {% if product.how_to_use %}
+            {{product.how_to_use|linebreaks}}
+        {% endif %}
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{% static 'js/swiper.min.js' %}" defer></script>
+<script src="{% static 'js/swiper_carousel.js' %}" defer></script>
+{% endblock %}

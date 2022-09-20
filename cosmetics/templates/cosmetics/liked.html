@@ -1,0 +1,71 @@
+{% extends 'cosmetics/base.html' %}
+{% load static %} 
+{% load i18n %} 
+
+{% block title %}{% translate 'Приглянувшиеся товары' %}{% endblock %}
+{% block head %}
+    <meta name="description" content="{% translate 'Приглянувшиеся товары' %}">   
+    <meta property="og:url" content="{{request.build_absolute_uri}}" />
+    <meta property="og:site_name" content="WhySkin"/>
+    <meta property="og:image" content="https://whyskin.com.ua{% static 'img/icon-cosm-cart.jpg' %}"/>
+    <meta property="og:title" content="{% translate 'Приглянувшиеся товары' %}!" />
+    <meta property="og:description" content="Подберите интересные товары, а затем добавьте их в корзину" />
+    <meta property="og:type" content="website" />
+{% endblock %}
+{% block styles %}
+    <link href="{% static 'css/cosmetics_list.css' %}" type="text/css" rel="stylesheet">
+    <style>
+        .items{
+            justify-content: center;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+    <h1 class="liked_h1">{% translate 'Приглянувшиеся товары' %}</h1>
+    
+    {% if all_products %}
+    <div class="products_block products_block_liked">
+        <div class="items">
+            {% for product, image, is_added_to_cart, is_added_to_liked in all_products %}
+                <div class="product_item product_item_liked">
+                    <span class="item_add_to_liked">
+                        <span class="loading_when_clicked"></span>
+                        {% if is_added_to_liked %}
+                            <img src="{% static 'img/full_add_to_liked.svg' %}" alt="{% translate 'Удалить из понравившихся' %}" title="{% translate 'Удалить из понравившихся' %}">
+                        {% else %}
+                            <img src="{% static 'img/empty_add_to_liked.svg' %}" alt="{% translate 'Добавить в понравившиеся' %}" title="{% translate 'Добавить в понравившиеся' %}">
+                        {% endif %}
+                    </span>
+                    <a href="{% url 'cosmetics:product' product.slug %}"><img src="{{image.image.url}}" alt="{% translate 'Фото продукта' %} {{product.name}}" class="item_img"></a>
+                    <a href="{% url 'cosmetics:product' product.slug %}" class="item_name">{{product.name}}</a> 
+                    <div class="item_brand">{{product.manufacturer}}</div>
+                    <div class="item_options">
+                        <div class="item_prices">
+                            {% if product.old_price %}
+                                <div class="item_old_price">
+                                    {{product.old_price|floatformat:"0" }} <span>₴</span>
+                                </div>
+                            {% endif %}
+                            <div class="item_price">
+                                {{product.price|floatformat:"0" }} <span>₴</span>
+                            </div>
+                        </div>
+                        <span class="item_add_to_cart">
+                            {% if is_added_to_cart %}
+                                <img src="{% static 'img/full_add_to_cart.svg' %}" alt="{% translate 'Удалить из корзинки' %}" title="{% translate 'Удалить из корзинки' %}" class="add_to_cart_img">
+                            {% else %}
+                                <img src="{% static 'img/empty_add_to_cart.svg' %}" alt="{% translate 'Добавить в корзинку' %}" title="{% translate 'Добавить в корзинку' %}" class="add_to_cart_img">
+                            {% endif %}
+                        </span>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% else %}
+    <h2 style="text-align: center;">{% translate 'Понравившихся товаров пока нет. Давайте' %} <a href="{% url 'cosmetics:index' %}">{% translate 'поищем' %}</a>!</h2>
+    <img src="{% static 'img/icon-cosm-cart.svg' %}" alt="{% translate 'Фото корзинки' %}" class="empty_liked_carted_img">
+    {% endif %}
+
+{% endblock %}

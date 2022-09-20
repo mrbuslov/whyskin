@@ -1,0 +1,70 @@
+{% extends 'cosmetics/base.html' %} 
+{% load static %} 
+{% load i18n %} 
+
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    {{form.media}}
+{% endblock %}
+
+{% block title %}Pidvezu Блог{% endblock %}
+
+{% block content %}  
+
+
+    <style>
+        #id_title{
+            padding: 5px;
+            font-size: 16px;
+            border: none;
+            border-bottom: 0.3px solid #898989;
+            outline: none;
+            min-width: 300px;
+            text-align: center;
+        }
+        #cke_id_post_content, .django-ckeditor-widget, #cke_id_post_content{
+            width: 100% !important;
+        }
+        .button_upload_uk, .blog_add_btn{
+            padding: 15px;
+            border-radius: 7px;
+            border: none;
+            margin-top: 15px;
+            display: block;
+            margin: auto;
+            margin-top: 15px;
+            color: #fff;
+            background: #247dc9;
+            cursor: pointer;
+        }
+        .button_upload:hover, .blog_add_btn:hover{
+            background: #4698d0;
+        }
+        .blog_add_btn{
+            padding: 20px;
+            font-size: 16px;
+            margin: 20px auto;
+        }
+        .blog_h3{
+            text-align: center;
+            font-weight: normal;
+            font-size: 20px;
+            font-size: 18px;
+        }
+    </style>
+    <form action="{% url 'cosmetics:add_blog_post' %}" method="post">
+        {% csrf_token %}
+        <div class="blog">
+            <div class="blog_block">
+                <h3 class="blog_h3">{% translate "Добавить пост" %}</h3>
+                <h1 class="blog_h1">{{form.title}}</h1>
+                {{form.content}}
+
+            </div>
+
+            <input type="submit" class="blog_add_btn" value="{% translate 'Добавить публикацию' %}">
+        </div>
+    </form>
+
+{% endblock %}
+

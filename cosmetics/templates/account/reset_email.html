@@ -1,0 +1,32 @@
+{% extends 'cosmetics/base.html' %}
+{% load static %}
+{% load i18n %}
+
+{% block title %}{% translate 'Сброс пароля' %}{% endblock %}
+{% block head %}
+    <meta name="description" content="{% translate 'Страница сброса пароля' %}">   
+    <meta property="og:url" content="{{request.build_absolute_uri}}" />
+    <meta property="og:site_name" content="WhySkin"/>
+    <meta property="og:image" content="https://whyskin.com.ua{% static 'img/logo.jpg' %}"/>
+    <meta property="og:title" content="{% translate 'Сброс пароля' %}" />
+    <meta property="og:description" content="{% translate 'Страница сброса пароля' %}" />
+    <meta property="og:type" content="website" />
+{% endblock %}
+{% block styles %}
+    <link href="{% static 'css/registration.css' %}" type="text/css" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+    <div class="box"> 
+        <h1 class="login_header">{% translate "Введите Ваш email для сброса пароля" %}</h1>
+        <form method="POST" action="{% url 'account:reset_email' %}">
+        {% csrf_token %}
+            <div class="input_textbox">
+                <input type="email" name="email" required placeholder="Email" id="email"><br>
+            </div>	
+            <button type="submit" class="button login">
+                <span class="button_text">{% translate "Отправить" %}</span>
+            </button>
+        </form>
+    </div>
+{% endblock %}

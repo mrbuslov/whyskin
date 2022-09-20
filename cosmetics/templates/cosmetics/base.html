@@ -1,0 +1,290 @@
+{% load static %}  
+{% load i18n %} 
+{% load remove_lang_code_from_url %}
+
+<!DOCTYPE html>
+<html lang="{{request.LANGUAGE_CODE}}">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index,follow,noodp"><!-- Все поисковые системы -->
+  <meta name="googlebot" content="index,follow"><!-- Указание отдельно для Google -->
+  
+  <!-- {{request.build_absolute_uri}} -->
+  <link rel="alternate" href="https://whyskin.com.ua{{request.path|remove_lang_code_from_url}}" hreflang="uk-UA">
+  <link rel="alternate" href="https://whyskin.com.ua/ru{{request.path|remove_lang_code_from_url}}" hreflang="ru-UA">
+  <link rel="canonical" href="https://whyskin.com.ua{{request.path}}">
+  <meta http-equiv="Content-Language" content="{{request.LANGUAGE_CODE}}">
+  
+  <title>{% block title %}{% endblock %}</title>  
+
+  {% block head %}{% endblock %}
+
+  <link rel="shortcut icon" href="{% static 'img/icon.ico' %}" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/icon-32.ico' %}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/icon-16.ico' %}">
+  <link rel="mask-icon" href="{% static 'img/icon.ico' %}" color="#DED293">
+
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="msapplication-starturl" content="/">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <link rel="preload" href="{% static 'others/comfortaa.ttf' %}" as="font" type="font/woff" crossorigin="anonymous">
+  
+  <link href="{% static 'css/style.css' %}" type="text/css" rel="stylesheet">
+  <link href="{% static 'css/notification.css' %}" type="text/css" rel="stylesheet">
+  {% block styles %}{% endblock %}
+  <link rel="stylesheet" media="(max-width: 1367px)" href="{% static 'css/style_adaptive.css' %}">
+</head>
+<body>
+  {% block index_offer_header %}{% endblock %}
+  <div class="header">
+    <div class="header_main">
+      <div class="header_info">
+        <div class="header_contacts">
+          <span>Тел: <a href="tel:0674216364">067 421 63 64</a></span>
+          <span>Телеграм: <a href="https://t.me/whyskin">@whyskin</a></span>
+        </div>
+        <div class="header_schedule">
+          {% translate 'Ежедневно с' %} 8:55 до 20:00
+        </div>
+        
+        <!-- <div class="other_info">
+          <span>Самовывоз: ТЦ Лето, г. Днепр</span>
+        </div> -->
+      </div>
+      <div class="header_logo"><a href="{% url 'cosmetics:index' %}" style="color: initial;">WhySkin</a></div>
+      <div class="header_user_action">
+        <div class="header_user">
+          <a href="{% url 'cosmetics:cart' %}"><img src="{% static 'img/header_cart.svg' %}" alt="{% translate 'Посмотреть корзину' %}"></a>
+          <a href="{% url 'cosmetics:liked' %}"><img src="{% static 'img/header_liked.svg' %}" alt="{% translate 'Понравившиеся товары' %}"></a>
+          <a href="{% url 'account:profile' %}"><img src="{% static 'img/header_user.svg' %}" alt="{% translate 'Войти или зарегистрироваться' %}"></a>
+          {% if request.user.is_staff %}
+            <a href="{% url 'cosmetics:add_new_product' %}"><img src="{% static 'img/add_product.svg' %}" alt="{% translate 'Добавить продукт' %}"></a>
+          {% endif %}
+        </div>
+        <form method="get" id="searchForm" action="{% url 'cosmetics:search' %}">
+          <div class="header_search">
+            <input type="text" placeholder="{% translate 'Найти товар' %}..." name="search_product" value="{{search_product}}">
+            <input type="submit" value="ok" id="search_submit_button" style="display: none;">
+            <label for="search_submit_button" style="display: flex;">
+              <img src="{% static 'img/header_search.svg' %}" alt="{% translate 'Поиск' %}" title="{% translate 'Поиск' %}" class="search_submit_magnifier" />
+            </label>
+          </div>
+        </form>
+      </div>
+    </div>  
+    <div class="header_categories">
+      <ul class="header_categories_list">
+        {% for category, subcategory_list in base_categories.items %}
+          <li class="header_category"><a href="{% url 'cosmetics:category' category.slug %}" class="header_category_main_a">{{category}}</a>
+            <ul class="header_subcategories_block">
+              {% for subcategory in subcategory_list %}
+              <li class="header_subcategory"><a href="{% url 'cosmetics:category' subcategory.slug %}">{{subcategory}}</a></li>
+              {% endfor %}
+            </ul>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  
+  
+
+  <div class="adaptive_header">
+    <img src="{% static 'img/adaptive/hamburger.svg' %}" alt="{% translate 'Открыть меню' %}" class="adaptive_header_img adaptive_header_hamb" >
+    <a href="{% url 'cosmetics:index' %}"><span class="adaptive_logo">WhySkin</span></a>
+    <div class="adaptive_header_other">
+      <img class="adaptive_header_img search_nav" src="{% static 'img/adaptive/search.svg' %}" alt="{% translate 'Поиск' %}">
+      <a href="{% url 'cosmetics:liked' %}"><img class="adaptive_header_img" src="{% static 'img/adaptive/liked.svg' %}" alt="{% translate 'Понравившиеся товары' %}"></a>
+      <a href="{% url 'cosmetics:cart' %}"><img class="adaptive_header_img" src="{% static 'img/adaptive/cart.svg' %}" alt="{% translate 'Посмотреть корзину' %}"></a>
+      {% if request.user.is_staff %}
+        <a href="{% url 'cosmetics:add_new_product' %}"><img class="adaptive_header_img" src="{% static 'img/adaptive/plus.svg' %}" alt="{% translate 'Добавить продукт' %}"></a>
+      {% endif %}
+    </div>
+  </div>
+
+  <form method="get" id="adaptiveSearchForm" action="{% url 'cosmetics:search' %}">
+    <div class="adaptive_header_search_cover">
+      <div class="adaptive_header_search">
+        <input type="text" placeholder="{% translate 'Найти товар' %}..." name="search_product" value="{{search_product}}">
+        <input type="submit" value="ok" id="adaptive_search_submit_button" style="display: none;">
+        <label for="adaptive_search_submit_button">
+          <img src="{% static 'img/header_search.svg' %}" alt="{% translate 'Поиск' %}" title="{% translate 'Поиск' %}" class="search_submit_magnifier" />
+        </label>
+      </div>
+    </div>
+  </form>
+  <div class="main_dark_search"></div>
+  
+
+
+  <nav class="adaptive_header_menu">
+    <div class="menu_overlay"></div>
+  
+    <style>
+        .menu ul li a{
+            color: #000;
+        }
+    </style>
+    <div class="menu">
+      <div class="menu_header">
+        <label class="menu_toggle menu_toggle_close" for="menu">
+          <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </label>
+        <span>{% translate 'Дополнительно' %}</span>
+      </div>
+      <ul>
+        <li class="adaptive_menu_item_categories">
+          <span class="adaptive_menu_categ_dropdown"><strong>{% translate 'Категории' %}</strong> <img src="{% static 'img/adaptive/small_arrow_up.svg' %}" alt="{% translate 'Стрелка' %}" class="arrow_down"></span>
+          <ul class="adaptive_menu_categ_dropdown_ul">
+            {% for category, subcategory_list in base_categories.items %}
+              <li>
+                <span><a href="{% url 'cosmetics:category' category.slug %}">{{category}}</a></span>
+                <span class="menu_item_next"><img src="{% static 'img/adaptive/small_arrow_up.svg' %}" alt="{% translate 'Стрелка' %}" class="arrow_right"></span>
+                
+                {% if subcategory_list %}
+                  <div class="menu_secondary">
+                    <div class="menu_header">
+                      <span class="menu_toggle menu_toggle_secondary_menu" for="ite2">
+                        <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                          <path d="M19 12H6M12 5l-7 7 7 7"/>
+                        </svg>
+                      </span>
+                      <span>{{category}}</span>
+                    </div>
+                    <ul>
+                      {% for subcategory in subcategory_list %}
+                        <li><span><a href="{% url 'cosmetics:category' subcategory.slug %}">{{subcategory}}</a></span></li>
+                      {% endfor %}  
+                  </div>
+                {% endif %}
+              </li>
+            {% endfor %}
+            </ul>
+        </li>
+        <li><span><a href="{% url 'cosmetics:contacts' %}">{% translate 'Контакты' %}</a></span></li>
+        <li><span><a href="{% url 'cosmetics:delivery_and_payment' %}">{% translate 'Доставка и оплата' %}</a></span></li>
+        <li><span><a href="{% url 'account:login' %}">{% translate 'Вход' %}</a></span></li>
+        <li><span><a href="{% url 'account:registration' %}">{% translate 'Регистрация' %}</a></span></li>
+        <li><span><a href="{% url 'cosmetics:cart' %}">{% translate 'Корзина' %}</a></span></li>
+     
+        <li><span><a href="{% url 'cosmetics:privacy_policy' %}">{% translate 'Политика конфиденциальности' %}</a></span></li>
+        <li><span><a href="{% url 'cosmetics:contract_offer' %}">{% translate 'Публичная оферта' %}</a></span></li>
+        <li><span><a href="{% url 'cosmetics:exchange_and_return' %}">{% translate 'Обмен и возврат' %}</a></span></li>
+  
+        <li><span><a href="#">{% translate 'О нас' %}</a></span></li>
+        <li><span><a href="{% url 'cosmetics:blog' %}">{% translate 'Наш блог' %}</a></span></li>
+        <!-- <li>
+          <span>Item 2</span>
+          <span class="menu_item_next"><img src="{% static 'img/adaptive/small_arrow_up.svg' %}" alt="{% translate 'Стрелка' %}" class="arrow_right"></span>
+          
+          <div class="menu_secondary">
+            <div class="menu_header">
+              <span class="menu_toggle menu_toggle_secondary_menu" for="ite2">
+                <svg width="35" height="35" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="butt" stroke-linejoin="arcs">
+                  <path d="M19 12H6M12 5l-7 7 7 7"/>
+                </svg>
+              </span>
+              <span>Item 2</span>
+            </div>
+            <ul>
+              <li><span>Item 2.1</span></li>
+              <li><span>Item 2.2</span></li>
+              <li><span>Item 2.4</span></li>
+              <li><span>Item 2.5</span></li>
+              <li><span>Item 2.6</span></li>
+              <li><span>Item 2.7</span></li>
+              <li><span>Item 2.8</span></li>
+              <li><span>Item 2.9</span></li>
+          </div>
+        </li> -->
+
+
+
+        <!-- <li><span>Item 3</span></li>
+        <li><span>Item 4</span></li>
+        <li><span>Item 5</span></li>
+        <li><span>Item 6</span></li> -->
+      </ul>  
+    </div>
+  </nav>
+  
+
+
+
+
+  <div class="main">{% block content %}{% endblock %}</div>
+
+
+  <input type="hidden" value="{% static 'img/full_add_to_cart.svg' %}" id="full_add_to_cart_img">
+  <input type="hidden" value="{% static 'img/empty_add_to_cart.svg' %}" id="empty_add_to_cart_img">
+  <input type="hidden" value="{% static 'img/full_add_to_liked.svg' %}" id="full_add_to_liked_img">
+  <input type="hidden" value="{% static 'img/empty_add_to_liked.svg' %}" id="empty_add_to_liked_img">
+  <div class="notification">
+      <div class="notif_text">
+      <span class="notif_main">{% translate 'Добавлено в корзинку' %}!</span>
+      <a href="{% url 'cosmetics:cart' %}" class="notif_goto_cart">{% translate 'Посмотреть товары' %}</a>
+      </div>
+      <div class="notif_close">+</div>
+  </div>
+
+
+
+
+
+
+  <footer>
+    <div class="footer_logo">
+      <h2>WhySkin</h2>
+      <div style="font-size: 14px; margin: 5px 0;color: #898989;">
+          {% if request.LANGUAGE_CODE == 'uk' %}
+            <a href="/" style="font-size: 14px; color: initial; text-decoration: underline;">uk</a> / <a href="/ru/" style="font-size: 14px; color: #898989;">ru</a>
+          {% elif request.LANGUAGE_CODE == 'ru' %}
+            <a href="/" style="font-size: 14px; color: #898989;">uk</a> / <a href="/ru/" style="font-size: 14px; color: initial; text-decoration: underline;">ru</a>
+          {% endif %}
+        </div>
+      <span>Тел: <a href="tel:0674216364">067 421 63 64</a></span>
+      <span>Телеграм: <a href="https://t.me/whyskin">@whyskin</a></span>
+      <div>
+        <a href="https://www.instagram.com/why_skin/" style="border: none;"><img src="{% static 'img/icon-instagram.svg' %}" alt="{% translate 'Перейти на нашу страницу в Инстаграм' %}" title="{% translate 'Перейти на нашу страницу в Инстаграм' %}"></a>
+        <a href="https://www.tiktok.com/@whyskin" style="border: none;"><img src="{% static 'img/icon-tiktok.svg' %}" alt="{% translate 'Перейти на нашу страницу в Тик Ток' %}" title="{% translate 'Перейти на нашу страницу в Тик Ток' %}"></a>
+      </div>
+      {% now "Y" as current_year %}
+      <span>© WhySkin {{ current_year }}</span>
+    </div>
+    <div>
+      <span class="footer_title">{% translate 'Клиентам' %}</span>
+      <ul>
+        <li><a href="{% url 'cosmetics:contacts' %}">{% translate 'Контакты' %}</a></li>
+        <li><a href="{% url 'cosmetics:delivery_and_payment' %}">{% translate 'Доставка и оплата' %}</a></li>
+        <li><a href="{% url 'account:login' %}">{% translate 'Вход' %}</a></li>
+        <li><a href="{% url 'account:registration' %}">{% translate 'Регистрация' %}</a></li>
+        <li><a href="{% url 'cosmetics:cart' %}">{% translate 'Корзина' %}</a></li>
+      </ul>
+    </div>
+    <div>
+      <span class="footer_title">{% translate 'Важное' %}</span>
+      <ul>
+        <li><a href="{% url 'cosmetics:privacy_policy' %}">{% translate 'Политика конфиденциальности' %}</a></li>
+        <li><a href="{% url 'cosmetics:contract_offer' %}">{% translate 'Публичная оферта' %}</a></li>
+        <li><a href="{% url 'cosmetics:exchange_and_return' %}">{% translate 'Обмен и возврат' %}</a></li>
+      </ul>
+    </div>
+    <div>
+      <span class="footer_title">{% translate 'Другое' %}</span>
+      <ul>
+        <li><a href="#">{% translate 'О нас' %}</a></li>
+        <li><a href="{% url 'cosmetics:blog' %}">{% translate 'Наш блог' %}</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="{% static 'js/script.js' %}"></script>
+  <script src="{% static 'js/script_adaptive.js' %}"></script>
+  {% block scripts %}{% endblock %}
+</html>

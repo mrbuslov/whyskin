@@ -1,0 +1,83 @@
+
+/* ----------------------------------- Profile ----------------------------------------------- */
+.profile_header{
+    font-size: 26px;
+    background: #fff;
+    margin-bottom: 15px;
+    border-radius: 0 0 7px 7px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.profile_data{
+    justify-content: center;
+}
+.profile_data, .user_data{
+    display: flex;
+    flex-direction: row;
+}
+.user_data{
+    border-radius: 7px 0 0 7px;
+} 
+
+.user_data_fields input{
+    font-size: 15px;
+    border: 0;
+    border-bottom: 1px solid;
+    outline: none;
+}    
+
+#profile_submit{
+    width: 270px;
+    border: 0;
+    padding: 12px 0;
+    border-radius: 5px;
+    background: var(--background-color);
+    color: #000;
+    margin: 15px auto;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: background .3s ease;
+    cursor: pointer;
+    display: block;
+    font-weight: 700;
+}
+#profile_submit:hover{
+    background: var(--background-color-hover);
+}
+.profile_email{
+    margin: 11px 0;
+    overflow: hidden; 
+    white-space: nowrap; 
+    text-overflow: ellipsis;
+}
+.user_data_fields{
+    margin-left: 20px;
+}
+#id_first_name, #id_last_name, #id_phone_number{
+    width: 100%;
+    padding: 0 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    min-width: 200px;
+}
+
+
+/*--------------------------------- Телефон ВЕРТИКАЛЬНО --------------------------------------*/
+@media (orientation:portrait) and (max-width:480px){
+    .main{
+        min-height: 70vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .registration_greeting_h2, .registration_greeting{
+        padding: 0 20px;
+    }
+    .profile_data{
+        width: 100%;
+        justify-content: center;
+    }
+    .user_data_fields{
+        width: 50%;
+    }
+}

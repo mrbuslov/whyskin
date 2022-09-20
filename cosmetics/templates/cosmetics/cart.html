@@ -1,0 +1,66 @@
+{% extends 'cosmetics/base.html' %}
+{% load static %} 
+{% load i18n %} 
+
+
+{% block title %}{% translate 'Ваша корзинка' %}{% endblock %}
+{% block head %}
+    <meta name="description" content="{% translate 'Корзинка с добавленными товарами' %}">   
+    <meta property="og:url" content="{{request.build_absolute_uri}}" />
+    <meta property="og:site_name" content="WhySkin"/>
+    <meta property="og:image" content="https://whyskin.com.ua{% static 'img/icon-cosm-cart.jpg' %}"/>
+    <meta property="og:title" content="{% translate 'Ваша корзинка с добавленными товарами' %}!" />
+    <meta property="og:description" content="{% translate 'Подберите интересные товары и нажмите кнопку оформить заказ' %}" />
+    <meta property="og:type" content="website" />
+{% endblock %}
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'css/cart_order.css' %}">
+{% endblock %}
+
+
+{% block content %}
+<h1 class="carted_h1">{% translate 'Ваша корзинка' %}</h1>
+
+<form action="{% url 'cosmetics:order' %}" method="post">
+    {% csrf_token %}
+    {% for product, image in all_products %}
+    <a href="{% url 'cosmetics:product' product.slug %}" class="carted">
+        <div class="carted_image">
+            <img src="{{image.image.url}}" alt="{% translate 'Изображение' %} {{product.name}}" title="{% translate 'Изображение' %} {{product.name}}">
+        </div>
+        <div class="carted_prod">
+            <div class="carted_prod_details">
+                <div class="carted_prod_name">
+                    <div class="carted_name">{{product.name}}</div>
+                    <div class="carted_price"><div class="carted_price_num" style="display: inline-block;">{{product.price|floatformat:"0" }}</div> <span>₴</span></div>
+                </div>
+                <div class="quantity_block">
+                    <button class="quantity_arrow-minus"> - </button>
+                    <input class="quantity_num" type="number" value="1" name="product_quantity"/>
+                    <button class="quantity_arrow-plus"> + </button>
+                </div>
+            </div>
+            <div class="carted_remove"><div class="carted_remove_cross">+</div></div>
+        </div>
+    </a>
+
+    {% empty %}
+    <h2 style="text-align: center;">{% translate 'В корзинке пока нет товаров. Давайте' %} <a href="{% url 'cosmetics:index' %}">{% translate 'поищем' %}</a>!</h2>
+    <img src="{% static 'img/icon-cosm-cart.svg' %}" alt="{% translate 'Фото корзинки' %}" class="empty_liked_carted_img">
+    {% endfor %}
+
+    {% if all_products %}
+    <hr class="cart_hr">
+    <div class="cart_total_price">{{total_price|floatformat:"0" }} <span>₴</span></div> 
+    <input type="submit" class="cart_make_order" value="{% translate 'Оформить заказ' %}">
+    {% endif %}
+
+</form>
+
+
+
+{% endblock %}
+
+{% block scripts %}
+
+{% endblock %}
